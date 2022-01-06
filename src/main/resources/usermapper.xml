@@ -11,11 +11,41 @@
 		INSERT INTO Account VALUES(#{userID}, #{userPassword}, #{userName}, #{userNickname}, #{userProfile})
 	</insert>
 	
+	<!-- 아이디 중복 확인 -->
 	<select id="idCheck" parameterType="com.pp.peterpet.user.UserDTO" resultType="com.pp.peterpet.user.UserDTO">
 		SELECT * FROM Account WHERE userID =#{userID}
 	</select>
 	
+	<!-- 닉네임 중복 확인 -->
 	<select id="nicknameCheck" resultType="com.pp.peterpet.user.UserDTO">
 		SELECT * FROM Account WHERE userNickname = #{userNickname}
 	</select>
+	
+	<!-- 유저 정보 가져오기 -->
+	<select id="getUser" resultType="com.pp.peterpet.user.UserDTO">
+		SELECT * FROM Account WHERE userID = #{userID}
+	</select>
+	
+	<!-- 유저 프로필 업데이트 -->
+	<update id="UserUpdateProfile" parameterType="com.pp.peterpet.user.UserDTO">
+		update Account set userProfile= #{userProfile} where userID=#{userID}
+	</update>
+	
+	<!-- 유저 비밀번호 업데이트 -->
+	<update id="UserUpdatePassword" parameterType="com.pp.peterpet.user.UserDTO">
+		update Account set userPassword= #{userPassword} where userID=#{userID}
+	</update>
+	
+	<!-- 유저 닉네임 업데이트 -->
+	<update id="UserUpdateNickname" parameterType="com.pp.peterpet.user.UserDTO">
+		update Account set userNickname= #{userNickname} where userID=#{userID}
+	</update>
+	
+	<!-- 패스워드 확인 -->
+	<select id="passwordCheck" resultType="com.pp.peterpet.user.UserDTO">
+		SELECT * FROM Account WHERE userID = #{userID}
+	</select>
+	
+	
+	
 </mapper>

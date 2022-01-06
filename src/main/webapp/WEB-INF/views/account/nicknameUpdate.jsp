@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>회원 가입</title>
 <!--Ajax를 위해서 공식사이트 에서 제공하는 jquery를 가져온다.  -->
-<script src="js/nicknameUpdate.js"></script>
+<script src="resources/js/nicknameUpdate.js"></script>
 
 </head>
 <body>

@@ -21,7 +21,7 @@
 				<tbody>
 					<tr>
 						<td colspan="3">
-							<img src="images/${User.userProfile }" width="300px">
+							<img src="resources/images/${User.userProfile }" width="300px">
 						</td>
 					</tr>
 					<tr>

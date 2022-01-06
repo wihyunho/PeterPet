@@ -2,6 +2,7 @@ package com.pp.peterpet.user;
 
 import java.io.IOException;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,8 +22,6 @@ import com.pp.peterpet.user.UserDAO;
  */
 @Controller
 public class UserController {
-	@Autowired
-	private BoardDAO bdao;
 
 	@Autowired
 	private UserDAO udao;
@@ -166,5 +165,65 @@ public class UserController {
 			response.getWriter().write("-1");
 
 		response.getWriter().write(udao.nicknameCheck(nickname) + "");
+	}
+	
+	// 회원 정보페이지 진입///////////////////
+	@RequestMapping(value = "/UserInfoC", method = RequestMethod.GET)
+	public String UserInfoC(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+		if(udao.loginCheck(request)) {
+			request.setAttribute("User", udao.getUser(request));
+			request.setAttribute("contentPage", "account/info.jsp");
+			return "index";
+		}else {
+			request.getSession().setAttribute("messageType", "오류 메시지");
+			request.getSession().setAttribute("messageContent", "로그인을 해야 정보를 불러 올 수 있습니다.");
+			return "redirect:/";
+		}
+	}
+	
+	// 회원 정보페이지 진입
+	@RequestMapping(value = "/UserInfoUpdateC", method = RequestMethod.GET)
+	public String UserInfoUpdateCG(HttpServletRequest request) throws IOException, ServletException {
+		if(udao.loginCheck(request)) {
+			request.setAttribute("User", udao.getUser(request));
+			String type = request.getParameter("type");
+			
+			if(type.equals("profile")) {
+				request.setAttribute("contentPage", "account/profileUpdate.jsp");
+			}else if(type.equals("password")) {
+				request.setAttribute("contentPage", "account/passwordUpdate.jsp");
+			}else if(type.equals("nickname")) {
+				request.setAttribute("contentPage", "account/nicknameUpdate.jsp");
+			}
+		}else {
+			request.getSession().setAttribute("messageType", "오류 메시지");
+			request.getSession().setAttribute("messageContent", "로그인을 해야 정보를 불러 올 수 있습니다.");
+
+			return "redirect:/";
+		}
+		return "index";
+	}
+	
+	// 회원 정보페이지 진입
+	@RequestMapping(value = "/UserInfoUpdateC", method = RequestMethod.POST)
+	public String UserInfoUpdateCP(HttpServletRequest request) throws IOException, ServletException {
+		if(udao.UserUpdate(request)) {
+			request.getSession().setAttribute("messageType", "성공 메시지");
+			request.getSession().setAttribute("messageContent", "회원 정보를 수정했습니다.");
+		}
+	
+		return "redirect:UserInfoC";
+	}
+	
+	// 회원 정보페이지 진입
+	@RequestMapping(value = "/UserPasswordCheckServlet", method = RequestMethod.POST)
+	public void UserPasswordCheckServlet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+		String password = request.getParameter("Password");
+		
+		if(password == null || password.equals("")) response.getWriter().write("-1");
+		
+		response.getWriter().write(udao.passwordCheck(request, password) + "");
 	}
 }

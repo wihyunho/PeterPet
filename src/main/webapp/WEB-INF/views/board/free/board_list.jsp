@@ -30,12 +30,12 @@
 			<ul class="card-group">
 				<c:forEach var="b" items="${boards }">
 					<!-- start card -->
-					<li onclick="location.href='BoardViewC?no=${b.no}&type=${b.type}&p=${curPageNo}'" class="card-item">
-						<div class="card-ly1" style=" background-image: url(${b.thumbnail});"></div>
+					<li onclick="location.href='BoardViewC?no=${b.b_no}&type=${b.b_type}&p=${curPageNo}'" class="card-item">
+						<div class="card-ly1" style=" background-image: url(${b.b_thumbnail});"></div>
 						<a href="#" class="card card_big">
-							<h3 class="card__head fs_28">${b.title }</h3> 
-							<span class="card__date">작성자: ${b.writer}</span><br>
-							<span class="card__date">작성일: ${b.date}</span>
+							<h3 class="card__head fs_28">${b.b_title }</h3> 
+							<span class="card__date">작성자: ${b.b_writer}</span><br>
+							<span class="card__date">작성일: ${b.b_date}</span>
 						</a>
 					</li>
 				</c:forEach>

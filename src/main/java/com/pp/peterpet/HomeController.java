@@ -10,10 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.pp.peterpet.board.BoardDAO;
 import com.pp.peterpet.user.UserDAO;
 
-
-
-
-
 /**
  * Handles requests for the application home page.
  */

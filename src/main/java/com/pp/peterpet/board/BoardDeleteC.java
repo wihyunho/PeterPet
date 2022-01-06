@@ -1,4 +1,4 @@
-package com.pp.peterpet.user;
+package com.pp.peterpet.board;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,26 +7,29 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import user.UserDAO;
 
-@WebServlet("/UserInfoC")
-public class UserInfoC extends HttpServlet {
+@WebServlet("/BoardDeleteC")
+public class BoardDeleteC extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		UserDAO.loginCheck(request);
 		
-		if(UserDAO.loginCheck(request)) {
-			request.setAttribute("User", UserDAO.getUser(request));
-			request.setAttribute("contentPage", "account/info.jsp");
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+		if(BoardDAO.getBdao().getDel(request)) {
+			request.getSession().setAttribute("messageType", "성공 메시지");
+			request.getSession().setAttribute("messageContent", "글삭제를 성공했습니다.");
 		}else {
 			request.getSession().setAttribute("messageType", "오류 메시지");
-			request.getSession().setAttribute("messageContent", "로그인을 해야 정보를 불러 올 수 있습니다.");
-			response.sendRedirect("HC");
+			request.getSession().setAttribute("messageContent", "글삭제를 실패했습니다.");
 		}
+		String type = request.getParameter("type");
+		String url = "BoardListC?type="+type;
+		response.sendRedirect(url);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
 	}
 
 }

@@ -6,4 +6,6 @@ public interface BoardMapper {
 	public int include(BoardDTO bdto);
 	
 	public List<BoardDTO> getfreeList(BoardDTO bdto);
+	
+	public List<BoardDTO> getList(BoardDTO bdto);
 }
