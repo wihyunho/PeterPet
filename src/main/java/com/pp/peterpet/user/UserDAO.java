@@ -28,33 +28,23 @@ public class UserDAO {
 	
 	// 로그인
 	public int login(String userID, String userPassword) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String SQL = "SELECT * FROM Account WHERE userID = ?";
-
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(SQL);
-			pstmt.setString(1, userID);
-			
 		
-			
-			rs = pstmt.executeQuery();
-			if (rs.next()) {
-				if (rs.getString("userPassword").equals(userPassword)) {
-					return 1; // 로그인 성공
-				}
-				return 2; // 비밀 번호 틀림
-			} else {
-				return 0; // 해당사용자가 존재하지 않음
+		UserDTO udto = new UserDTO();
+		udto.setUserID(userID);
+		udto.setUserPassword(userPassword);
+		
+		
+		UserDTO result =  ss.getMapper(UserMapper.class).login(udto);
+		
+		if (result != null) {
+			if (result.getUserPassword().equals(userPassword)) {
+				return 1; // 로그인 성공
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(con, pstmt, rs);
-		} // finally end
-		return -1;	//데이터베이스 오류
+			return 2; // 비밀 번호 틀림
+		} else {
+			return 0; // 해당사용자가 존재하지 않음
+		}
+		
 	}// loing() end
 
 	// 아이디 중복체크
