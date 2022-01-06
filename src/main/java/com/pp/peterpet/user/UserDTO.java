@@ -7,6 +7,21 @@ public class UserDTO {
 	String userNickname;
 	String userProfile;
 	
+	public UserDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public UserDTO(String userID, String userPassword, String userName, String userNickname, String userProfile) {
+		super();
+		this.userID = userID;
+		this.userPassword = userPassword;
+		this.userName = userName;
+		this.userNickname = userNickname;
+		this.userProfile = userProfile;
+	}
+
+
+
 	public String getUserID() {
 		return userID;
 	}

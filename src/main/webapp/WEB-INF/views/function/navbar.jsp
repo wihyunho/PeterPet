@@ -16,7 +16,7 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="HC"> 
+			<a class="navbar-brand" href="./"> 
 			<img src="resources/images/peterpet_logo.png">
 			</a>
 		</div>
@@ -52,7 +52,7 @@
 					</a>
 					<ul class="dropdown-menu">
 						<li><a href="UserLoginC">로그인</a></li>
-						<li><a href="JoinC">회원가입</a></li>
+						<li><a href="UserRegisterC">회원가입</a></li>
 					</ul>
 				</li>
 			</ul>

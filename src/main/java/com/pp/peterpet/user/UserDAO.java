@@ -49,78 +49,42 @@ public class UserDAO {
 
 	// 아이디 중복체크
 	public int idCheck(String userID) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String SQL = "SELECT * FROM Account WHERE userID =?";
-
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(SQL);
-			pstmt.setString(1, userID);
-			rs = pstmt.executeQuery();
-			if (rs.next() || userID.equals("")) {
-				return 0; 	// 이미존재하는 회원
-			} else {
-				return 1;	// 가입 가능한 회원 아이디
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(con, pstmt, rs);
-		} // finally end
-		return -1;
+		
+		UserDTO udto = new UserDTO();
+		udto.setUserID(userID);
+		
+		UserDTO result = ss.getMapper(UserMapper.class).idCheck(udto);
+		
+		if (result != null || userID.equals("")) {
+			return 0; 	// 이미존재하는 회원
+		} else {
+			return 1;	// 가입 가능한 회원 아이디
+		}
 	}// registerCheck() end
 	
 	// 닉네임 중복체크
-	public static int nicknameCheck(String nickname) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		String SQL = "SELECT * FROM Account WHERE userNickname = ?";
-
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(SQL);
-			pstmt.setString(1, nickname);
-			rs = pstmt.executeQuery();
-			if (rs.next() || nickname.equals("")) {
-				return 0; 	// 이미존재하는 닉네임
-			} else {
-				return 1;	// 가입 가능한 회원 아이디
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(con, pstmt, rs);
-		} // finally end
-		return -1;
+	public int nicknameCheck(String nickname) {
+		UserDTO udto = new UserDTO();
+		udto.setUserNickname(nickname);
+		
+		UserDTO result = ss.getMapper(UserMapper.class).nicknameCheck(udto);
+		
+		if (result !=null || nickname.equals("")) {
+			return 0; 	// 이미존재하는 닉네임
+		} else {
+			return 1;	// 가입 가능한 회원 아이디
+		}
 	}// registerCheck() end
 
 	// DB에 넣기
 	public int register(String userID, String userPassword, String userName, String userNickname, String userProfile) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		String SQL = "INSERT INTO Account VALUES(?, ?, ?, ?, ?)";
 		if(userProfile == null) {
 			userProfile = "icon.png";
 		}
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(SQL);
-			pstmt.setString(1, userID);
-			pstmt.setString(2, userPassword);
-			pstmt.setString(3, userName);
-			pstmt.setString(4, userNickname);
-			pstmt.setString(5, userProfile);
 
-			return pstmt.executeUpdate();
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(con, pstmt, null);
-		} // finally end
-		return -1;
+		UserDTO udto = new UserDTO(userID, userPassword, userName, userNickname, userProfile);
+		
+		return ss.getMapper(UserMapper.class).register(udto);
 	}// register() end
 
 	//로그인 되어 있는지 확인
