@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pp.peterpet.board.BoardMapper">
+	<!-- <insert id="include" parameterType="com.pp.peterpet.board.BoardDTO">
+		INSERT INTO BOARD VALUES(board_seq.nextval, ?, ?, ?, sysdate, ?, ?)
+	</insert> -->
+	
+	<select id="getfreeList" resultType="com.pp.peterpet.board.BoardDTO">
+		select * from board where b_type = #{b_type} order by b_no desc
+	</select>
+</mapper>
