@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pp.peterpet.comment.CommentMapper">
+	<select id="getCommentList" resultType="com.pp.peterpet.comment.CommentDTO">
+		select Level, c_no, b_no, c_writer, c_date, c_parent, c_ischange,c_comment 
+		from BOARD_COMMENT
+		where  b_no = #{b_no}
+		start with c_parent = 0
+		connect by prior c_no = c_parent
+	</select>
+
+</mapper>

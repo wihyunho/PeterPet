@@ -1,4 +1,4 @@
-package com.pp.peterpet.board;
+package com.pp.peterpet.comment;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,29 +7,31 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import board.BoardDAO;
 import user.UserDAO;
 
-@WebServlet("/BoardDeleteC")
-public class BoardDeleteC extends HttpServlet {
+
+@WebServlet("/CommentWriteC")
+public class CommentWriteC extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		UserDAO.loginCheck(request);
-		
-		if(BoardDAO.getBdao().getDel(request)) {
-			request.getSession().setAttribute("messageType", "성공 메시지");
-			request.getSession().setAttribute("messageContent", "글삭제를 성공했습니다.");
-		}else {
-			request.getSession().setAttribute("messageType", "오류 메시지");
-			request.getSession().setAttribute("messageContent", "글삭제를 실패했습니다.");
-		}
-		String type = request.getParameter("type");
-		String url = "BoardListC?type="+type;
-		response.sendRedirect(url);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		request.setCharacterEncoding("utf-8");
+		
+		if(CommentDAO.insertComment(request) != -1) {
+			request.getSession().setAttribute("messageType", "성공 메시지");
+			request.getSession().setAttribute("messageContent", "댓글 등록 성공.");
+			
+		}else {
+			request.getSession().setAttribute("messageType", "오류 메시지");
+			request.getSession().setAttribute("messageContent", "댓글 등록 실패.");
+		}
+		
+		String url = "BoardViewC?no="+request.getParameter("boardnum");
+		response.sendRedirect(url);
 	}
 
 }

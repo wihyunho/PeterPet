@@ -5,8 +5,8 @@ import java.sql.Date;
 public class BoardDTO {
 
 	int b_no;
-	String b_title;
 	String b_type;
+	String b_title;
 	String b_content;
 	Date b_date;
 	String b_thumbnail;
@@ -16,17 +16,21 @@ public class BoardDTO {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public BoardDTO(int b_no, String b_title, String b_type, String b_content, Date b_date, String b_thumbnail,
+	
+
+	public BoardDTO(int b_no, String b_type, String b_title, String b_content, Date b_date, String b_thumbnail,
 			String b_writer) {
 		super();
 		this.b_no = b_no;
-		this.b_title = b_title;
 		this.b_type = b_type;
+		this.b_title = b_title;
 		this.b_content = b_content;
 		this.b_date = b_date;
 		this.b_thumbnail = b_thumbnail;
 		this.b_writer = b_writer;
 	}
+
+
 
 	public int getB_no() {
 		return b_no;

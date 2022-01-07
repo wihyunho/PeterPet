@@ -34,11 +34,11 @@
 			</thead>
 			<c:forEach var="b" items="${boards }">
 				<tbody>
-					<tr class="boardList" onclick="location.href='BoardViewC?no=${b.no}&type${b.type}&p=${curPageNo}'">
-						<td align="center">${b.title }</td>
-						<td id="smallhidden2" align="center">${b.writer }</td>
+					<tr class="boardList" onclick="location.href='BoardViewC?no=${b.b_no}&type${b.b_type}&p=${curPageNo}'">
+						<td align="center">${b.b_title }</td>
+						<td id="smallhidden2" align="center">${b.b_writer }</td>
 						<td id="smallhidden" align="center">
-							<fmt:formatDate value="${b.date }" type="both" dateStyle="short" timeStyle="short"/>
+							<fmt:formatDate value="${b.b_date }" type="both" dateStyle="short" timeStyle="short"/>
 						</td>
 					</tr>
 				</tbody>

@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.pp.peterpet.board.BoardMapper">
+	<!-- 메인화면 보드리스트 가져오기 -->
 	<select id="getfreeList" resultType="com.pp.peterpet.board.BoardDTO">
 		select * from board where b_type = #{b_type} order by b_no desc
 	</select>
 	
+	<!-- 보드 리스트 가져오기 -->
 	<select id="getList" resultType="com.pp.peterpet.board.BoardDTO">
 		select * from board where b_type = #{b_type} order by b_no
 	</select>
+	
+	<!-- 보드 자세히 보기 -->
+	<select id="getBoard" resultType="com.pp.peterpet.board.BoardDTO">
+		select * from board where b_no=#{b_no}
+	</select>
+	
+	<!-- 게시판 제목으로 검색 -->
+	<select id="getTitleSearch" resultType="com.pp.peterpet.board.BoardDTO">
+		select * from board where b_title like '%'||#{b_title}||'%' and b_type = #{b_type} order by b_no
+	</select>
+	
+	<!-- 작성자로 검색 -->
+	<select id="getWriterSearch" resultType="com.pp.peterpet.board.BoardDTO">
+		select * from board where b_writer like '%'||#{b_writer}||'%' and b_type = #{b_type} order by b_no
+	</select>
+	
+	<!-- 게시물 작성하기 -->
+	<insert id="include" parameterType="com.pp.peterpet.board.BoardDTO">
+		INSERT INTO BOARD VALUES(board_seq.nextval, #{b_type}, #{b_title}, #{b_content}, sysdate, #{b_thumbnail}, #{b_writer})
+	</insert>
+	
+	<!-- 게시물 수정하기 -->
+	<update id="getUpdate" parameterType="com.pp.peterpet.board.BoardDTO">
+		update board set b_title=#{b_title}, b_content=#{b_content}, b_date=sysdate, b_thumbnail = #{b_thumbnail} where b_no=#{b_no}
+	</update>
+	
+	<!-- 게시물 삭제하기 -->
+	<delete id="getDel" parameterType="com.pp.peterpet.board.BoardDTO">
+		delete from board where b_no= #{b_no}
+	</delete>
 </mapper>

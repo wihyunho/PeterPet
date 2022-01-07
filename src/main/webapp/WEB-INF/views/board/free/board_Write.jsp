@@ -8,9 +8,9 @@
 <!-- include summernote css/js-->
 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
-<script type="text/javascript" src="js/summernote.js"></script>
-<script type="text/javascript" src="js/boardCheck.js"></script>
-<script type="text/javascript" src="js/validCheck.js"></script>
+<script type="text/javascript" src="resources/js/summernote.js"></script>
+<script type="text/javascript" src="resources/js/boardCheck.js"></script>
+<script type="text/javascript" src="resources/js/validCheck.js"></script>
 
 </head>
 <body>

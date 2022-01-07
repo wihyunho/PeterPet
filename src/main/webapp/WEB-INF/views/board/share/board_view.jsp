@@ -27,16 +27,16 @@
 				<button 
 					<c:choose>
 						<c:when test="${requestScope.curPageNo != null}">
-							onclick="location.href='BoardPageC?p=${curPageNo }&type=${board.type}'"
+							onclick="location.href='BoardPageC?p=${curPageNo }&type=${board.b_type}'"
 						</c:when>
 						<c:otherwise>
 							onclick="location.href='BoardListC?type=share'"
 						</c:otherwise>
 					</c:choose>
 				>목록</button>
-				<c:if test="${requestScope.userNickname eq board.writer}">
-					<button onclick="location.href='BoardUpdateC?p=${curPageNo }&no=${board.no}&type=${board.type}'">수정</button>
-					<button onclick="location.href='BoardDeleteC?no=${board.no}&type=${board.type}'">삭제</button>
+				<c:if test="${requestScope.userNickname eq board.b_writer}">
+					<button onclick="location.href='BoardUpdateC?p=${curPageNo }&no=${board.b_no}&type=${board.b_type}'">수정</button>
+					<button onclick="location.href='BoardDeleteC?no=${board.b_no}&type=${board.b_type}'">삭제</button>
 				</c:if>
 			</div>
 			<table class="table table-striped"
@@ -44,19 +44,19 @@
 				<tbody>
 					<tr>
 						<td style="width: 20%;">글제목</td>
-						<td colspan="2">${board.title }</td>
+						<td colspan="2">${board.b_title }</td>
 					</tr>
 					<tr>
 						<td>작성자</td>
-						<td colspan="2">${board.writer }</td>
+						<td colspan="2">${board.b_writer }</td>
 					</tr>
 					<tr>
 						<td>작성일자</td>
-						<td colspan="2"><fmt:formatDate value="${board.date }" type="both" dateStyle="medium" timeStyle="short"/></td>
+						<td colspan="2"><fmt:formatDate value="${board.b_date }" type="both" dateStyle="medium" timeStyle="short"/></td>
 					</tr>
 					<tr>
 						<td id="ttD" colspan="3" style="min-height: 200px; text-align: left;">
-							${board.content }
+							${board.b_content }
 						</td>
 					</tr>
 				</tbody>
@@ -70,7 +70,7 @@
 					<c:if test="${sessionScope.userID !=null}">
 						<tr bgcolor="#F5F5F5">
 							<form action="CommentWriteC" method="post" id="writeCommentForm">
-								<input type="hidden" name="boardnum" value="${board.no}">
+								<input type="hidden" name="boardnum" value="${board.b_no}">
 								<input type="hidden" name="comment_id" value="${sessionScope.userID}">
 								<input type="hidden" name="commentnum" value="0">
 								<!-- 본문 작성-->
@@ -140,7 +140,7 @@
 												<a href="#" id="chagecommenthidden${comment.c_no}" onclick="return false;"
 												class="button">[수정] </a>
 												<br>
-												<a href="CommentDeleteC?no=${comment.c_no}&boardnum=${board.no}"> [삭제]</a>
+												<a href="CommentDeleteC?no=${comment.c_no}&boardnum=${board.b_no}"> [삭제]</a>
 											</c:if>
 											<!-- 댓글작성자가 아니라면 -->
 											<c:if test="${requestScope.userNickname ne comment.c_writer}">
@@ -171,7 +171,7 @@
 							</script>
 							<tr bgcolor="#F5F5F5" id="recomment${comment.c_no}" style="display: none;">
 								<form action="CommentWriteC" method="post" id="writeCommentForm">
-									<input type="hidden" name="boardnum" value="${board.no}">
+									<input type="hidden" name="boardnum" value="${board.b_no}">
 									<input type="hidden" name="comment_id" value="${sessionScope.userID}"> 
 									<input type="hidden" name="commentnum" value="${comment.c_no}">
 									<!-- 본문 작성-->
@@ -211,7 +211,7 @@
 							</script>
 							<tr bgcolor="#F5F5F5" id="chagecomment${comment.c_no}" style="display: none;">
 								<form action="CommentChageC" method="post" id="writeCommentForm">
-									<input type="hidden" name="boardnum" value="${board.no}">
+									<input type="hidden" name="boardnum" value="${board.b_no}">
 									<input type="hidden" name="commentnum" value="${comment.c_no}">
 									<!-- 본문 작성-->
 									<td>

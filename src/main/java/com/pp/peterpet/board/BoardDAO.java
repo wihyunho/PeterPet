@@ -1,6 +1,7 @@
 package com.pp.peterpet.board;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +17,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pp.peterpet.board.BoardDTO;
+import com.pp.peterpet.user.UserDAO;
+import com.pp.peterpet.user.UserDTO;
 
 
 
@@ -25,47 +28,39 @@ public class BoardDAO {
 	@Autowired
 	private SqlSession ss;
 	
+	@Autowired
+	private UserDAO udao;
+	
 	ArrayList<BoardDTO> boards;
 
 	//보드 글 생성
 	public int include(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		String SQL = "INSERT INTO BOARD VALUES(board_seq.nextval, ?, ?, ?, sysdate, ?, ?)";
 		
 		String content = request.getParameter("content");
-		String thumbnail="";
+		
+		String thumbnail="resources/images/noimage.png";
+		
 		if(content.indexOf("<img ") != -1) {
 			//이미지가 있다
 			int start,end;
 			
-			start = content.indexOf("/PeterPet");
+			start = content.indexOf("resources/");
 			thumbnail =  content.substring(start);
 			
 			end = thumbnail.indexOf("\"");
 			thumbnail= thumbnail.substring(0, end);
-		}else {
-			thumbnail = "/PeterPet/images/noimage.png";
 		}
 		
-		UserDTO user = UserDAO.getUser(request);
-
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(SQL);
-			pstmt.setString(1, request.getParameter("type"));
-			pstmt.setString(2, request.getParameter("title"));
-			pstmt.setString(3, content);
-			pstmt.setString(4, thumbnail);
-			pstmt.setString(5, user.getUserNickname());
-
-			return pstmt.executeUpdate();
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			DBManager.close(con, pstmt, null);
-		} // finally end
-		return -1;
+		UserDTO user = udao.getUser(request);
+		
+		BoardDTO bdto = new BoardDTO();
+		bdto.setB_type(request.getParameter("type"));
+		bdto.setB_title(request.getParameter("title"));
+		bdto.setB_content(content);
+		bdto.setB_thumbnail(thumbnail);
+		bdto.setB_writer(user.getUserNickname());
+		
+		return ss.getMapper(BoardMapper.class).include(bdto);
 	}
 
 	//보드 리스트 가져오기
@@ -88,179 +83,83 @@ public class BoardDAO {
 	}
 
 	//글 자세히 보기
-	public BoardDTO getBoard(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		
-		
-		BoardDTO b = new BoardDTO();
-		
-		String sql = "select * from board where b_no=?";
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setInt(1, Integer.parseInt(request.getParameter("no")));
-			rs = pstmt.executeQuery();
-			
-			if(rs.next()) {
-				b.setNo(rs.getInt("b_no"));
-				b.setTitle(rs.getString("b_title"));
-				b.setContent(rs.getString("b_content"));
-				b.setDate(rs.getDate("b_date"));
-				b.setThumbnail(rs.getString("b_thumbnail"));
-				b.setWriter(rs.getString("b_writer"));
-				b.setType(rs.getString("b_type"));
-			}
-			
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			DBManager.close(con, pstmt, rs);
-		}
-		return b;
+	public BoardDTO getBoard(HttpServletRequest request) {	
+		BoardDTO bdto = new BoardDTO();
+		bdto.setB_no(Integer.parseInt(request.getParameter("no")));
+
+		return ss.getMapper(BoardMapper.class).getBoard(bdto);
 	}
 
 	//글 수정하기
-	public boolean getUpdate(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		
+	public int getUpdate(HttpServletRequest request) {		
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
-
-		String thumbnail="";
+		System.out.println(content);
+		System.out.println(content.indexOf("<img "));
+		
+		String thumbnail="resources/images/noimage.png";
+		
 		if(content.indexOf("<img ") != -1) {
 			//이미지가 있다
 			int start,end;
 			
-			start = content.indexOf("/PeterPet");
+			start = content.indexOf("resources/");
 			thumbnail =  content.substring(start);
 			
 			end = thumbnail.indexOf("\"");
 			thumbnail= thumbnail.substring(0, end);
-		}else {
-			thumbnail = "/PeterPet/images/noimage.png";
 		}
 		
+		System.out.println(thumbnail);
 		
-		String sql = "update board set b_title=?, b_content=?, b_date=sysdate, b_thumbnail = ? where b_no=?";
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setString(1, title);
-			pstmt.setString(2, content);
-			pstmt.setString(3, thumbnail);
-			pstmt.setInt(4, Integer.parseInt(request.getParameter("no")));
-			
-			if(pstmt.executeUpdate()==1) {
-				return true;
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			DBManager.close(con, pstmt, null);
-		}
-		return false;
+		BoardDTO bdto = new BoardDTO();
+		bdto.setB_no(Integer.parseInt(request.getParameter("no")));
+		bdto.setB_content(content);
+		bdto.setB_thumbnail(thumbnail);
+		bdto.setB_title(title);
+
+		return ss.getMapper(BoardMapper.class).getUpdate(bdto);
 	}
 
 	//보드 삭제
-	public boolean getDel(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
+	public int getDel(HttpServletRequest request) {
+
+		BoardDTO bdto = new BoardDTO();
 		
-		String sql = "delete from board where b_no=?";
+		bdto.setB_no(Integer.parseInt(request.getParameter("no")));
 		
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setInt(1, Integer.parseInt(request.getParameter("no")));
-			
-			if(pstmt.executeUpdate()==1) { return true; }
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			DBManager.close(con, pstmt, null);
-		}
-		return false;
+		return ss.getMapper(BoardMapper.class).getDel(bdto);
 	}
 
 	//보드 제목으로 검색하기
 	public ArrayList<BoardDTO> getTitleSearch(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
+		BoardDTO bdto = new  BoardDTO();
+		bdto.setB_title(request.getParameter("search"));
+		bdto.setB_type(request.getParameter("type"));
 		
-		String sql = "select * from board where b_title like ? and b_type = ? order by b_no";
-		
+		List<BoardDTO> result = ss.getMapper(BoardMapper.class).getTitleSearch(bdto);
 		boards = new ArrayList<BoardDTO>();
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setString(1, "%"+request.getParameter("search")+"%");
-			pstmt.setString(2, request.getParameter("type"));
-			rs=pstmt.executeQuery();
-			while(rs.next()) {
-				BoardDTO b = new BoardDTO();
-				b.setNo(rs.getInt("b_no"));
-				b.setTitle(rs.getString("b_title"));
-				b.setContent(rs.getString("b_content"));
-				b.setDate(rs.getDate("b_date"));
-				b.setThumbnail(rs.getString("b_thumbnail"));
-				b.setWriter(rs.getString("b_writer"));
-				b.setType(rs.getString("b_type"));
-				boards.add(b);
-			}
-			
-	
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			DBManager.close(con, pstmt, rs);
+		
+		for (int i = 0; i < result.size(); i++) {
+			boards.add(result.get(i));
 		}
+		
 		return boards;
 	}
 
 	//보드 작성자로 검색하기
-	public ArrayList<BoardDTO> getWriterSearch(HttpServletRequest request) {
-		Connection con = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
+	public ArrayList<BoardDTO> getWriterSearch(HttpServletRequest request) {	
+		BoardDTO bdto = new BoardDTO();
+		bdto.setB_writer(request.getParameter("search"));
+		bdto.setB_type(request.getParameter("type"));
 		
-		String sql = "select * from board where b_writer like ? and b_type = ? order by b_no";
-		
+		List<BoardDTO> result = ss.getMapper(BoardMapper.class).getWriterSearch(bdto);
 		boards = new ArrayList<BoardDTO>();
-		try {
-			con = DBManager.connect();
-			pstmt = con.prepareStatement(sql);
-			
-			pstmt.setString(1, "%"+request.getParameter("search")+"%");
-			pstmt.setString(2, request.getParameter("type"));
-			rs=pstmt.executeQuery();
-			while(rs.next()) {
-				BoardDTO b = new BoardDTO();
-				b.setNo(rs.getInt("b_no"));
-				b.setTitle(rs.getString("b_title"));
-				b.setContent(rs.getString("b_content"));
-				b.setDate(rs.getDate("b_date"));
-				b.setThumbnail(rs.getString("b_thumbnail"));
-				b.setWriter(rs.getString("b_writer"));
-				b.setType("b_type");
-				boards.add(b);
-			}
-			
-	
-		} catch (Exception e) {
-			e.printStackTrace();
-		}finally {
-			DBManager.close(con, pstmt, rs);
+		
+		for (int i = 0; i < result.size(); i++) {
+			boards.add(result.get(i));
 		}
+
 		return boards;
 	}
 	

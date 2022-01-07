@@ -42,7 +42,7 @@ function sendFile(file, editor) {
     $.ajax({ // ajax를 통해 파일 업로드 처리
         data : data,
         type : "POST",
-        url : "/PeterPet/function/summernote_imageUpload.jsp",
+        url : "SummernoteImage",
         cache : false,
         contentType : false,
         processData : false,
