@@ -20,7 +20,9 @@ select * from BOARD_COMMENT;
 코멘트 가져올때 답글에 레벨을 설정해서 보여줌
 select Level, c_no, b_no, c_writer, c_date, c_parent, c_comment
 from BOARD_COMMENT
-where  b_no = 44
+where  b_no = 101
 start with c_parent = 0
 connect by prior c_no = c_parent;
 */
+
+--delete board_comment;

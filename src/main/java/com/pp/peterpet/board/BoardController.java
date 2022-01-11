@@ -38,7 +38,7 @@ public class BoardController {
 	
 	//보드 페이지 진입//////////////
 	@RequestMapping(value = "/BoardListC", method = RequestMethod.GET)
-	public String home(HttpServletRequest request) {
+	public String BoardListC(HttpServletRequest request) {
 
 		udao.loginCheck(request);
 		

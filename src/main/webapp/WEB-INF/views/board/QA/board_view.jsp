@@ -210,7 +210,7 @@
 								});
 							</script>
 							<tr bgcolor="#F5F5F5" id="chagecomment${comment.c_no}" style="display: none;">
-								<form action="CommentChageC" method="post" id="writeCommentForm">
+								<form action="CommentUpdateC" method="post" id="writeCommentForm">
 									<input type="hidden" name="boardnum" value="${board.b_no}">
 									<input type="hidden" name="commentnum" value="${comment.c_no}">
 									<!-- 본문 작성-->
