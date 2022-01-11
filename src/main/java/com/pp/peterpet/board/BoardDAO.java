@@ -205,10 +205,12 @@ public class BoardDAO {
 		List<BoardDTO> boardlist = ss.getMapper(BoardMapper.class).getfreeList(bdto);
 		
 		boards = new ArrayList<BoardDTO>();
-		for (int i = 0; i < maxcount; i++) {
-			boards.add(boardlist.get(i));
-		}
-		
+			for (int i = 0; i < maxcount; i++) {
+				if(boardlist.size() <= i) {
+					break;
+				}
+				boards.add(boardlist.get(i));					
+			}					
 		return boards;
 	}
 }

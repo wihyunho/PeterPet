@@ -102,7 +102,7 @@
 										<c:forEach var="i" begin="1" end="${comment.level}" step="1">
 											&nbsp;&nbsp;&nbsp;&nbsp;
 										</c:forEach>
-										<img src="images/reply_icon.gif">
+										<img src="resources/images/reply_icon.gif">
 										</c:if>
 										${comment.c_writer}&nbsp;&nbsp;
 									</div>
