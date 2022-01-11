@@ -56,6 +56,6 @@ src="https://tistory1.daumcdn.net/tistory/2784544/skin/images/xmltojsonPast.min.
 		</div>
 	</div>
 
-	<script src="js/TourUrl.js"></script>
+	<script src="resources/js/TourUrl.js"></script>
 </body>
 </html>

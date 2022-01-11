@@ -27,6 +27,6 @@
 			<div id="test4"></div>
 		</div>
 	</div>
-	<script src="js/TourSel.js"></script>
+	<script src="resources/js/TourSel.js"></script>
 </body>
 </html>

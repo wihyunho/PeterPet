@@ -22,9 +22,6 @@ import com.pp.peterpet.comment.CommentDTO;
 import com.pp.peterpet.user.UserDAO;
 import com.pp.peterpet.user.UserDTO;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class BoardController {
 	@Autowired

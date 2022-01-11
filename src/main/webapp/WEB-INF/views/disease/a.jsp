@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="js/a.js"></script>
+<script type="text/javascript" src="resources/js/a.js"></script>
 <style>
 @-webkit-keyframes buzz-out-on-hover {
   10% {
@@ -118,13 +118,13 @@
 		<h3 class="recruit__header">질병 사전</h3>
 		<div class="recruit-content" align="center">
 					<button onclick="popup2();" class="link buzz-out-on-hover">
-						<img style="min-width:300px;" src="images/dog.png" width="45%">
+						<img style="min-width:300px;" src="resources/images/dog.png" width="45%">
 					</button>
 					
-					<img style="min-width:300px;" src="images/doctor.png" width="10%">
+					<img style="min-width:300px;" src="resources/images/doctor.png" width="10%">
 
 					<button onclick="popup1();" class="link buzz-out-on-hover">
-						<img style="min-width:300px;" src="images/cat.png" width="45%">
+						<img style="min-width:300px;" src="resources/images/cat.png" width="45%">
 					</button>
 		</div>
 	</div>

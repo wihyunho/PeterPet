@@ -7,7 +7,7 @@ function main() {
     startXHR(); //function startXHR로 이동
     }
     else{
-        windows.location.reload(true);
+        window.location.reload(true);
     }
 }
 
