@@ -51,6 +51,7 @@
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="UserInfoC">회원정보</a></li>
+						<li><a href="ChatBox">채팅</a></li>
 						<li><a href="UserLogoutC">로그아웃</a></li>
 					</ul></li>
 			</ul>
