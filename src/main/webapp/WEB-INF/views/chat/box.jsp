@@ -6,40 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LIO 채팅 서비스</title>
-	<!--Ajax를 위해서 공식사이트 에서 제공하는 jquery를 가져온다.  -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-	<script type="text/javascript">
-		//메시지 온거 있는지 확인해주는 함수
-		function getUnread() {
-			$.ajax({
-				type: "POST",
-				url: "./ChatUnreadServlet",
-				data: {
-					userID: encodeURIComponent('${userID}'),
-				},
-				success: function (result) {
-					if(result >= 1){
-						showUnread(result);
-					} else {
-						showUnread('');
-					}
-				}
-			});
-		}
-		
-		//4초마다 메시지 왔는지 책크
-		function getInfiniteUnread() {
-			setInterval(function () {
-				getUnread();	
-			}, 4000);
-		}
-		
-		function showUnread(result) {
-			$('#unread').html(result);
-		}
-		
-		//
+	<script type="text/javascript">	
 		function chatBoxFunction() {
 			var userID = '${userID}'
 			$.ajax({
@@ -96,6 +63,11 @@
 	 		url='./Chat?toID='+toID;
 	   		window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=no');
 	   	}
+	 	
+	 	$(document).ready(function () {
+			chatBoxFunction();
+			getInfiniteBox();
+		});
 	</script>
 </head>
 <body>
@@ -144,15 +116,5 @@
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript">
-		$(document).ready(function () {
-			getUnread();
-			getInfiniteUnread();
-			chatBoxFunction();
-			getInfiniteBox();
-		});
-	</script>
-
 </body>
 </html>

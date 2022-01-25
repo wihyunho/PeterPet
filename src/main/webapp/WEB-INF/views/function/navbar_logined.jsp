@@ -5,6 +5,41 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+//메시지 온거 있는지 확인해주는 함수
+function getUnread() {
+	$.ajax({
+		type: "POST",
+		url: "./ChatUnreadServlet",
+		data: {
+			userID: encodeURIComponent('${userID}'),
+		},
+		success: function (result) {
+			if(result >= 1){
+				showUnread(result);
+			} else {
+				showUnread('');
+			}
+		}
+	});
+}
+
+//4초마다 메시지 왔는지 책크
+function getInfiniteUnread() {
+	setInterval(function () {
+		getUnread();	
+	}, 4000);
+}
+
+function showUnread(result) {
+	$('#unread').html(result);
+}
+
+$(document).ready(function () {
+	getUnread();
+	getInfiniteUnread();
+});
+</script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -51,7 +86,7 @@
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="UserInfoC">회원정보</a></li>
-						<li><a href="ChatBox">채팅</a></li>
+						<li><a href="ChatBox">채팅 <span id="unread" class="label label-info"></a></li>
 						<li><a href="UserLogoutC">로그아웃</a></li>
 					</ul></li>
 			</ul>
