@@ -68,11 +68,12 @@ public class ChatController {
 
 			return "redirect:/";
 		}
+		String userID =(String) request.getSession().getAttribute("userID");
 		
-		request.setAttribute("userID", (String) request.getSession().getAttribute("userID"));
-		request.setAttribute("toID", toID);
-		request.setAttribute("contentPage", "chat/chat.jsp");
-		return "index";
+		request.setAttribute("userID", udao.getUser2(userID));
+		request.setAttribute("toID",  udao.getUser2(toID));
+
+		return "chat/chat";
 	}
 	
 	//채팅 목록 가져오는 ajax///////
@@ -145,5 +146,4 @@ public class ChatController {
 			response.getWriter().write(cdao.submit(fromID, toID, chatContent) + "");	
 		}
 	}
-	
 }

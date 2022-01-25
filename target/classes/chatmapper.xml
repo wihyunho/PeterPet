@@ -18,7 +18,7 @@
 	</insert>
 	
 	<update id="readChat" parameterType="com.pp.peterpet.chat.ChatDTO">
-		UPDATE CHAT SET chatRead = 1 WHERE (fromID = #{fromID} AND toID =#{toID})
+		UPDATE CHAT SET chatRead = 1 WHERE (fromID = #{toID} AND toID = #{fromID})
 	</update>
 	
 	<select id="getUnreadChat" parameterType="com.pp.peterpet.chat.ChatDTO" resultType="com.pp.peterpet.chat.UnreadDTO">

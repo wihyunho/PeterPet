@@ -9,11 +9,16 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.pp.peterpet.user.UserDAO;
+
 
 @Service
 public class ChatDAO {
 	@Autowired
 	private SqlSession ss;
+	
+	@Autowired
+	private UserDAO udao;
 	
 	public String getBoxs(String userID) {
 		StringBuffer result = new StringBuffer("");
@@ -33,7 +38,13 @@ public class ChatDAO {
 			result.append("{\"value\":\""+  chatList.get(i).getToID() + "\"},");
 			result.append("{\"value\":\""+  chatList.get(i).getChatContent() + "\"},");
 			result.append("{\"value\":\""+  chatList.get(i).getChatTime() + "\"},");
-			result.append("{\"value\":\""+  unread + "\"}]");
+			result.append("{\"value\":\""+ unread  + "\"},");
+			
+			if(chatList.get(i).getFromID().equals(userID)) {
+				result.append("{\"value\":\""+ udao.getUser2(chatList.get(i).getToID()).getUserNickname() + "\"}]");
+			}else {
+				result.append("{\"value\":\""+ udao.getUser2(chatList.get(i).getFromID()).getUserNickname() + "\"}]");
+			}
 			if(i != 0) result.append(",");
 		}
 		result.append("], \"last\":\"" + chatList.get(chatList.size()-1).getChatID() + "\"}");

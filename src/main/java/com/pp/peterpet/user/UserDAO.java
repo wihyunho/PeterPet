@@ -112,6 +112,16 @@ public class UserDAO {
 
 		return user;
 	}
+	
+	// 유저의 정보를 가져오는 함수
+	public UserDTO getUser2(String userID) {
+		UserDTO udto = new UserDTO();
+		udto.setUserID(userID);
+
+		UserDTO user = ss.getMapper(UserMapper.class).getUser(udto);
+
+		return user;
+	}
 
 	public boolean UserUpdate(HttpServletRequest request) throws IOException {
 		Connection con = null;

@@ -59,15 +59,18 @@
 						}else{
 							result[i][1].value = result[i][0].value;
 						}
-						addBox(result[i][0].value, result[i][1].value, result[i][2].value, result[i][3].value, result[i][4].value);
+						addBox(result[i][0].value, result[i][1].value, result[i][2].value, result[i][3].value, result[i][4].value , result[i][5].value);
 					}
 				}
 			});
 		}
+		
 		//메세지함 출력
-		function addBox(lastID, toID, chatContent, chatTime , unread) {
-			$('#boxTable').append('<tr onclick="location.href=\'Chat?toID='+encodeURIComponent(toID) + '\'">' +
-					'<td style="width: 150px;"><h5>' + lastID + '</h5></td>'+
+		function addBox(lastID, toID, chatContent, chatTime , unread, toNickname) {		
+			$('#boxTable').append(
+					//'<tr onclick="location.href=\'Chat?toID='+encodeURIComponent(toID) + '\'">' +
+					'<tr onclick="popup(\''+ toID +'\');">' +
+					'<td style="width: 150px;"><h5>' + toNickname + '</h5></td>'+
 					'<td>' +
 					'<h5>' + chatContent +
 					'<span class="label label-info">' + unread + '</span></h5>' +
@@ -81,12 +84,18 @@
 				chatBoxFunction();
 			}, 3000);
 		}
+		
 		//a태그를 post 방식으로 전송
 	   	function mySubmit(val){
 		  var f = document.myForm;
 		  f.contentPage.value = val;
 		  f.submit();
-		}
+		}	
+		
+	 	function popup(toID) {
+	 		url='./Chat?toID='+toID;
+	   		window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=no');
+	   	}
 	</script>
 </head>
 <body>
