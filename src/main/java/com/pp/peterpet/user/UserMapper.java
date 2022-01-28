@@ -11,6 +11,8 @@ public interface UserMapper {
 	
 	public UserDTO getUser(UserDTO udto);
 	
+	public UserDTO getUser3(UserDTO udto);
+	
 	public int UserUpdateProfile(UserDTO udto);
 	
 	public int UserUpdatePassword(UserDTO udto);
@@ -18,5 +20,7 @@ public interface UserMapper {
 	public int UserUpdateNickname(UserDTO udto);
 	
 	public UserDTO passwordCheck(UserDTO udto);
+	
+	
 	
 }

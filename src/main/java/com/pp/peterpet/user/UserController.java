@@ -170,7 +170,7 @@ public class UserController {
 	// 회원 정보페이지 진입///////////////////
 	@RequestMapping(value = "/UserInfoC", method = RequestMethod.GET)
 	public String UserInfoC(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
+		
 		if(udao.loginCheck(request)) {
 			request.setAttribute("User", udao.getUser(request));
 			request.setAttribute("contentPage", "account/info.jsp");
@@ -180,6 +180,24 @@ public class UserController {
 			request.getSession().setAttribute("messageContent", "로그인을 해야 정보를 불러 올 수 있습니다.");
 			return "redirect:/";
 		}
+	}
+	
+	// 회원 정보페이지 진입///////////////////
+	@RequestMapping(value = "/OtherUserInfoC", method = RequestMethod.GET)
+	public String OtherUserInfoC(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		udao.loginCheck(request);
+		
+		String userNickname = request.getParameter("userNickname");
+		
+		UserDTO user = udao.getUser3(userNickname);
+		request.setAttribute("User", user);
+		
+		if(request.getSession().getAttribute("userID") != null && request.getSession().getAttribute("userID").equals(user.userID)) {
+			return "redirect:UserInfoC";
+		}else {
+			request.setAttribute("contentPage", "account/otherInfo.jsp");
+			return "index";
+		}		
 	}
 	
 	// 회원 정보페이지 진입
