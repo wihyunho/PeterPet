@@ -94,9 +94,7 @@ public class BoardDAO {
 	public int getUpdate(HttpServletRequest request) {		
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
-		System.out.println(content);
-		System.out.println(content.indexOf("<img "));
-		
+
 		String thumbnail="resources/images/noimage.png";
 		
 		if(content.indexOf("<img ") != -1) {
@@ -109,8 +107,7 @@ public class BoardDAO {
 			end = thumbnail.indexOf("\"");
 			thumbnail= thumbnail.substring(0, end);
 		}
-		
-		System.out.println(thumbnail);
+
 		
 		BoardDTO bdto = new BoardDTO();
 		bdto.setB_no(Integer.parseInt(request.getParameter("no")));

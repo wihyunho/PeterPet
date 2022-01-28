@@ -53,8 +53,14 @@ public class ChatController {
 
 			return "redirect:/";
 		}
+		String toID;
+		String toNickname = request.getParameter("toNickname");
 		
-		String toID = (String) request.getParameter("toID");
+		if(toNickname == null) {
+			toID = (String) request.getParameter("toID");
+		}else {
+			toID = udao.getUser3(toNickname).getUserID();
+		}
 		
 		if (toID == null) {
 			request.getSession().setAttribute("messageType", "오류 메시지");

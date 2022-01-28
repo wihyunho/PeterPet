@@ -16,6 +16,63 @@
 	height: auto;
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+<script src="https://kit.fontawesome.com/328162a37e.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(function() {
+    $.contextMenu({
+        selector: '.board-writer-one',
+        trigger: 'left',
+        items: {
+            "회원 정보": {
+				name: "회원 정보", 
+				icon: "fa-user",
+				callback: function(itemKey, opt, e) {
+					location.href="OtherUserInfoC?userNickname=${board.b_writer}"
+	            }
+        	},
+       		"채팅 보내기": {
+	   			 name: "채팅 보내기", 
+	   			 icon: "fa-comments",
+	   			 callback: function(itemKey, opt, e) {
+	    				popup('${board.b_writer}');
+	             }
+      		},
+
+        }
+    });   
+});
+
+$(function() {
+    $.contextMenu({
+        selector: '.board-writer-noChat',
+        trigger: 'left',
+        items: {
+            "회원 정보": {
+    			name: "회원 정보", 
+    			icon: "fa-user",
+    			callback: function(itemKey, opt, e) {
+    				location.href="OtherUserInfoC?userNickname=${board.b_writer}"
+                }
+       		},
+       		"채팅 보내기": {
+       			 name: "채팅 보내기", 
+       			 icon: "fa-comments",
+       			 disabled: true
+      		},
+
+        }
+    });  
+});
+
+
+function popup(toNickname) {
+	url='./Chat?toNickname='+toNickname;
+	window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=no, location=no, resizable=no');
+}
+</script>
 </head>
 <body>
 	<!-- 게시글 content  -->
@@ -39,7 +96,35 @@
 					</tr>
 					<tr>
 						<td>작성자</td>
-						<td colspan="2">${board.b_writer }</td>
+						<td colspan="2">
+							<!-- 작성자가 자신이거나 로그인 안한경우 -->
+							<c:if test="${requestScope.userNickname eq board.b_writer || requestScope.userNickname == null}">
+								<span class="board-writer-noChat btn btn-neutral">
+									${board.b_writer } 
+								</span>
+							</c:if>
+							
+							<c:if test="${requestScope.userNickname ne board.b_writer && requestScope.userNickname != null}">
+								<span class="board-writer-one btn btn-neutral">
+									${board.b_writer }
+								</span>
+							</c:if>
+						<!-- 
+							왜 안됨?
+							<c:choose>
+								<c:when test="${requestScope.userNickname eq board.b_writer || requestScope.userNickname == null}">
+									<span class="context-menu-noChat btn btn-neutral">
+										${board.b_writer } 
+									</span>
+								</c:when>
+								<c:otherwise>
+									<span class="context-menu-one btn btn-neutral">
+										${board.b_writer }
+									</span>
+								</c:otherwise>
+							</c:choose>
+						-->
+						</td>
 					</tr>
 					<tr>
 						<td>작성일자</td>
@@ -84,6 +169,53 @@
 					<!-- 댓글 목록 -->
 					<c:if test="${requestScope.commentList != null}">
 						<c:forEach var="comment" items="${commentList}">
+							<script>
+							$(function() {
+							    $.contextMenu({
+							        selector: '.comment-writer-one${comment.c_no}	',
+							        trigger: 'left',
+							        items: {
+							            "회원 정보": {
+											name: "회원 정보", 
+											icon: "fa-user",
+											callback: function(itemKey, opt, e) {
+												location.href="OtherUserInfoC?userNickname=${comment.c_writer}"
+								            }
+							        	},
+							       		"채팅 보내기": {
+								   			 name: "채팅 보내기", 
+								   			 icon: "fa-comments",
+								   			 callback: function(itemKey, opt, e) {
+								    				popup('${comment.c_writer}');
+								             }
+							      		},
+
+							        }
+							    });   
+							});
+
+							$(function() {
+							    $.contextMenu({
+							        selector: '.comment-writer-noChat${comment.c_no}',
+							        trigger: 'left',
+							        items: {
+							            "회원 정보": {
+							    			name: "회원 정보", 
+							    			icon: "fa-user",
+							    			callback: function(itemKey, opt, e) {
+							    				location.href="OtherUserInfoC?userNickname=${comment.c_writer}"
+							                }
+							       		},
+							       		"채팅 보내기": {
+							       			 name: "채팅 보내기", 
+							       			 icon: "fa-comments",
+							       			 disabled: true
+							      		},
+
+							        }
+							    });  
+							});
+							</script>
 							<tr>
 								<!-- 아이디, 작성날짜 -->
 								<td nowrap="nowrap">
@@ -95,7 +227,26 @@
 										</c:forEach>
 										<img src="resources/images/reply_icon.gif">
 										</c:if>
-										${comment.c_writer}&nbsp;&nbsp;
+										
+										<!-- 작성자가 자신이거나 로그인 안한경우 -->
+										<c:choose>
+										<c:when test="${comment.c_writer ne '삭제된 코멘트'}">
+											<c:if test="${requestScope.userNickname eq comment.c_writer || requestScope.userNickname == null}">
+												<span class="comment-writer-noChat${comment.c_no} btn btn-neutral">
+													${comment.c_writer }&nbsp;&nbsp;
+												</span>
+											</c:if>
+											
+											<c:if test="${requestScope.userNickname ne comment.c_writer && requestScope.userNickname != null}">
+												<span class="comment-writer-one${comment.c_no} btn btn-neutral">
+													${comment.c_writer }&nbsp;&nbsp;
+												</span>
+											</c:if>
+										</c:when>
+										<c:otherwise>
+											${comment.c_writer }&nbsp;&nbsp;
+										</c:otherwise>
+										</c:choose>
 									</div>
 								</td>
 								<!-- 본문내용 -->

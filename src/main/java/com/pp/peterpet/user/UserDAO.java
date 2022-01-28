@@ -99,7 +99,7 @@ public class UserDAO {
 		}
 	}
 
-	// 유저의 정보를 가져오는 함수
+	// 유저의 정보를 가져오는 함수 request 세션에 아이디가 이미 있음
 	public UserDTO getUser(HttpServletRequest request) {
 
 		HttpSession hs = request.getSession();
@@ -113,12 +113,22 @@ public class UserDAO {
 		return user;
 	}
 	
-	// 유저의 정보를 가져오는 함수
+	//아이디를 통하여 유저의 정보를 가져오는 함수 getuser와 함수는 같음
 	public UserDTO getUser2(String userID) {
 		UserDTO udto = new UserDTO();
 		udto.setUserID(userID);
 
 		UserDTO user = ss.getMapper(UserMapper.class).getUser(udto);
+
+		return user;
+	}
+	
+	//닉네임을 통하여 유저의 정보를 가져오는 함수
+	public UserDTO getUser3(String userNickname) {
+		UserDTO udto = new UserDTO();
+		udto.setUserNickname(userNickname);
+
+		UserDTO user = ss.getMapper(UserMapper.class).getUser3(udto);
 
 		return user;
 	}

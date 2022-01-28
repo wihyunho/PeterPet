@@ -74,10 +74,16 @@ public class BoardController {
 	public String BoardPageC(HttpServletRequest request) {
 		
 		udao.loginCheck(request);
+
+		int p;
+		if(request.getParameter("p").equals("") || request.getParameter("p") == null){
+			p = 1;
+		}else {
+			p = Integer.parseInt(request.getParameter("p"));
+		}
 		
-		int p = Integer.parseInt(request.getParameter("p"));
 		bdao.getList(request);
-		bdao.paging(p, request);
+		bdao.paging((int)p, request);
 		
 		String board_type = request.getParameter("type");
 		
