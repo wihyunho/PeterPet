@@ -75,7 +75,18 @@ public class ChatController {
 			return "redirect:/";
 		}
 		String userID =(String) request.getSession().getAttribute("userID");
+		int isdel =  cdao.CheckDel(userID,toID);
 		
+	
+		//내가 나간상태였는데 다시 들어온 경우
+		if(isdel == 1) {
+			//채팅의 상태들을 다시 0로 모두 변경
+			cdao.reInside(userID,toID);
+			
+			isdel = 0;
+		}
+	
+		request.getSession().setAttribute("isDelete", isdel);
 		request.setAttribute("userID", udao.getUser2(userID));
 		request.setAttribute("toID",  udao.getUser2(toID));
 
@@ -152,4 +163,54 @@ public class ChatController {
 			response.getWriter().write(cdao.submit(fromID, toID, chatContent) + "");	
 		}
 	}
+	
+	@RequestMapping(value = "/IsDeleteServlet", method = RequestMethod.POST)
+	public void IsDeleteServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		String fromID = request.getParameter("fromID");
+		String toID = request.getParameter("toID");
+		
+		//사용자 대상자 메시지중 하나라도 값이 없다면
+		if(fromID == null || fromID.equals("") || toID ==null || toID.equals("")) {
+			response.getWriter().write("0");
+		}else{
+			fromID = URLDecoder.decode(fromID, "UTF-8");
+			toID =  URLDecoder.decode(toID, "UTF-8");
+			int isdel = cdao.CheckDel(fromID, toID);
+			request.getSession().setAttribute("isDelete", isdel);
+			response.getWriter().write(isdel + "");
+		}
+	}
+	
+	@RequestMapping(value = "/ChatRemoveC", method = RequestMethod.GET)
+	public void ChatRemoveC(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+		
+		//나
+		String toID = request.getParameter("toID");
+		
+		//상대방
+		String fromID = request.getParameter("fromID");
+		
+		if(cdao.DeleteChat(toID, fromID)) {
+			request.getSession().setAttribute("messageType", "성공 메시지");
+			request.getSession().setAttribute("messageContent", "대화방을 나갔습니다.");
+		}else {
+			request.getSession().setAttribute("messageType", "오류 메시지");
+			request.getSession().setAttribute("messageContent", "알수없는 오류가 발생하였습니다.");
+		}
+			
+		return;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

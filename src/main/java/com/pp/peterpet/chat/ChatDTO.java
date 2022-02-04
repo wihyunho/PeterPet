@@ -7,6 +7,7 @@ public class ChatDTO {
 	String chatContent;
 	String chatTime;
 	int chatRead;
+	int isDelete;
 	
 	
 	public int getChatID() {
@@ -45,6 +46,13 @@ public class ChatDTO {
 	public void setChatRead(int chatRead) {
 		this.chatRead = chatRead;
 	}
+	public int getIsDelete() {
+		return isDelete;
+	}
+	public void setIsDelete(int isDelete) {
+		this.isDelete = isDelete;
+	}
+	
 
 	
 }

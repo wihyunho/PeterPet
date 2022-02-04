@@ -4,7 +4,6 @@ package com.pp.peterpet.chat;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -55,14 +54,15 @@ public class ChatDAO {
 	public String getID(String fromID, String toID,String chatID) {
 		StringBuffer result = new StringBuffer("");
 		result.append("{\"result\":[");
-		ChatDAO chatDAO = new ChatDAO();
+		//ChatDAO chatDAO = new ChatDAO();
 		ArrayList<ChatDTO> chatList = getChatListByID(fromID, toID, chatID);
 		if(chatList.size() == 0) return "";
 		for(int i = 0; i <chatList.size(); i++) {
 			result.append("[{\"value\":\""+  chatList.get(i).getFromID() + "\"},");
 			result.append("{\"value\":\""+  chatList.get(i).getToID() + "\"},");
 			result.append("{\"value\":\""+  chatList.get(i).getChatContent() + "\"},");
-			result.append("{\"value\":\""+  chatList.get(i).getChatTime() + "\"}]");
+			result.append("{\"value\":\""+  chatList.get(i).getChatTime() + "\"},");
+			result.append("{\"value\":\""+  chatList.get(i).getIsDelete() + "\"}]");
 			if(i != chatList.size() -1) result.append(",");
 		}
 		result.append("], \"last\":\"" + chatList.get(chatList.size()-1).getChatID() + "\"}");
@@ -194,6 +194,7 @@ public class ChatDAO {
 			chatList.add(result.get(i));
 		}
 		
+		//중복 삭제
 		for(int i = 0; i < chatList.size(); i++) {
 			ChatDTO x = chatList.get(i);
 			for(int j = 0; j < chatList.size(); j++) {
@@ -207,6 +208,21 @@ public class ChatDAO {
 						chatList.remove(y);
 						j--;
 					}
+				}
+			}
+		}
+		
+		//이미 나간 채팅창을 제거
+		for(int i = 0; i < chatList.size(); i++) {
+			if(chatList.get(i).getFromID().equals(userID)) {
+				//fromID가 나인데 내가 나간 상태면 리스트에서 제거
+				if(chatList.get(i).isDelete == 1) {
+					chatList.remove(i);
+				}
+			}else {
+				//toID가 나인데 내가 나간 상태
+				if(chatList.get(i).isDelete == 2) {
+					chatList.remove(i);
 				}
 			}
 		}
@@ -247,5 +263,63 @@ public class ChatDAO {
 		cdto.setToID(toID);
 	
 		return ss.getMapper(ChatMapper.class).getUnreadChat(cdto).getCounter();
+	}
+
+	//채팅방 나가기 기능을 사용하였을 때
+	public boolean DeleteChat(String toID, String fromID) {
+		ChatDTO cdto = new ChatDTO();
+		cdto.setFromID(fromID);
+		cdto.setToID(toID);
+		
+		ChatDTO result =  ss.getMapper(ChatMapper.class).deleteChatCheck(cdto);
+		
+		if(result.getIsDelete() == 0) {
+			ss.getMapper(ChatMapper.class).deleteChatUpdate1(cdto);
+			ss.getMapper(ChatMapper.class).deleteChatUpdate2(cdto);
+			
+			return true;
+		}else {
+			if(ss.getMapper(ChatMapper.class).deleteChat(cdto) >= 1) {
+				return true;
+			}
+		}	
+		return false;
+	}
+
+	//내가 나갔는지 상대가 나갔는지 판별
+	public int CheckDel(String fromID, String toID) {
+		ChatDTO cdto = new ChatDTO();
+		cdto.setFromID(fromID);
+		cdto.setToID(toID);
+		
+		ChatDTO result = ss.getMapper(ChatMapper.class).deleteChatCheck(cdto);
+		
+		if(result != null) {
+			if(fromID.equals(result.getFromID())) {
+				if(result.getIsDelete() == 1) {
+					return 1;
+				}else if(result.getIsDelete() ==2) {
+					return 2;
+				}
+			}else {
+				if(result.getIsDelete() == 1) {
+					//마직막 메세지가 상대가 보낸거고 isdelete가1(상대가 나간 상태임)
+					return 2;
+				}else if(result.getIsDelete() ==2) {
+					//마직막 메세지가 상대가 보낸거고 isdelete가2(내가 나간 상태임)
+					return 1;
+				}
+			}
+		}
+		return 0;
+	}
+	
+	//나간 채팅방에 다시 들어간 경우
+	public void reInside(String fromID, String toID) {
+		ChatDTO cdto = new ChatDTO();
+		cdto.setFromID(fromID);
+		cdto.setToID(toID);
+		
+		ss.getMapper(ChatMapper.class).reInside(cdto);
 	}
 }//Class END

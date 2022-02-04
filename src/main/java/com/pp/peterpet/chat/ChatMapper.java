@@ -17,4 +17,14 @@ public interface ChatMapper {
 	public UnreadDTO getUnreadChat(ChatDTO cdto);
 
 	public List<ChatDTO> getChatListByRecent(ChatDTO cdto);
+	
+	public ChatDTO deleteChatCheck(ChatDTO cdto);
+	
+	public int deleteChatUpdate1(ChatDTO cdto);
+	
+	public int deleteChatUpdate2(ChatDTO cdto);
+	
+	public int deleteChat(ChatDTO cdto);
+	
+	public int reInside(ChatDTO cdto);
 }
