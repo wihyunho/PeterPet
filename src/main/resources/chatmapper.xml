@@ -14,7 +14,7 @@
 	</select>
 	
 	<insert id="submit" parameterType="com.pp.peterpet.chat.ChatDTO">
-		INSERT INTO CHAT VALUES(chat_seq.nextval, #{fromID}, #{toID}, #{chatContent}, sysdate, 0)
+		INSERT INTO CHAT VALUES(chat_seq.nextval, #{fromID}, #{toID}, #{chatContent}, sysdate, 0, 0)
 	</insert>
 	
 	<update id="readChat" parameterType="com.pp.peterpet.chat.ChatDTO">
@@ -28,4 +28,24 @@
 	<select id="getChatListByRecent" resultType="com.pp.peterpet.chat.ChatDTO">
 		SELECT * FROM CHAT WHERE ((fromID = #{fromID} AND toID = #{toID}) OR (fromID = #{toID} AND toID = #{fromID})) AND chatID > (SELECT MAX(chatID) - #{chatRead} FROM CHAT WHERE (fromID = #{fromID} AND toID = #{toID}) OR (fromID = #{toID} AND toID = #{fromID})) ORDER BY chatTime
 	</select>
+	
+	<select id="deleteChatCheck" resultType="com.pp.peterpet.chat.ChatDTO">
+		SELECT * FROM CHAT WHERE chattime = (select max(chattime) from chat WHERE ((fromID = #{toID} AND toID = #{fromID}) OR (fromID = #{fromID} AND toID = #{toID})))
+	</select>
+	
+	<update id="deleteChatUpdate1" parameterType="com.pp.peterpet.chat.ChatDTO">		
+		UPDATE Chat SET isDelete = 1 WHERE fromID = #{fromID} AND toID = #{toID}
+	</update>
+	
+	<update id="deleteChatUpdate2" parameterType="com.pp.peterpet.chat.ChatDTO">		
+		UPDATE Chat SET isDelete = 2 WHERE fromID = #{toID} AND toID = #{fromID}
+	</update>
+	
+	<delete id="deleteChat" parameterType="com.pp.peterpet.chat.ChatDTO">
+		DELETE CHAT WHERE ((fromID = #{toID} AND toID = #{fromID}) OR (fromID = #{fromID} AND toID = #{toID}))
+	</delete>
+	
+	<update id="reInside" parameterType="com.pp.peterpet.chat.ChatDTO">
+		UPDATE Chat SET isDelete = 0 WHERE ((fromID = #{fromID} AND toID = #{toID}) OR (fromID = #{toID} AND toID =#{fromID}))
+	</update>
 </mapper>

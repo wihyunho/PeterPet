@@ -39,6 +39,14 @@ $(document).ready(function () {
 	getUnread();
 	getInfiniteUnread();
 });
+
+function logout(){
+	//자식창 로그아웃 기능 넣어야함
+	var dummy= window.open("chat/chat.j	p","Chat","");
+	dummy.close();
+	location.href='UserLogoutC';
+}
+
 </script>
 </head>
 <body>
@@ -47,8 +55,9 @@ $(document).ready(function () {
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
 				aria-expanded="false">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="./"> 
 			<img src="resources/images/peterpet_logo.png">
@@ -87,7 +96,7 @@ $(document).ready(function () {
 					<ul class="dropdown-menu">
 						<li><a href="UserInfoC">회원정보</a></li>
 						<li><a href="ChatBox">채팅 <span id="unread" class="label label-info"></a></li>
-						<li><a href="UserLogoutC">로그아웃</a></li>
+						<li><a onclick="logout();">로그아웃</a></li>
 					</ul></li>
 			</ul>
 		</div>

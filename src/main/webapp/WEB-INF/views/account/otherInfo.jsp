@@ -7,6 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>회원 가입</title>
 </head>
+<script type="text/javascript">
+function popup(toNickname) {
+	url='./Chat?toNickname='+toNickname;
+	window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=no, location=no');
+}
+</script>
 <body>
 	<!-- 회원가입 양식 -->
 	<div class="container">
@@ -38,7 +44,7 @@
 					</tr>
 					<tr>
 						<td colspan="3">
-							<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=profile'" type="button"value="메세지 보내기">
+							<input class="btn btn-primary" onclick="popup('${User.userNickname}');" type="button"value="메세지 보내기">
 						</td>
 					</tr>
 								

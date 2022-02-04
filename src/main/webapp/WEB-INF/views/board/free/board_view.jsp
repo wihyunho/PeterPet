@@ -70,7 +70,7 @@ $(function() {
 
 function popup(toNickname) {
 	url='./Chat?toNickname='+toNickname;
-	window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=no, location=no, resizable=no');
+	window.open(url, 'Chat', 'top=10, left=10, width=628, height=800, status=no, menubar=no, toolbar=no, resizable=0, location=no');
 }
 </script>
 </head>
