@@ -202,15 +202,4 @@ public class ChatController {
 		return;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
