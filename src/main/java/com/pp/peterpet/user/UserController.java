@@ -40,7 +40,8 @@ public class UserController {
 	public String UserLoginCP(HttpServletRequest request) throws IOException {
 		String userID = request.getParameter("userID");
 		String userPassword = request.getParameter("userPassword");
-
+		String loginType = request.getParameter("loginType");
+		
 		if (userID == null || userID.equals("") || userPassword == null || userPassword.equals("")) {
 			request.getSession().setAttribute("messageType", "오류 메시지");
 			request.getSession().setAttribute("messageContent", "모든 내용을 입력해주세요.");
@@ -48,7 +49,7 @@ public class UserController {
 			return "redirect:UserLoginC";
 		}
 
-		int result = udao.login(userID, userPassword);
+		int result = udao.login(userID, userPassword, loginType);
 
 		if (result == 1) {
 			request.getSession().setAttribute("userID", userID);
@@ -66,7 +67,7 @@ public class UserController {
 			return "redirect:UserLoginC";
 		} else if (result == -1) {
 			request.getSession().setAttribute("messageType", "오류 메시지");
-			request.getSession().setAttribute("messageContent", "데이터베이스 오류가 발생했습니다.");
+			request.getSession().setAttribute("messageContent", "소셜 로그인 타입이 다릅니다. 로그인 타입을 확인해 주세요");
 			return "redirect:UserLoginC";
 		}
 
@@ -97,6 +98,21 @@ public class UserController {
 			return "index";
 		}
 	}
+	
+	// 회원 가입 선택 페이지 진입/////////////////////////
+	@RequestMapping(value = "/SelectRegisterC", method = RequestMethod.GET)
+	public String SelectRegisterC(HttpServletRequest request) {
+		if (udao.loginCheck(request)) {
+			request.getSession().setAttribute("messageType", "오류 메시지");
+			request.getSession().setAttribute("messageContent", "로그인 상태로 회원가입을 할 수 없습니다.");
+			request.setAttribute("contentPage", "home.jsp");
+
+			return "index";
+		} else {
+			request.setAttribute("contentPage", "account/select_join.jsp");
+			return "index";
+		}
+	}
 
 	// 회원 가입
 	@RequestMapping(value = "/UserRegisterC", method = RequestMethod.POST)
@@ -111,6 +127,7 @@ public class UserController {
 		String userName = mr.getParameter("userName");
 		String userNickname = mr.getParameter("nickname");
 		String userProfile = mr.getFilesystemName("profile");
+		String loginType = mr.getParameter("loginType");
 
 		// null 값을 받으면 반환
 		if (userID == null || userID.equals("") || userPassword1 == null || userPassword1.equals("")
@@ -129,7 +146,7 @@ public class UserController {
 			return "redirect:UserRegisterC";
 		}
 
-		int result = udao.register(userID, userPassword1, userName, userNickname, userProfile);
+		int result = udao.register(userID, userPassword1, userName, userNickname, userProfile,loginType);
 
 		if (result == 1) {
 			request.getSession().setAttribute("userID", userID);

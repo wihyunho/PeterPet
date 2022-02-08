@@ -13,6 +13,7 @@ create sequence COMMENT_SEQ;
 
 --drop sequence COMMENT_SEQ;
 --drop table board_comment;
+--delete board_comment;
 
 select * from BOARD_COMMENT;
 

@@ -8,12 +8,16 @@
 <title>회원 가입</title>
 <!--Ajax를 위해서 공식사이트 에서 제공하는 jquery를 가져온다.  -->
 <script src="resources/js/join.js"></script>
-
+ <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="99323380118-93dou793k0bhub4437omhgpdadnm36gp.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
 	<!-- 회원가입 양식 -->
 	<div class="container">
 		<form method="post" enctype="multipart/form-data" action="UserRegisterC" onSubmit="return finalCheck();">
+			<input type="hidden" name="loginType" value="PeterPet">
 			<table class="table table-bordered table-hover"
 				style="text-align: center; border: 1px solid #dddddd">
 				<thead>

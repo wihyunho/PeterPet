@@ -25,19 +25,23 @@ public class UserDAO {
 	private SqlSession ss;
 
 	// 로그인
-	public int login(String userID, String userPassword) {
+	public int login(String userID, String userPassword, String loginType) {
 
 		UserDTO udto = new UserDTO();
 		udto.setUserID(userID);
 		udto.setUserPassword(userPassword);
 
-		UserDTO result = ss.getMapper(UserMapper.class).login(udto);
-
+		UserDTO result = ss.getMapper(UserMapper.class).login(udto);	
+		
 		if (result != null) {
-			if (result.getUserPassword().equals(userPassword)) {
-				return 1; // 로그인 성공
+			if(result.getLoginType().equals(loginType)) {
+				if (result.getUserPassword().equals(userPassword)) {
+					return 1; // 로그인 성공
+				}
+				return 2; // 비밀 번호 틀림
+			}else {
+				return -1;
 			}
-			return 2; // 비밀 번호 틀림
 		} else {
 			return 0; // 해당사용자가 존재하지 않음
 		}
@@ -74,13 +78,22 @@ public class UserDAO {
 	}// registerCheck() end
 
 	// DB에 넣기
-	public int register(String userID, String userPassword, String userName, String userNickname, String userProfile) {
+	public int register(String userID, String userPassword, String userName, String userNickname, String userProfile, String loginType) {
+		
 		if (userProfile == null) {
 			userProfile = "icon.png";
 		}
-
-		UserDTO udto = new UserDTO(userID, userPassword, userName, userNickname, userProfile);
-
+		
+		userProfile = "resources/images/"+userProfile;
+		
+		UserDTO udto = new UserDTO();
+		udto.setUserID(userID);
+		udto.setUserPassword(userPassword);
+		udto.setUserName(userName);
+		udto.setUserNickname(userNickname);
+		udto.setUserProfile(userProfile);
+		udto.setLoginType(loginType);
+		
 		return ss.getMapper(UserMapper.class).register(udto);
 	}// register() end
 
@@ -109,7 +122,7 @@ public class UserDAO {
 		udto.setUserID(userID);
 
 		UserDTO user = ss.getMapper(UserMapper.class).getUser(udto);
-
+		
 		return user;
 	}
 	
@@ -151,10 +164,14 @@ public class UserDAO {
 
 		if (type.equals("profile")) {
 			value = mr.getFilesystemName("profile");
+			
+			
 			if (value == null) {
 				value = "icon.png";
 			}
-
+			
+			value = "resources/images/"+value;
+			
 			UserDTO udto = new UserDTO();
 			udto.setUserID(userID);
 			udto.setUserProfile(value);

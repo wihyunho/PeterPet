@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
 				<tbody>
 					<tr>
 						<td colspan="3">
-							<img src="resources/images/${User.userProfile }" width="300px">
+							<img src="${User.userProfile }" width="300px">
 						</td>
 					</tr>
 					<tr>
@@ -39,8 +40,10 @@
 					<tr>
 						<td colspan="3">
 							<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=profile'" type="button"value="프로필사진 변경">
-							<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=nickname'" type="button"value="닉네임 변경">
-							<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=password'" type="button"value="비밀번호 변경">
+							<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=nickname'" type="button"value="닉네임 변경"> 
+							<c:if test="${User.loginType eq 'PeterPet'}">
+								<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=password'" type="button"value="비밀번호 변경">
+							</c:if>
 						</td>
 					</tr>
 								

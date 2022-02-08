@@ -8,7 +8,7 @@
 	
 	<!-- 회원가입 -->
 	<insert id="register" parameterType="com.pp.peterpet.user.UserDTO">
-		INSERT INTO Account VALUES(#{userID}, #{userPassword}, #{userName}, #{userNickname}, #{userProfile})
+		INSERT INTO Account VALUES(#{userID}, #{userPassword}, #{userName}, #{userNickname}, #{userProfile}, #{loginType})
 	</insert>
 	
 	<!-- 아이디 중복 확인 -->

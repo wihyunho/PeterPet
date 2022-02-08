@@ -27,7 +27,7 @@ function popup(toNickname) {
 				<tbody>
 					<tr>
 						<td colspan="3">
-							<img src="resources/images/${User.userProfile }" width="300px">
+							<img src="${User.userProfile }" width="300px">
 						</td>
 					</tr>
 					<tr>
