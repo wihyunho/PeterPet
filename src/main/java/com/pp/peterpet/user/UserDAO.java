@@ -81,10 +81,10 @@ public class UserDAO {
 	public int register(String userID, String userPassword, String userName, String userNickname, String userProfile, String loginType) {
 		
 		if (userProfile == null) {
-			userProfile = "icon.png";
+			userProfile = "resources/images/icon.png";
 		}
 		
-		userProfile = "resources/images/"+userProfile;
+		userProfile = userProfile;
 		
 		UserDTO udto = new UserDTO();
 		udto.setUserID(userID);

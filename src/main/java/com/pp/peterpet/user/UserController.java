@@ -127,6 +127,7 @@ public class UserController {
 		String userName = mr.getParameter("userName");
 		String userNickname = mr.getParameter("nickname");
 		String userProfile = mr.getFilesystemName("profile");
+		userProfile = "resources/images/" + userProfile;
 		String loginType = mr.getParameter("loginType");
 
 		// null 값을 받으면 반환
