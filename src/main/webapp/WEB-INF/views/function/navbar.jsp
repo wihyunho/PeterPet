@@ -53,6 +53,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="UserLoginC">로그인</a></li>
 						<li><a href="UserRegisterC">회원가입</a></li>
+						<li><a href="KakaoLoginC">카카오 로그인</a></li>
 					</ul>
 				</li>
 			</ul>
