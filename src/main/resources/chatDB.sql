@@ -10,6 +10,7 @@ CREATE TABLE Chat(
 
 --drop table chat;
 --drop sequence chat_seq;
+--delete chat;
 
 create sequence Chat_seq;
 

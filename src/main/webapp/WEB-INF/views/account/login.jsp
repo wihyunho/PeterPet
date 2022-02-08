@@ -6,19 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- 카카오 로그인 -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport"
-	content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-
-
 <title>로그인</title>
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" 
+content="99323380118-93dou793k0bhub4437omhgpdadnm36gp.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
 	<!-- 로그인 창 구현 -->
 	<div class="container">
-		<form method="post" action="UserLoginC">
+		<form method="post" action="UserLoginC" name="myForm">
+			<input type="hidden" name="loginType" value="PeterPet">
 			<table class="table table-bordered table-hover"
 				style="text-align: center; border: 1px solid #dddddd">
 				<thead>
@@ -45,24 +44,24 @@
 					</tr>
 				</tbody>
 			</table>
-		</form>
-		<a id="kakao-login-btn"></a> 
-		<a href="http://developers.kakao.com/logout">Logout</a>
-		<script type='text/javascript'>
-			//<![CDATA[
-			// 사용할 앱의 JavaScript 키를 설정해 주세요.
-			Kakao.init('70cdb1b1167ec9404d51259e89f44bce');
-			// 카카오 로그인 버튼을 생성합니다.
-			Kakao.Auth.createLoginButton({
-				container : '#kakao-login-btn',
-				success : function(authObj) {
-					alert(JSON.stringify(authObj));
-				},
-				fail : function(err) {
-					alert(JSON.stringify(err));
-				}
-			});
-			//]]>
+		</form>		
+		<!-- 구글 로그인 API -->
+		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>	
+
+		<script>
+			function onSignIn(googleUser) {		
+				// Useful data for your client-side scripts:
+				var profile = googleUser.getBasicProfile();
+				
+				var f = document.myForm
+				f.userID.value = profile.getEmail(); 
+				f.userPassword.value = profile.getId();
+				f.loginType.value = "Google";
+				
+				gapi.auth2.getAuthInstance().disconnect();
+				
+				f.submit();
+			}
 		</script>
 	</div>
 </body>

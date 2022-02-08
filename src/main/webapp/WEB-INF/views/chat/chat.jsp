@@ -88,7 +88,7 @@
 		$('#chatList').append(
 						'<div class="d-flex justify-content-start mb-4">'
 							+ '<div class="img_cont_msg">'
-								+ '<img src="resources/images/${toID.userProfile}" class="rounded-circle user_img_msg">'
+								+ '<img src="${toID.userProfile}" class="rounded-circle user_img_msg">'
 							+ '</div>'
 						+ '<div class="msg_cotainer">' + chatContent
 							+ '<span class="msg_time">' + chatTime + '</span>' 
@@ -106,7 +106,7 @@
 							+ '<span class="msg_time_send">' + chatTime + '</span>'
 						+ '</div>'
 						+ '<div class="img_cont_msg">'
-							+ '<img src="resources/images/${userID.userProfile}" class="rounded-circle user_img_msg">'
+							+ '<img src="${userID.userProfile}" class="rounded-circle user_img_msg">'
 						+ '</div>'
 						+'</div>');
 		$('#chatList').scrollTop($('#chatList')[0].scrollHeight);
@@ -250,7 +250,7 @@
 			<div class="card-header msg_head">
 				<div class="d-flex bd-highlight">
 					<div class="img_cont">
-						<img src="resources/images/${toID.userProfile}" class="rounded-circle user_img">			
+						<img src="${toID.userProfile}" class="rounded-circle user_img">			
 					</div>
 					<div class="user_info">
 						<span>${toID.userNickname}</span>

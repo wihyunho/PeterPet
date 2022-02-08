@@ -115,8 +115,15 @@ public class ChatController {
 	@RequestMapping(value = "/ChatListServlet", method = RequestMethod.POST)
 	public void ChatListServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String fromID = request.getParameter("fromID");
+		fromID = URLDecoder.decode(fromID, "UTF-8");
+		
 		String toID = request.getParameter("toID");
+		toID = URLDecoder.decode(toID, "UTF-8");
+		
 		String listType = request.getParameter("listType");
+		listType = URLDecoder.decode(listType, "UTF-8");
+		
+
 		
 		//사용자 대상자 메시지중 하나라도 값이 없다면
 		if(fromID == null || fromID.equals("") || toID ==null || toID.equals("")

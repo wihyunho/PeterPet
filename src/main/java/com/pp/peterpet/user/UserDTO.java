@@ -6,22 +6,12 @@ public class UserDTO {
 	String userName;
 	String userNickname;
 	String userProfile;
+	String loginType;
 	
 	public UserDTO() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public UserDTO(String userID, String userPassword, String userName, String userNickname, String userProfile) {
-		super();
-		this.userID = userID;
-		this.userPassword = userPassword;
-		this.userName = userName;
-		this.userNickname = userNickname;
-		this.userProfile = userProfile;
-	}
-
-
-
 	public String getUserID() {
 		return userID;
 	}
@@ -53,7 +43,11 @@ public class UserDTO {
 		this.userProfile = userProfile;
 	}
 	
-	
-	
+	public String getLoginType() {
+		return loginType;
+	}
+	public void setLoginType(String loginType) {
+		this.loginType = loginType;
+	}
 
 }
