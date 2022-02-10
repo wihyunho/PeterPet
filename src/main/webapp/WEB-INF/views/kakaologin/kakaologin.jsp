@@ -2,19 +2,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Login Demo - Kakao JavaScript SDK</title>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
 </head>
 <body>
-	<!-- 카카오 로그인 -->
-	<a class="p-2" href="https://kauth.kakao.com/oauth/authorize?client_id=3ec4538608c8038f3e2b43c2b2cb9e4b&redirect_uri=http://localhost&response_type=code">
-	<!-- REST_API키 및 REDIRECT_URi는 본인걸로 수정하세요 -->
-	<!-- 저는 redirect_uri을 http://localhost:8080/member/kakaoLogin로 했습니다. -->
-	<!-- 본인걸로 수정 시 띄어쓰기 절대 하지 마세요. 오류납니다. -->
-	
-		<!-- <img src="/resources/icon/kakao_login_large_narrow.png" style="height:60px">
-      		이미지는 카카오 개발자센터에서 제공하는 login 이미지를 사용했습니다. -->
-
-	</a>
+    <a id="kakao-login-btn"></a>
+    <a href="http://developers.kakao.com/logout">Logout</a>
+    <script type='text/javascript'>
+        //<![CDATA[
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('70cdb1b1167ec9404d51259e89f44bce');
+        // 카카오 로그인 버튼을 생성합니다.
+        Kakao.Auth.createLoginButton({
+            container: '#kakao-login-btn',
+            success: function (authObj) {
+                alert(JSON.stringify(authObj));
+            },
+            fail: function (err) {
+                alert(JSON.stringify(err));
+            }
+        });
+      //]]>
+    </script>
 </body>
 </html>
