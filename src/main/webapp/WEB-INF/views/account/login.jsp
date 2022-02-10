@@ -32,20 +32,18 @@ content="99323380118-93dou793k0bhub4437omhgpdadnm36gp.apps.googleusercontent.com
 					<tr>
 						<td style="width: 110px;"><h5>페스워드</h5></td>
 						<td><input class="form-control" type="password"
-							name="userPassword" maxlength="20" placeholder="비밀번호를 입력하세요.">
+							name="userPassword" maxlength="30" placeholder="비밀번호를 입력하세요.">
 						</td>
 					</tr>
 					<tr>
-						<td style="text-align: left;" colspan="2"><input
-							class="btn btn-primary pull-right" type="submit" value="로그인">
+						<td style="text-align: left;" colspan="2">	
+							<input style="width: 120px;height: 36px" class="btn btn-primary pull-right" type="submit" value="로그인">
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</form>
-		
-		<!-- 구글 로그인 API -->
-		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>	
+		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 
 		<script>
 			function onSignIn(googleUser) {		

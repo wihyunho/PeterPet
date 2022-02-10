@@ -34,13 +34,13 @@ public class UserDAO {
 		UserDTO result = ss.getMapper(UserMapper.class).login(udto);	
 		
 		if (result != null) {
-			if(result.getLoginType().equals(loginType)) {
-				if (result.getUserPassword().equals(userPassword)) {
-					return 1; // 로그인 성공
-				}
-				return 2; // 비밀 번호 틀림
+			if (result.getUserPassword().equals(userPassword)) {
+				if(!result.getLoginType().equals(loginType)) {
+					return -1;
+				}		
+				return 1; // 로그인 성공
 			}else {
-				return -1;
+				return 2; // 비밀 번호 틀림
 			}
 		} else {
 			return 0; // 해당사용자가 존재하지 않음
@@ -79,13 +79,6 @@ public class UserDAO {
 
 	// DB에 넣기
 	public int register(String userID, String userPassword, String userName, String userNickname, String userProfile, String loginType) {
-		
-		if (userProfile == null) {
-			userProfile = "resources/images/icon.png";
-		}
-		
-		userProfile = userProfile;
-		
 		UserDTO udto = new UserDTO();
 		udto.setUserID(userID);
 		udto.setUserPassword(userPassword);

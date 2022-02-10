@@ -44,10 +44,12 @@
 
 
 		<form action="googleRegister" method="post" name="googleRegister">
-			<input type="hidden" name="userID2"> <input type="hidden"
-				name="userPassword2"> <input type="hidden" name="userName2">
+			<input type="hidden" name="userID2"> 
+			<input type="hidden" name="userPassword2"> 
+			<input type="hidden" name="userName2">
 			<input type="hidden" name="profile2">
 		</form>
+		
 		<script>
 			function onSuccess(googleUser) {
 				var profile = googleUser.getBasicProfile();
