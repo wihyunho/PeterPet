@@ -15,7 +15,6 @@
 	<div class="container">
 		<form method="post" action="kakaoRegister2" onSubmit="return finalCheck();">
 			<input type="hidden" name="userID" value="${userID}">
-			${profile }
 			<input type="hidden" name="profile" value="${profile}">
 			<input type="hidden" name="userPassword" value="kakao">
 			<input type="hidden" name="loginType" value="Kakao">

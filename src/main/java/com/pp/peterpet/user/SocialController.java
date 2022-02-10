@@ -27,7 +27,7 @@ public class SocialController {
 
 			return "index";
 		} else {
-			if(udao.getUser2(request.getParameter("userID2"))==null){
+			if(udao.getUser2(request.getParameter("google_ID"))==null){
 			request.setAttribute("contentPage", "account/google_join.jsp");
 			request.setAttribute("userID",  request.getParameter("google_ID"));
 			request.setAttribute("userPassword",  request.getParameter("google_Password"));

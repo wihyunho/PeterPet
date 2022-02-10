@@ -42,14 +42,16 @@
 				</tr>
 				<tr>
 					<td align="center">
-						<!-- 카카오 로그인 API -->
-						<div id="kakao-login-btn"></div>
-						<ul>
-							<li onclick="kakaoLogin();">
-							<a href="javascript:void(0)">
-									<img src="resources/images/kakao_login_large_narrow.png" style="width: 240px; height: 50px;">
-							</a></li>
-						</ul>
+						<a onclick="kakaoLogin();" href="javascript:void(0)">
+							<img src="resources/images/kakao_login_large_narrow.png" style="width: 240px; height: 50px;">
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<a onclick="kakaoLogin();" href="javascript:void(0)">
+							<img src="resources/images/btnG_완성형.png" style="width: 240px; height: 50px;">
+						</a>
 					</td>
 				</tr>
 			</tbody>
@@ -75,9 +77,10 @@
 											url : '/v2/user/me',
 											success : function(response) {
 												console.log(response)
-												var k = document.kakaoRegister
+												var k = document.kakaoRegister;
+												
 												k.kakao_ID.value = response.id;
-												k.kakao_profile.value = response.properties.profile_image;
+												k.kakao_profile.value = response.kakao_account.profile.profile_image_url;
 
 												kakaoLogout();
 
@@ -110,19 +113,12 @@
 			}
 		</script>
 		<form action="googleRegister" method="post" name="googleRegister">
-<<<<<<< HEAD
-			<input type="hidden" name="userID2"> 
-			<input type="hidden" name="userPassword2"> 
-			<input type="hidden" name="userName2">
-			<input type="hidden" name="profile2">
-=======
-			<input type="hidden" name="google_ID"> <input type="hidden"
-				name="google_Password"> <input type="hidden"
-				name="google_Name"> <input type="hidden"
-				name="google_profile">
->>>>>>> e78c21ffa293834b725661e05377836f2f9e3c11
+			 <input type="hidden" name="google_ID"> 
+			 <input type="hidden" name="google_Password"> 
+			 <input type="hidden" name="google_Name"> 
+			 <input type="hidden" name="google_profile"> 
 		</form>
-		
+
 		<script>
 			function onSuccess(googleUser) {
 				var profile = googleUser.getBasicProfile();

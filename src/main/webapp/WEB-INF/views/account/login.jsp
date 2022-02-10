@@ -47,7 +47,7 @@
 			</table>
 		</form>
 
-		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+		<div class="g-signin2 pull-right" data-onsuccess="onSignIn" data-theme="dark" style="border-radius: 5px;"></div>
 
 		<script>
 			function onSignIn(googleUser) {
@@ -66,10 +66,17 @@
 		</script>
 
 		<!-- 카카오 로그인 API -->
-		<div style="width: 120px; height: 36px; background-color: yellow; text-align: center;"> 
-		<a onclick="kakaoLogin();" href="javascript:void(0)">
-				<img src="resources/images/kakao_login_medium.png" width="70px;">
-		</a>
+		<div  onclick="kakaoLogin();" class="pull-right" style="width: 120px; height: 36px; background-color: #FEE500; text-align: center; margin-right: 21px; border-radius: 5px;"> 
+			<a href="javascript:void(0)">
+				<img src="resources/images/kakao_login_medium.png" width="72px;">
+			</a>
+		</div>
+		
+		<!-- 네이버 로그인 API -->
+		<div  onclick="kakaoLogin();" class="pull-right" style="width: 120px; height: 36px; background-color: #03c75a; text-align: center; margin-right: 21px; border-radius: 5px;"> 
+			<a href="javascript:void(0)">
+				<img src="resources/images/naver_login.png" width="99px">
+			</a>
 		</div>
 		<!-- 카카오 스크립트 -->
 		<script>
