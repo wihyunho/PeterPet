@@ -14,6 +14,8 @@
 <meta name="google-signin-client_id"
 	content="99323380118-93dou793k0bhub4437omhgpdadnm36gp.apps.googleusercontent.com">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
 </head>
 <body>
 	<!-- 회원가입 양식 -->
@@ -27,42 +29,113 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td align="center">
-						<input style="width: 240px; height: 50px; font-size: 16px;" onclick='location.href="UserRegisterC"' class="btn btn-primary" type="submit" value="PeterPet으로 가입">
-					</td>
+					<td align="center"><input
+						style="width: 240px; height: 50px; font-size: 16px;"
+						onclick='location.href="UserRegisterC"' class="btn btn-primary"
+						type="submit" value="PeterPet으로 가입"></td>
 				</tr>
 				<tr>
 					<td align="center">
 						<!-- 구글 로그인 API -->
 						<div id="my-signin2"></div>
 					</td>
-
+				</tr>
+				<tr>
+					<td align="center">
+						<!-- 카카오 로그인 API -->
+						<div id="kakao-login-btn"></div>
+						<ul>
+							<li onclick="kakaoLogin();">
+							<a href="javascript:void(0)">
+									<img src="resources/images/kakao_login_large_narrow.png" style="width: 240px; height: 50px;">
+							</a></li>
+						</ul>
+					</td>
 				</tr>
 			</tbody>
 		</table>
 
+		<form action="kakaoRegister" method="post" name="kakaoRegister">
+			<input type="hidden" name="kakao_ID"> <input type="hidden"
+				name="kakao_profile">
+		</form>
 
+		<!-- 카카오 스크립트 -->
+		<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+		<script>
+			Kakao.init('70cdb1b1167ec9404d51259e89f44bce'); //발급받은 키 중 javascript키를 사용해준다.
+			console.log(Kakao.isInitialized()); // sdk초기화여부판단
+			//카카오로그인
+			function kakaoLogin() {
+				Kakao.Auth
+						.login({
+							success : function(response) {
+								Kakao.API
+										.request({
+											url : '/v2/user/me',
+											success : function(response) {
+												console.log(response)
+												var k = document.kakaoRegister
+												k.kakao_ID.value = response.id;
+												k.kakao_profile.value = response.properties.profile_image;
 
+												kakaoLogout();
+
+												k.submit();
+											},
+											fail : function(error) {
+												console.log(error)
+											},
+										})
+							},
+							fail : function(error) {
+								console.log(error)
+							},
+						})
+			}
+			//카카오로그아웃  
+			function kakaoLogout() {
+				if (Kakao.Auth.getAccessToken()) {
+					Kakao.API.request({
+						url : '/v1/user/unlink',
+						success : function(response) {
+							console.log(response)
+						},
+						fail : function(error) {
+							console.log(error)
+						},
+					})
+					Kakao.Auth.setAccessToken(undefined)
+				}
+			}
+		</script>
 		<form action="googleRegister" method="post" name="googleRegister">
+<<<<<<< HEAD
 			<input type="hidden" name="userID2"> 
 			<input type="hidden" name="userPassword2"> 
 			<input type="hidden" name="userName2">
 			<input type="hidden" name="profile2">
+=======
+			<input type="hidden" name="google_ID"> <input type="hidden"
+				name="google_Password"> <input type="hidden"
+				name="google_Name"> <input type="hidden"
+				name="google_profile">
+>>>>>>> e78c21ffa293834b725661e05377836f2f9e3c11
 		</form>
 		
 		<script>
 			function onSuccess(googleUser) {
 				var profile = googleUser.getBasicProfile();
 
-				var f = document.googleRegister
-				f.userID2.value = profile.getEmail();
-				f.userPassword2.value = profile.getId();
-				f.userName2.value = profile.getName();
-				f.profile2.value = profile.getImageUrl();
+				var g = document.googleRegister
+				g.google_ID.value = profile.getEmail();
+				g.google_Password.value = profile.getId();
+				g.google_Name.value = profile.getName();
+				g.google_profile.value = profile.getImageUrl();
 
 				gapi.auth2.getAuthInstance().disconnect();
 
-				f.submit();
+				g.submit();
 			}
 
 			function onFailure(error) {
