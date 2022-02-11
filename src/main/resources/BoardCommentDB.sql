@@ -26,4 +26,14 @@ start with c_parent = 0
 connect by prior c_no = c_parent;
 */
 
+/*
+create or replace trigger TRG_nickname
+	after update of userNickname on Account
+	for each row
+begin
+	update board_comment set c_writer=:new.userNickname
+	where c_writer=:old.userNickname;
+end;
+*/
+
 --delete board_comment;

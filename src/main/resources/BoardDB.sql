@@ -17,3 +17,14 @@ select * from board;
 
 --delete board;
 
+/*
+create or replace trigger TRG_nickname
+    after update of userNickname on Account
+    for each row
+begin
+    update board set b_writer=:new.userNickname
+    where b_writer=:old.userNickname;
+    update board_comment set c_writer=:new.userNickname
+    where c_writer=:old.userNickname;
+end;
+*/
