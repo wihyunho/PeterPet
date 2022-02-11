@@ -91,7 +91,7 @@ public class SocialController {
 				return "index";
 			}else {
 				request.getSession().setAttribute("messageType", "오류 메시지");
-				request.getSession().setAttribute("messageContent", "가입되어 있는 email입니다.");
+				request.getSession().setAttribute("messageContent", "가입되어 있는 카카오 계정입니다.");
 				
 				return "redirect:SelectRegisterC";
 			}

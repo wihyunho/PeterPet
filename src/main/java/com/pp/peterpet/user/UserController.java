@@ -51,7 +51,6 @@ public class UserController {
 
 		int result = udao.login(userID, userPassword, loginType);
 		
-		System.out.println(result);
 		if (result == 1) {
 			request.getSession().setAttribute("userID", userID);
 			request.getSession().setAttribute("messageType", "성공 메시지");
