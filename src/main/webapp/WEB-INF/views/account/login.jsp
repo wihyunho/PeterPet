@@ -12,6 +12,9 @@
 	content="99323380118-93dou793k0bhub4437omhgpdadnm36gp.apps.googleusercontent.com">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script
+	src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js"
+	charset="utf-8"></script>
 
 </head>
 <body>
@@ -39,15 +42,17 @@
 						</td>
 					</tr>
 					<tr>
-						<td style="text-align: left;" colspan="2">	
-							<input style="width: 120px;height: 36px" class="btn btn-primary pull-right" type="submit" value="로그인">
+						<td style="text-align: left;" colspan="2"><input
+							style="width: 120px; height: 36px"
+							class="btn btn-primary pull-right" type="submit" value="로그인">
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</form>
 
-		<div class="g-signin2 pull-right" data-onsuccess="onSignIn" data-theme="dark" style="border-radius: 5px;"></div>
+		<div class="g-signin2 pull-right" data-onsuccess="onSignIn"
+			data-theme="dark" style="border-radius: 5px;"></div>
 
 		<script>
 			function onSignIn(googleUser) {
@@ -66,18 +71,14 @@
 		</script>
 
 		<!-- 카카오 로그인 API -->
-		<div  onclick="kakaoLogin();" class="pull-right" style="width: 120px; height: 36px; background-color: #FEE500; text-align: center; margin-right: 21px; border-radius: 5px;"> 
-			<a href="javascript:void(0)">
-				<img src="resources/images/kakao_login_medium.png" width="72px;">
+		<div onclick="kakaoLogin();" class="pull-right"
+			style="width: 120px; height: 36px; background-color: #FEE500; text-align: center; margin-right: 21px; border-radius: 5px;">
+			<a href="javascript:void(0)"> <img
+				src="resources/images/kakao_login_medium.png" width="72px;">
 			</a>
 		</div>
-		
-		<!-- 네이버 로그인 API -->
-		<div  onclick="kakaoLogin();" class="pull-right" style="width: 120px; height: 36px; background-color: #03c75a; text-align: center; margin-right: 21px; border-radius: 5px;"> 
-			<a href="javascript:void(0)">
-				<img src="resources/images/naver_login.png" width="99px">
-			</a>
-		</div>
+
+
 		<!-- 카카오 스크립트 -->
 		<script>
 			Kakao.init('70cdb1b1167ec9404d51259e89f44bce'); //발급받은 키 중 javascript키를 사용해준다.
@@ -123,6 +124,60 @@
 					})
 					Kakao.Auth.setAccessToken(undefined)
 				}
+			}
+		</script>
+
+		<!-- 네이버 로그인 API -->
+		<div id="naverIdLogin_loginButton();" class="pull-right"
+			style="width: 120px; height: 36px; background-color: #03c75a; text-align: center; margin-right: 21px; border-radius: 5px;">
+			<a id="naverIdLogin_loginButton" href="javascript:void(0)"> <img
+				src="resources/images/naver_login.png" width="99px">
+			</a>
+		</div>
+		
+		<!-- 네이버 스크립트 -->
+		<script>
+			var naverLogin = new naver.LoginWithNaverId({
+				clientId : "NFHnma7HGbCOhFpJzepE", //내 애플리케이션 정보에 cliendId를 입력해줍니다.
+				callbackUrl : "http://localhost/peterpet/UserLoginC", // 내 애플리케이션 API설정의 Callback URL 을 입력해줍니다.
+				isPopup : false,
+				callbackHandle : true
+			});
+
+			naverLogin.init();
+
+			window.addEventListener('load', function() {
+				naverLogin.getLoginStatus(function(status) {
+					if (status) {
+						var n = document.myForm;
+						n.userID.value = naverLogin.user.getEmail();
+						n.userPassword.value = naverLogin.user.getId();
+						n.loginType.value = "Naver";
+						
+						naverLogin.logout();
+	
+						n.submit();
+						}
+					});
+				});
+
+			var testPopUp;
+			function openPopUp() {
+				testPopUp = window
+						.open("https://nid.naver.com/nidlogin.logout",
+								"_blank",
+								"toolbar=yes,scrollbars=yes,resizable=yes,width=1,height=1");
+			}
+			function closePopUp() {
+				testPopUp.close();
+			}
+
+			function naverLogout() {
+				openPopUp();
+				setTimeout(function() {
+					closePopUp();
+				}, 1000);
+
 			}
 		</script>
 	</div>
