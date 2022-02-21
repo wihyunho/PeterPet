@@ -28,7 +28,7 @@ public class CommentDAO {
 	//댓글 등록
 	public int insertComment(HttpServletRequest request) {
 		String comment = request.getParameter("comment");
-		comment = comment.replace("\r\n", "<br>");
+		comment = comment.replace(" ", "&nbsp;").replace("<", "&lt;").replace(">", "&gt;").replace("\r\n", "<br>");
 		
 		UserDTO user = udao.getUser(request);
 		
@@ -55,10 +55,11 @@ public class CommentDAO {
 		
 		return data;	
 	}
-
+	
+	//댓글 수정
 	public int updateComment(HttpServletRequest request) {
 		String comment = request.getParameter("comment");
-		comment = comment.replace("\r\n", "<br>");
+		comment = comment.replace(" ", "&nbsp;").replace("<", "&lt;").replace(">", "&gt;").replace("\r\n", "<br>");
 		
 		CommentDTO cdto = new CommentDTO();
 		cdto.setC_comment(comment);

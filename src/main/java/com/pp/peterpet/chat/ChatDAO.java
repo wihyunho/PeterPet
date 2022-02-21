@@ -234,7 +234,9 @@ public class ChatDAO {
 		ChatDTO cdto = new ChatDTO();
 		cdto.setFromID(fromID);
 		cdto.setToID(toID);
+		chatContent = chatContent.replace(" ", "&nbsp;").replace("<", "&lt;").replace(">", "&gt;").replace("\r\n", "<br>").replace("\"", "&quot;");
 		cdto.setChatContent(chatContent);
+		
 		
 		return ss.getMapper(ChatMapper.class).submit(cdto);
 	}//getChatListRec END
