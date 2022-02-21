@@ -26,7 +26,6 @@ public class ChatController {
 	@Autowired
 	private ChatDAO cdao;
 
-	
 	//채팅함 진입////////////////////////////
 	@RequestMapping(value = "/ChatBox", method = RequestMethod.GET)
 	public String ChatBox(HttpServletRequest request) {
@@ -111,7 +110,7 @@ public class ChatController {
 		}
 	}
 	
-	
+	//채팅 리스트 가져오는 ajax
 	@RequestMapping(value = "/ChatListServlet", method = RequestMethod.POST)
 	public void ChatListServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String fromID = request.getParameter("fromID");
@@ -138,6 +137,7 @@ public class ChatController {
 		}
 	}
 	
+	//채팅 안읽은 갯수 가져오는 ajax
 	@RequestMapping(value = "/ChatUnreadServlet", method = RequestMethod.POST)
 	public void ChatUnreadServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String userID = request.getParameter("userID");
@@ -149,11 +149,15 @@ public class ChatController {
 		}
 	}
 
+	//채팅 보내는 ajax
 	@RequestMapping(value = "/ChatSubmitServlet", method = RequestMethod.POST)
 	public void ChatSubmitServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String fromID = request.getParameter("fromID");
 		String toID = request.getParameter("toID");
 		String chatContent = request.getParameter("chatContent");
+		chatContent = URLDecoder.decode(chatContent, "UTF-8");
+		
+		chatContent = chatContent.trim();
 		
 		//사용자 대상자 메시지중 하나라도 값이 없다면
 		if(fromID == null || fromID.equals("") || toID ==null || toID.equals("")
@@ -171,6 +175,7 @@ public class ChatController {
 		}
 	}
 	
+	//채팅 상대가 나갔는지 채크하는 ajax
 	@RequestMapping(value = "/IsDeleteServlet", method = RequestMethod.POST)
 	public void IsDeleteServlet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		String fromID = request.getParameter("fromID");
@@ -188,6 +193,7 @@ public class ChatController {
 		}
 	}
 	
+	//채팅을 나가기
 	@RequestMapping(value = "/ChatRemoveC", method = RequestMethod.GET)
 	public void ChatRemoveC(HttpServletRequest request, HttpServletResponse response) throws IOException {
 

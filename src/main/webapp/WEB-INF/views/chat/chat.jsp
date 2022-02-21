@@ -31,7 +31,8 @@
 	function submitFunction() {
 		var fromID = '${userID.userID}';
 		var toID = '${toID.userID}';
-		var chatContent = $( '#chatContent').val();
+		var chatContent = $('#chatContent').val();
+		
 		$.ajax({
 				type: "POST",
 				url: "./ChatSubmitServlet",
@@ -120,6 +121,7 @@
 				+'<hr style="background-color: rgba(255, 255, 255, 0.5);;">');
 		
 		// 	<textarea id="chatContent" class="form-control type_msg" placeholder="상대가 없습니다..." disabled="disabled"></textarea>
+		$('#chatContent').val('');
 		$('#chatContent').attr('placeholder', '상대가 없습니다...');
 		$('#chatContent').attr('disabled', 'disabled');
 		$('#chatList').scrollTop($('#chatList')[0].scrollHeight);
@@ -159,8 +161,7 @@
 					flag = 1;
 					clearInterval(getIsDelete);
 					addChat3();
-				}
-				
+				}		
 			}
 		});
 	}
@@ -181,14 +182,11 @@
 				}else{
 					flag = 1;
 					clearInterval(getIsDelete);
-					addChat3();
+					addChat3();	
 				}
 				
 			}
 		});
-	}
-	function aa(flag) {
-		return flag;
 	}
 	
 	//a태그를 post 방식으로 전송
@@ -207,9 +205,17 @@
 	$(document).ready(function() {
 		chatListFunction('0');
 		getInfiniteChat();
+		
+		 $('#chatContent').on('keydown', function(event) {
+	        if (event.keyCode == 13)
+	            if (!event.shiftKey){
+	                event.preventDefault();
+	                
+	                submitFunction();
+	            }
+	    });
 	});
-	
-	
+
     function quit() {
     	var fromID = '${userID.userID}';
 		var toID = '${toID.userID}';
@@ -233,7 +239,7 @@
         	});    			
 
         }
-    }
+    } 
 </script>
 
 
