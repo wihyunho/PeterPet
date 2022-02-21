@@ -40,6 +40,10 @@ public class BoardDAO {
 		
 		String thumbnail="resources/images/noimage.png";
 		
+		String title = request.getParameter("title");
+		
+		title = title.replace(" ", "&nbsp;").replace("<", "&lt;").replace(">", "&gt;").replace("\r\n", "<br>");
+		
 		if(content.indexOf("<img ") != -1) {
 			//이미지가 있다
 			int start,end;
@@ -55,7 +59,7 @@ public class BoardDAO {
 		
 		BoardDTO bdto = new BoardDTO();
 		bdto.setB_type(request.getParameter("type"));
-		bdto.setB_title(request.getParameter("title"));
+		bdto.setB_title(title);
 		bdto.setB_content(content);
 		bdto.setB_thumbnail(thumbnail);
 		bdto.setB_writer(user.getUserNickname());
@@ -96,6 +100,8 @@ public class BoardDAO {
 		String content = request.getParameter("content");
 
 		String thumbnail="resources/images/noimage.png";
+		
+		title = title.replace(" ", "&nbsp;").replace("<", "&lt;").replace(">", "&gt;").replace("\r\n", "<br>");
 		
 		if(content.indexOf("<img ") != -1) {
 			//이미지가 있다
