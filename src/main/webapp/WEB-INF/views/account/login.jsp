@@ -128,10 +128,9 @@
 		</script>
 
 		<!-- 네이버 로그인 API -->
-		<div id="naverIdLogin_loginButton();" class="pull-right"
-			style="width: 120px; height: 36px; background-color: #03c75a; text-align: center; margin-right: 21px; border-radius: 5px;">
-			<a id="naverIdLogin_loginButton" href="javascript:void(0)"> <img
-				src="resources/images/naver_login.png" width="99px">
+		<div id="naverIdLogin_loginButton" class="pull-right" style="width: 120px; height: 36px; background-color: #03c75a; text-align: center; margin-right: 21px; border-radius: 5px;">
+			<a id="naverIdLogin_loginButton" href="javascript:void(0)">
+				<img src="resources/images/naver_login.png" width="99px">
 			</a>
 		</div>
 		
