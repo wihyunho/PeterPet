@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+.container {
+	width: 100%;
+	margin: auto;
+	max-width: 1200px;
+	padding: 0;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section-top-category .grid {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.grid>div, .grid>li {
+	padding: 10px;
+}
+
+.grid-8 {
+	width: 33.333333%;
+}
+
+@media ( max-width : 1023px) {
+	.grid-8 {
+		width: 50%;
+	}
+}
+
+@media ( max-width : 767px) {
+	.grid-8 {
+		width: 100%;
+	}
+}
+
+.search-category-list .title {
+	display: block;
+	position: relative;
+	margin-bottom: 34px;
+	padding: 0 0 16px 8px;
+	font-size: 32px;
+	color: #0dbcaf;
+	font-weight: 700;
+}
+
+.search-category-list .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-image: linear-gradient(90deg, #1dc6f7, #00e5c2);
+}
+
+.search-category-list .name {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 0;
+}
+
+.search-category-list .name a, .search-category-list .name label {
+	display: inline-block;
+	position: relative;
+	padding: 5px 8px;
+	line-height: 1;
+	font-size: 20px;
+	color: #777;
+	font-weight: 300;
+}
+
+.search-category-list .name a:hover, .search-category-list .name label:hover{
+	color: #0dbcaf;
+	font-weight: 700;
+}
+
+.search-category-list .title {
+    display: block;
+    position: relative;
+    margin-bottom: 34px;
+    padding: 0 0 16px 8px;
+    font-size: 32px;
+    color: #0dbcaf;
+    font-weight: 700;
+}
+
+.grid-12 {
+	width: 33.333333%;
+}
+
+@media ( max-width : 1023px) {
+	.grid-12 {
+		width: 50%;
+	}
+}
+
+@media ( max-width : 767px) {
+	.grid-12 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px)
+.search-category-list .title--small {
+    font-size: 22px;
+}
+
+@media (max-width: 768px)
+.search-category-list .title--small {
+    font-size: 18px;
+}
+
+@media (max-width: 768px)
+.search-category-list .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.search-category-list .name {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+.search-category-list .name a, .search-category-list .name label {
+    display: inline-block;
+    position: relative;
+    padding: 5px 8px;
+    line-height: 1;
+    font-size: 20px;
+    color: #777;
+    font-weight: 300;
+}
+
+
+.disease-block {
+    text-align: center;
+}
+
+
+@media (max-width: 768px)
+.disease-block .title {
+    font-size: 24px;
+}
+@media (max-width: 1024px)
+.disease-block .title {
+    padding-top: 15px;
+    font-size: 30px;
+}
+.disease-block .title {
+    display: block;
+    position: relative;
+    padding: 55px 0 0;
+    font-size: 40px;
+    color: #3c83dc;
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px)
+.disease-block .pr {
+    font-size: 13px;
+}
+@media (max-width: 1024px)
+.disease-block .pr {
+    margin-top: 5px;
+    font-size: 16px;
+}
+.disease-block .pr {
+    margin-top: 30px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #777;
+    font-weight: 300;
+}
+@media (max-width: 768px)
+.pr {
+    margin-bottom: 5px;
+}
+
+.disease-img img {
+    max-width: 100%;
+}
+
+@media (max-width: 1024px)
+.disease-img {
+    margin: 40px 0 30px;
+}
+
+.disease-img {
+    text-align: center;
+    margin-top: 60px;
+}
