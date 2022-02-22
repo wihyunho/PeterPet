@@ -27,12 +27,12 @@
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/Y2IxY2VmNTEtZGIyYS00Y2U4LTliYzctOTgyNGM0NjY1YWZm"
+							href="DogDisease_Eyes_4"
 							class="">눈이 충혈된다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OGJkYTA2ODQtZWUwZi00YjFkLWIxY2UtYzY2ZjQyNTcxNDZh"
+							href="DogDisease_Eyes_5"
 							class="">눈이 이상하다</a>
 					</dd>
 				</dl></li>
@@ -40,52 +40,52 @@
 					<dt class="title">행동 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/OWYyYjM5NjAtZTg1NS00OGNiLTliOTItYjg5YzlkMmU5OWZl"
+							href="DogDisease_Act_1"
 							class="">기지개를 자주 켠다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/N2IwM2QxZjUtZTg5Yi00MzY1LTkxYTMtMzA1NzZmMDE0Mjgz"
+							href="DogDisease_Act_2"
 							class="">특정 부위를 계속해서 핥는다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MjdiMWU2M2EtMGM1NS00YzI3LWIyMTktNjg0YjZlODBjYWE5"
+							href="DogDisease_Act_3"
 							class="">엉덩이를 바닥에 끌고 다닌다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MDg5YWZhNzEtNzkxOS00YzkyLTkzYWUtYzkzYjdjNTJjMGRl"
+							href="DogDisease_Act_4"
 							class="">한 방향으로 빙빙 돈다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ODM0NWU0OGQtZWYyMS00OTAzLWJkZDgtNWNiNTliZGNmNGQz"
+							href="DogDisease_Act_5"
 							class="">균형이 잘 잡지 못해 비틀거린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NDE3YmNkNzQtZGJlMC00M2M3LThiNDUtNzM4NzdlY2Y1N2M2"
+							href="DogDisease_Act_6"
 							class="">기력이 없다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OTE5M2U0YjEtNTNhZi00MDZlLWJiMzktMTIxNWQ5MjRiNjg3"
+							href="DogDisease_Act_7"
 							class="">산책을 나가기 싫어한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MWY4M2FkZWUtYjliZC00ZWIxLWJiNjUtNGI2ZTkyMjUwY2Vm"
+							href="DogDisease_Act_8"
 							class="">사물에 자주 부딪힌다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YmU1YjE4NTMtZTY0YS00NjBmLWJiMDYtZjljNzkyMDViNjgz"
+							href="DogDisease_Act_9"
 							class="">정신없이 돌아다닌다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NDMzM2E5MzAtZTFkMy00YjBmLWFmYjItOGRiYWYyMjE2N2U0"
+							href="DogDisease_Act_10"
 							class="">기력이 없다</a>
 					</dd>
 				</dl></li>
@@ -93,27 +93,27 @@
 					<dt class="title">코 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/M2M1YzU0ZTItNzFhZi00MzExLThkZmEtNGVhNTlkZmZlYzRm"
+							href="DogDisease_Nose_1"
 							class="">콧물을 많이 흘린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YWIxMzUzNDItOTQyNC00OTgxLWJkMDItODFkMjU2MjRjN2Y2"
+							href="DogDisease_Nose_2"
 							class="">코피가 난다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YzcyODA4ZTItMzNmYy00MjI0LTliYTYtNGQ5MTc1NDRkZTdl"
+							href="DogDisease_Nose_3"
 							class="">콧물, 재채기가 난다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MWEzMzY0YzMtNzk3Yi00YWJlLWFhN2MtN2EzNTc1Yjg2NTcx"
+							href="DogDisease_Nose_4"
 							class="">코를 곤다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/M2Y2MWZlZGQtMzZhZi00NTNlLWE2YTAtMTc3NjQ2NjEwZGE3"
+							href="DogDisease_Nose_5"
 							class="">입안이나 코에서 출혈</a>
 					</dd>
 				</dl></li>
@@ -121,42 +121,42 @@
 					<dt class="title">음식 섭취 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/ZGUyNDY2ZDUtZGMzYS00ZWFjLTg1YjgtMTI4OGMxYjNjZDQx"
+							href="DogDisease_Food_1"
 							class="">밥을 잘 먹지 않는다 </a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NWE1ZjVlMWUtNDgxMS00NzYyLWI4MGEtNjRjNzNlZGRmNjBi"
+							href="DogDisease_Food_2"
 							class="">물을 많이 마신다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZGEyMjAxNzQtZmViNi00MjI5LThlZTItZThhMTdhNmIzZTIx"
+							href="DogDisease_Food_3"
 							class="">배가 부풀어 오른다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OWZiNTMyOGUtMDgyZi00NTZhLWI2ZjYtZmRhM2U3NjM4OWE2"
+							href="DogDisease_Food_4"
 							class="">음식을 잘 씹지 못한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NjlhMzRhNDMtMTJlZS00MzkxLTg3MTktNzRiYjI1Njk5N2Qy"
+							href="DogDisease_Food_5"
 							class="">침을 많이 흘린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OTVhNTE1YzAtMzExOS00MjRhLTgyY2QtNzdlNDA2YTE3MDIx"
+							href="DogDisease_Food_6"
 							class="">식욕이 없다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NDcxZjk5MDQtMzgwNi00ZjQ1LWJlNDUtMmQzZmM2NmVhNjUx"
+							href="DogDisease_Food_7"
 							class="">먹는 양, 횟수가 증가한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YTY3MmMyNzktNWFjNy00OGJmLWJjMTctMTgyYmEwZDE3M2Fh"
+							href="DogDisease_Food_8"
 							class="">물을 마시는 양도 늘었다, 배가 부어있다</a>
 					</dd>
 				</dl></li>
@@ -164,12 +164,12 @@
 					<dt class="title">다리 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/NTE5YTcwMjItY2E3Yi00OTI4LWJkODQtMTU4MTA2MjAyZjZm"
+							href="DogDisease_Leg_1"
 							class="">다리를 절룩거리거나 한쪽 다리를 들고 다닌다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MTgwZjc4N2EtMDVhNi00MzRjLTkzODEtODFmZmMyYTI0ODY2"
+							href="DogDisease_Leg_2"
 							class="">걷는 모습이 이상하다</a>
 					</dd>
 				</dl></li>
@@ -177,22 +177,22 @@
 					<dt class="title">숨소리 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/MTg1YWUwZWItNDE2OS00YTRkLTgwOWMtOGZhN2FjMGQxNGE5"
+							href="DogDisease_Breathe_1"
 							class="">숨을 헐떡인다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZWQxYTVmOTEtNmE1YS00N2VlLWIxMjEtZjMyZjJhZTM0MzE4"
+							href="DogDisease_Breathe_2"
 							class="">숨소리가 달라진다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZDlkNTAxOWMtOTY4Yi00ZjIzLTg5ZGItNzY4NmYzNzcxOGUz"
+							href="DogDisease_Breathe_3"
 							class="">호흡곤란</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MWE4NDAxMGMtNGExOS00MDY3LThhMzAtODY5YWU5ODBhNTAz"
+							href="DogDisease_Breathe_4"
 							class="">호흡을 괴로워한다</a>
 					</dd>
 				</dl></li>

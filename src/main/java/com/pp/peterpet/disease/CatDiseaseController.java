@@ -30,7 +30,7 @@ public class CatDiseaseController {
 	@Autowired
 	private UserDAO udao;
 	
-	//강아지 jsp로 이동
+	//고양이 jsp로 이동
 	@RequestMapping(value = "/CatDiseaseC", method = RequestMethod.GET)
 	public String DogDiseaseC(HttpServletRequest request) {
 		udao.loginCheck(request);
