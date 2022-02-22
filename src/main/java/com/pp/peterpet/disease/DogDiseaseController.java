@@ -26,7 +26,7 @@ import com.pp.peterpet.user.UserDTO;
  * Handles requests for the application home page.
  */
 @Controller
-public class DiseaseController {
+public class DogDiseaseController {
 	@Autowired
 	private UserDAO udao;
 	
@@ -38,19 +38,7 @@ public class DiseaseController {
 		request.setAttribute("contentPage", "disease/a.jsp");
 		return "index";
 	}	
-	
-	//보드 페이지 진입//////////////
-	@RequestMapping(value = "/Disease_Result", method = RequestMethod.GET)
-	public String Disease_Result(HttpServletRequest request) {
-		udao.loginCheck(request);
-		
-		String name = request.getParameter("name");
-		
-		request.setAttribute("contentPage", "disease/a.jsp");
-		return "index";
-	}
 
-	
 	//강아지 jsp로 이동
 	@RequestMapping(value = "/DogDiseaseC", method = RequestMethod.GET)
 	public String DogDiseaseC(HttpServletRequest request) {

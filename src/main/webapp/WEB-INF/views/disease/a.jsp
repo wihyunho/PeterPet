@@ -121,7 +121,7 @@
 
 			<img style="max-width: 300px;" width="30%" src="resources/images/doctor.png">
 			
-			<img style="max-width: 300px;" onclick="location.href='DogDiseaseC'" class="link buzz-out-on-hover" src="resources/images/cat.png" width="30%">
+			<img style="max-width: 300px;" onclick="location.href='CatDiseaseC'" class="link buzz-out-on-hover" src="resources/images/cat.png" width="30%">
 		</div>
 	</div>
 
