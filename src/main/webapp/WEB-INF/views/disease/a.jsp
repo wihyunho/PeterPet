@@ -117,15 +117,11 @@
 	<div class="main-preview">
 		<h3 class="recruit__header">질병 사전</h3>
 		<div class="recruit-content" align="center">
-					<button onclick="popup2();" class="link buzz-out-on-hover">
-						<img style="min-width:300px;" src="resources/images/dog.png" width="45%">
-					</button>
-					
-					<img style="min-width:300px;" src="resources/images/doctor.png" width="10%">
+			<img style="max-width: 300px;" onclick="location.href='DogDiseaseC'" class="link buzz-out-on-hover" src="resources/images/dog.png" width="30%">
 
-					<button onclick="popup1();" class="link buzz-out-on-hover">
-						<img style="min-width:300px;" src="resources/images/cat.png" width="45%">
-					</button>
+			<img style="max-width: 300px;" width="30%" src="resources/images/doctor.png">
+			
+			<img style="max-width: 300px;" onclick="location.href='DogDiseaseC'" class="link buzz-out-on-hover" src="resources/images/cat.png" width="30%">
 		</div>
 	</div>
 

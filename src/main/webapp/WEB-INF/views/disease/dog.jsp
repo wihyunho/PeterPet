@@ -6,24 +6,23 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet" href="resources/css/petraschu.css">
 <body>
 	<div class="container">
 		<ul class="grid">
 			<li class="grid-8"><dl class="search-category-list">
 					<dt class="title">눈 이상</dt>
 					<dd class="name">
-						<a
-							href="/search/disease/NDdkNGQ5MzAtM2M1NC00MzI3LThlN2QtYTI5M2UzZDU5ZDk5"
-							class="">눈꺼풀이 벌겋게 붓는다</a>
+						<a href="DogDisease_Eyes_1" class="">눈꺼풀이 벌겋게 붓는다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YTQ4YTMzOGQtNjQwMy00ZTdkLTg5MzYtY2U0M2MxNDFmMmVm"
+							href="DogDisease_Eyes_2"
 							class="">눈을 자주 찌푸린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NDEzNjYyZDItYjY4ZS00MDViLTgyZjktNzNmOGQ2ZGNmZjBj"
+							href="DogDisease_Eyes_3"
 							class="">눈물을 많이 흘린다</a>
 					</dd>
 					<dd class="name">
@@ -389,5 +388,6 @@
 				</dl></li>
 		</ul>
 	</div>
+	본 HTML은 https://www.petraschu.com에서 가져와 수정하였습니다.
 </body>
 </html>

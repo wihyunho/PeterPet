@@ -37,5 +37,51 @@ public class DiseaseController {
 		
 		request.setAttribute("contentPage", "disease/a.jsp");
 		return "index";
+	}	
+	
+	//보드 페이지 진입//////////////
+	@RequestMapping(value = "/Disease_Result", method = RequestMethod.GET)
+	public String Disease_Result(HttpServletRequest request) {
+		udao.loginCheck(request);
+		
+		String name = request.getParameter("name");
+		
+		request.setAttribute("contentPage", "disease/a.jsp");
+		return "index";
+	}
+
+	
+	//강아지 jsp로 이동
+	@RequestMapping(value = "/DogDiseaseC", method = RequestMethod.GET)
+	public String DogDiseaseC(HttpServletRequest request) {
+		udao.loginCheck(request);
+		
+		request.setAttribute("contentPage", "disease/dog.jsp");
+		return "index";
+	}
+	
+
+	@RequestMapping(value = "/DogDisease_Eyes_1", method = RequestMethod.GET)
+	public String DogDisease_Eyes_1(HttpServletRequest request) {
+		udao.loginCheck(request);
+		
+		request.setAttribute("contentPage", "disease/dog/eyes/eyes1.jsp");
+		return "index";
+	}
+	
+	@RequestMapping(value = "/DogDisease_Eyes_2", method = RequestMethod.GET)
+	public String DogDisease_Eyes_2(HttpServletRequest request) {
+		udao.loginCheck(request);
+		
+		request.setAttribute("contentPage", "disease/dog/eyes/eyes2.jsp");
+		return "index";
+	}
+	
+	@RequestMapping(value = "/DogDisease_Eyes_3", method = RequestMethod.GET)
+	public String DogDisease_Eyes_3(HttpServletRequest request) {
+		udao.loginCheck(request);
+		
+		request.setAttribute("contentPage", "disease/dog/eyes/eyes3.jsp");
+		return "index";
 	}
 }
