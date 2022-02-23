@@ -312,12 +312,4 @@ public class DogDiseaseController {
 		request.setAttribute("contentPage", "disease/dog/breathe/breathe3.jsp");
 		return "index";
 	}
-	
-	@RequestMapping(value = "/DogDisease_Breathe_4", method = RequestMethod.GET)
-	public String DogDisease_Breathe_4(HttpServletRequest request) {
-		udao.loginCheck(request);
-		
-		request.setAttribute("contentPage", "disease/dog/breathe/breathe4.jsp");
-		return "index";
-	}
 }

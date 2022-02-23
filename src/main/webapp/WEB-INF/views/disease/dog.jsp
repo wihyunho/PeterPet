@@ -188,11 +188,6 @@
 					<dd class="name">
 						<a
 							href="DogDisease_Breathe_3"
-							class="">호흡곤란</a>
-					</dd>
-					<dd class="name">
-						<a
-							href="DogDisease_Breathe_4"
 							class="">호흡을 괴로워한다</a>
 					</dd>
 				</dl></li>
