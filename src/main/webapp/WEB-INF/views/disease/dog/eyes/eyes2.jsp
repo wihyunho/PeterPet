@@ -15,7 +15,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="안구건조증";
 					document.getElementById("prID").innerHTML ="안구건조증은 눈꼽이 많이 끼고 흰자가 충혈되는 증상을 수반하므로, 의심히 병원을 내원하며 눈물량 검사를 통해 적절한 진단으로 증상이 악화되지 않도록 해야 합니다.";
-					document.getElementById("imgId").src = "https://www.petraschu.com/public/c842274f-a47c-4a04-ade4-9c9a1329152c.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes2_A.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;
@@ -54,7 +54,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="각막궤양";
 					document.getElementById("prID").innerHTML ="각막궤양은 각막상처 재대로 치료가 안되서 발병하는 질병으로 원인은 세균감염, 스테로이드 성 약물 복용등으로 발병할 수 있습니다. 각막에 구명이 생겨 응급상황이 발생할 수 있으니 신속한 병원 내원이 필요합니다. ";
-					document.getElementById("imgId").src = "https://www.petraschu.com/public/87ec1c62-1fd2-4858-8c1c-71d003967195.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes2_B.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

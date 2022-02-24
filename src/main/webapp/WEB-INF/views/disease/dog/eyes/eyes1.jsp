@@ -15,7 +15,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="세균성 안감염";
 					document.getElementById("prID").innerHTML ="세균성 안겸염은 눈꺼플에 염증이 생겨 붉어지고 부어오를 증상을 동반합니다. 세균성 김염에 의해 주로 발병되고 반려견이 간지러움으로 인한 스트레스를 많이 받을 수 있으므로 빠른 병원 내원이 필요합니다.";
-					document.getElementById("imgId").src = "https://www.petraschu.com/public/ffa38b67-8e19-458a-91f4-aedf09b935cd.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes1_A.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;
@@ -44,7 +44,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="알레르기성 안검염";
 					document.getElementById("prID").innerHTML ="알레르기성 안겸염은 눈꺼플에 염증이 생겨 붉어지고 부어오를 증상을 동반합니다. 특정 음식이나 알러지 반응에 의해 주로 발병되고 반려견이 간지러움으로 인한 스트레스를 많이 받을 수 있으므로 빠른 병원 내원이 필요합니다. ";
-					document.getElementById("imgId").src = "https://www.petraschu.com/public/0efcb9d2-e5f9-40fd-a08f-4e5781e2fb53.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes1_B.jpg";
 					
 					var location = document.querySelector('.disease-container').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});

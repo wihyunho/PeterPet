@@ -38,5 +38,4 @@ public class HomeController {
 		request.setAttribute("contentPage", "home.jsp");
 		return "index";
 	}
-	
 }
