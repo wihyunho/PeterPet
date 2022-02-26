@@ -19,7 +19,7 @@
 				<li onclick="location.href='MapC'" >
 					<div>
 						<h3>편의 시설 찾기</h3>
-						여러분들의 주변에 반려동물들이 필요한 장소들을 보여드릴게요.<br> <span>병원, 공원, 애견카페</span>등의
+						여러분들의 주변에 반려동물들이 필요한 장소들을 보여드릴게요.<br> <span><b>병원, 공원, 애견카페</b></span>등의
 						장소들을 맵으로 확인해보세요.
 					</div> 
 					<img src="resources/images/park.png">
@@ -28,16 +28,26 @@
 				<li onclick="location.href='TourHomeC'">
 					<div>
 						<h3>관광지 찾기</h3>
-						여러분들의 반려동물과 함께할 여행지를 찾아 드릴게요. <br>
-						함께 같이 추억을 만들어 봐요. 
+						반려동물과 함께할 <span><b>관광지</b></span>를 찾아 드릴게요.<br>
+						같이 추억을 만들어 봐요.
 					</div> 
 					<img src="resources/images/travle.jpg">
+				</li>
+				
+				<li onclick="location.href='DiseaseC'">
+					<div>
+						<h3>질병 사전</h3>
+						어디가 아픈지 스스로 찾아봐요.<br>
+						<span><b>질병에 관한 정보</b></span>를 알려드릴게요.
+					</div> 
+					<img src="resources/images/doctor2.jpg">
 				</li>
 
 				<li onclick="location.href='BoardListC?type=free'">
 					<div>
 						<h3>사용자 게시판</h3>
-						자신의 반려동물을 자랑하거나 키우면서 생긴 노하우, 더이상 필요없는 물품을 나누어보아요.<br>
+						내 반려동물이 너무 귀여워!<br>
+						게시판을 통하여 <span><b>자랑</b></span>을 해보아요.<br>
 					</div> 
 					<img src="resources/images/cummunication.jpg">
 				</li>
@@ -55,7 +65,7 @@
 					<div>
 						<h3>동물등록</h3>
 						<span>가족의 인연이 더욱 강력하게!</span><br>
-						반려동물을 잃어버렸을 때 동물보호관리시스템(www.animal.go.kr) 상 동물등록정보를 통해 소유자를 쉽게 찾을 수 있습니다.
+						반려동물을 잃어버렸을 때 <span><b>동물보호관리시스템(www.animal.go.kr)</b></span> 상 동물등록정보를 통해 소유자를 쉽게 찾을 수 있습니다.
 					</div> 
 					<img src="resources/images/redline.jpg">
 				</li>
