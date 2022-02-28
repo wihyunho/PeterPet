@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-	<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="동맥관 개존증";
@@ -22,21 +25,21 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>금방 피곤하고 기침이나 구토, 호흡곤란 등의 증상이 나타난다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>금방 피곤하고 기침이나 구토, 호흡곤란 등의 증상이 나타난다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심실 중격 결손증";
@@ -48,24 +51,24 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>B</b>증상
-					</dt>
-					<dd onclick="B();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>몸이 자라지 않기도 한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>B</b>증상
+							</dt>
+							<dd onclick="B();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>몸이 자라지 않기도 한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="폐동맥 협착증";
@@ -77,24 +80,24 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>C</b>증상
-					</dt>
-					<dd onclick="C();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>쉽게 피곤해진다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>C</b>증상
+							</dt>
+							<dd onclick="C();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>쉽게 피곤해진다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심장사상충 감염";
@@ -106,30 +109,30 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>D</b>증상
-					</dt>
-					<dd onclick="D();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>기침이 만성화되고 천식처럼 심해진다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>기침을 하면서 자극으로 복수가 차서 빵빵하게 부어오른다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>호흡곤란이나 식욕부진, 운동을 싫어하는 등의 증상을 보인다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>커피색 소변이 배출된다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>D</b>증상
+							</dt>
+							<dd onclick="D();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>기침이 만성화되고 천식처럼 심해진다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>기침을 하면서 자극으로 복수가 차서 빵빵하게 부어오른다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>호흡곤란이나 식욕부진, 운동을 싫어하는 등의 증상을 보인다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>커피색 소변이 배출된다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="승모판 폐쇄부전";
@@ -141,33 +144,33 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>E</b>증상
-					</dt>
-					<dd onclick="E();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>운동이나 흥분한 후에 목이 막힌 듯이 건조한 기침이 나온다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>쉽게 피곤해진다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>산책이나 운동을 싫어한다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>주저 앉는다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>E</b>증상
+							</dt>
+							<dd onclick="E();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>운동이나 흥분한 후에 목이 막힌 듯이 건조한 기침이 나온다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>쉽게 피곤해진다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>산책이나 운동을 싫어한다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>주저 앉는다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function F() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심근증";
@@ -179,33 +182,33 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>F</b>증상
-					</dt>
-					<dd onclick="F();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>주저앉는다, 턱을 들고 숨쉰다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>눕지 못한다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>배에 복수가 차서 부풀어 오른다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>맥박이 흐트러지거나 사지의 부종 등 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>F</b>증상
+							</dt>
+							<dd onclick="F();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>주저앉는다, 턱을 들고 숨쉰다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>눕지 못한다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>배에 복수가 차서 부풀어 오른다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>맥박이 흐트러지거나 사지의 부종 등 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function G() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="부정맥";
@@ -217,30 +220,32 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>G</b>증상
-					</dt>
-					<dd onclick="G();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>쉽게 피곤해지거나 호흡이 거칠어진다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>입술 등의 점막이 보라색이 되는 청색증을 일으킨다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>G</b>증상
+							</dt>
+							<dd onclick="G();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>쉽게 피곤해지거나 호흡이 거칠어진다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>입술 등의 점막이 보라색이 되는 청색증을 일으킨다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

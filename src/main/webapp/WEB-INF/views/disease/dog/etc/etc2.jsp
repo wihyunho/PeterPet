@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-			<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="동맥관 개존증";
@@ -21,28 +24,28 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>		
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>자라지 않는다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 못한다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>금방 피곤하고 기침이나 구토, 호흡곤란 등의 증상이 나타난다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>자라지 않는다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 못한다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>금방 피곤하고 기침이나 구토, 호흡곤란 등의 증상이 나타난다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="폐동맥 협착증";
@@ -53,43 +56,43 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>B</b>증상
-					</dt>
-					<dd onclick="B();" class="name">
-						<label><span>자라지 않는다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 않는다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>쉽게 피곤해진다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>전신이 붓는다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>체중이 감소한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>기침을 동반한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>배가 부풀어 오른다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>B</b>증상
+							</dt>
+							<dd onclick="B();" class="name">
+								<label><span>자라지 않는다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 않는다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>쉽게 피곤해진다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>전신이 붓는다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>체중이 감소한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>기침을 동반한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>배가 부풀어 오른다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심실 중격 결손증";
@@ -100,40 +103,40 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>C</b>증상
-					</dt>
-					<dd onclick="C();" class="name">
-						<label><span>자라지 않는다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 못한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>전신이 붓는다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>쉽게 피곤해하고 체중이 감소한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>기침을 동반한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>배가 부풀어 오른다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>C</b>증상
+							</dt>
+							<dd onclick="C();" class="name">
+								<label><span>자라지 않는다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>걷는 모습이 이상하다, 후들거린다, 잘 서지 못한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>전신이 붓는다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>쉽게 피곤해하고 체중이 감소한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>기침을 동반한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>배가 부풀어 오른다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="연구개과장증";
@@ -144,31 +147,31 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>D</b>증상
-					</dt>
-					<dd onclick="D();" class="name">
-						<label><span>호흡이 이상하다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>항상 코를 곤다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>입을 크게 벌려 호흡한다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>숨을 쌕쌕 몰아 쉰다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>호흡곤란을 일으킨다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>무호흡 증상이 나타난다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>D</b>증상
+							</dt>
+							<dd onclick="D();" class="name">
+								<label><span>호흡이 이상하다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>항상 코를 곤다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>입을 크게 벌려 호흡한다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>숨을 쌕쌕 몰아 쉰다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>호흡곤란을 일으킨다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>무호흡 증상이 나타난다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="기관허탈";
@@ -179,28 +182,28 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>E</b>증상
-					</dt>
-					<dd onclick="E();" class="name">
-						<label><span>호흡이 이상하다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>숨소리에 쌕쌕거리는 소리가 들린다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>혀 또는 잇몸이 퍼렇게 변한다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>거위 울음소리 같은 기침을 한다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>숨을 쉬기 힘들어한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>E</b>증상
+							</dt>
+							<dd onclick="E();" class="name">
+								<label><span>호흡이 이상하다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>숨소리에 쌕쌕거리는 소리가 들린다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>혀 또는 잇몸이 퍼렇게 변한다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>거위 울음소리 같은 기침을 한다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>숨을 쉬기 힘들어한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function F() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="기관지염";
@@ -211,43 +214,43 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>F</b>증상
-					</dt>
-					<dd onclick="F();" class="name">
-						<label><span>호흡이 이상하다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>운동을 싫어한다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>기력이 없다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>거품이 섞인 침이 나온다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>호흡이 빨라진다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>숨소리에 쌕쌕거리는 소리가 들린다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>뭔가가 목을 막고 있거나 걸려 있어 토할 듯한 모습을 보인다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>콧물이나 열이 난다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>기침이 심해지면 거품상태의 점액을 구토한다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>식욕이 감퇴한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>F</b>증상
+							</dt>
+							<dd onclick="F();" class="name">
+								<label><span>호흡이 이상하다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>운동을 싫어한다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>기력이 없다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>거품이 섞인 침이 나온다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>호흡이 빨라진다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>숨소리에 쌕쌕거리는 소리가 들린다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>뭔가가 목을 막고 있거나 걸려 있어 토할 듯한 모습을 보인다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>콧물이나 열이 난다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>기침이 심해지면 거품상태의 점액을 구토한다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>식욕이 감퇴한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function G() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="디스템퍼(강아지 홍역)";
@@ -258,46 +261,47 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>G</b>증상
-					</dt>
-					<dd onclick="G();" class="name">
-						<label><span>호흡이 이상하다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>열이 난다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>식욕이 없다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>맑은 콧물을 흘린다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>기침을 자주 한다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>발작을 일으키거나 의식을 잃는다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>설사를 한다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>재채기를 자주 한다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>끈적거리는 눈곱이 다량으로 나온다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>눈이 빨개진다, 눈물이 많이 나온다, 눈을 가려워하거나 통증이 있다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>급격하게 마른다, 구토를 동반한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>G</b>증상
+							</dt>
+							<dd onclick="G();" class="name">
+								<label><span>호흡이 이상하다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>열이 난다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>식욕이 없다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>맑은 콧물을 흘린다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>기침을 자주 한다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>발작을 일으키거나 의식을 잃는다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>설사를 한다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>재채기를 자주 한다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>끈적거리는 눈곱이 다량으로 나온다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>눈이 빨개진다, 눈물이 많이 나온다, 눈을 가려워하거나 통증이
+										있다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>급격하게 마른다, 구토를 동반한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function H() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="켄넬코프";
@@ -308,43 +312,45 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>H</b>증상
-					</dt>
-					<dd onclick="H();" class="name">
-						<label><span>호흡이 이상하다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>열이 있다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>콧물이 끈적인다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>물 같은 콧물이 나온다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>콧물에 피가 섞여 있다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>마르고 심한 기침이 나온다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>가래가 껴서 토하거나 기침 횟수가 많고 장기화된다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>H</b>증상
+							</dt>
+							<dd onclick="H();" class="name">
+								<label><span>호흡이 이상하다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>열이 있다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>콧물이 끈적인다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>물 같은 콧물이 나온다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>콧물에 피가 섞여 있다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>마르고 심한 기침이 나온다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>가래가 껴서 토하거나 기침 횟수가 많고 장기화된다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 </body>
 </html>

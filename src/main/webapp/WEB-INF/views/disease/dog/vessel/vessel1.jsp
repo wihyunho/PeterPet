@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-		<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="간질";
@@ -22,30 +25,32 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>경련이 몇분 이상 장기화된다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>발작은 짧은 시간에 잦아들었다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>부분적으로 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>입에서 거품이 끓어오르거나 호흡곤란을 일으키고 대변이나 소변을 지린다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>발작 후에 이상한 식욕을 보이거나 물을 대량으로 들이키거나 혼수상태가 되기도 한다.</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>경련이 몇분 이상 장기화된다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>발작은 짧은 시간에 잦아들었다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>부분적으로 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>입에서 거품이 끓어오르거나 호흡곤란을 일으키고 대변이나 소변을
+										지린다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>발작 후에 이상한 식욕을 보이거나 물을 대량으로 들이키거나
+										혼수상태가 되기도 한다.</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="종양";
@@ -57,45 +62,45 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>B</b>증상
-					</dt>
-					<dd onclick="B();" class="name">
-						<label><span>경련이 몇분 이상 장기화된다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>발작은 짧은 시간에 잦아들었다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>누렇고 탁한 콧물이 난다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>식욕이 감소한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>숨을 쉬기 힘들어한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>숨소리에 큰 잡음이 들린다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>소변 색이 빨갛다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>소변이 꼬박 하루 동안 나오지 않는다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>구토를 동반한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>코피가 좀처럼 멈추지 않거나 대량으로 난다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>B</b>증상
+							</dt>
+							<dd onclick="B();" class="name">
+								<label><span>경련이 몇분 이상 장기화된다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>발작은 짧은 시간에 잦아들었다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>누렇고 탁한 콧물이 난다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>식욕이 감소한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>숨을 쉬기 힘들어한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>숨소리에 큰 잡음이 들린다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>소변 색이 빨갛다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>소변이 꼬박 하루 동안 나오지 않는다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>구토를 동반한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>코피가 좀처럼 멈추지 않거나 대량으로 난다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="신부전";
@@ -107,42 +112,43 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>C</b>증상
-					</dt>
-					<dd onclick="C();" class="name">
-						<label><span>경련이 몇 분 이상 장기화된다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>발작은 짧은 시간에 잦아들었다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>갑자기 기운이나 식욕이 완전히 사라진다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>다음, 다뇨 등의 증상을 보이다가 소변량이 적어지고, 어느 순간 전혀 나오지 않게 된다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>구토, 설사 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>입이 바싹 마를 정도로 심한 탈수증상을 보인다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>소변색이 옅다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>모질이 나빠지며 마르기 시작한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>빈혈을 일으킨다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>C</b>증상
+							</dt>
+							<dd onclick="C();" class="name">
+								<label><span>경련이 몇 분 이상 장기화된다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>발작은 짧은 시간에 잦아들었다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>갑자기 기운이나 식욕이 완전히 사라진다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>다음, 다뇨 등의 증상을 보이다가 소변량이 적어지고, 어느 순간
+										전혀 나오지 않게 된다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>구토, 설사 등의 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>입이 바싹 마를 정도로 심한 탈수증상을 보인다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>소변색이 옅다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>모질이 나빠지며 마르기 시작한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>빈혈을 일으킨다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="광견병";
@@ -154,30 +160,30 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>D</b>증상
-					</dt>
-					<dd onclick="D();" class="name">
-						<label><span>경련이 몇분 이상 장기화된다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>발작은 짧은 시간에 잦아들었다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>침을 흘리면서 배회한다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>흉포해진다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>근육이 마비되면서 움직이지 못한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>D</b>증상
+							</dt>
+							<dd onclick="D();" class="name">
+								<label><span>경련이 몇분 이상 장기화된다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>발작은 짧은 시간에 잦아들었다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>침을 흘리면서 배회한다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>흉포해진다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>근육이 마비되면서 움직이지 못한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="디스템퍼(강아지 홍역)";
@@ -189,36 +195,39 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>E</b>증상
-					</dt>
-					<dd onclick="E();" class="name">
-						<label><span>경련이 몇 분 이상 장기화된다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>발작은 짧은 시간에 잦아들었다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>식욕이나 기운이 없어진다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>기침이나 끈적거리는 눈곱에 콧물, 설사, 구토 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>신체 일부를 움찔거리거나, 의식을 잃는 신경증상이 나타난다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>E</b>증상
+							</dt>
+							<dd onclick="E();" class="name">
+								<label><span>경련이 몇 분 이상 장기화된다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>뭔가를 먹은 후 경련을 일으킨다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>발작은 짧은 시간에 잦아들었다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>식욕이나 기운이 없어진다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>기침이나 끈적거리는 눈곱에 콧물, 설사, 구토 등의 증상이
+										나타난다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>신체 일부를 움찔거리거나, 의식을 잃는 신경증상이 나타난다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

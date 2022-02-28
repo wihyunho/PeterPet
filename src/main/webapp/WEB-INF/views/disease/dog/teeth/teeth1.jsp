@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-			<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="급성 신부전";
@@ -21,31 +24,33 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>		
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>요독증을 일으키고 경련 등 신경증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>입이 바싹 마를 정도로 심한 탈수증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>구토, 설사 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>기운이나 식욕이 완전히 사라진다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>요독증을 일으키고 경련 등 신경증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>입이 바싹 마를 정도로 심한 탈수증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>구토, 설사 등의 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>기운이나 식욕이 완전히 사라진다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-			<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="위확장-염전";
@@ -21,34 +24,34 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>		
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>단시간에 급격하게 배가 붓는다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>호흡곤란이 있고 토하는 동작을 반복한다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>트름을 하고 침을 대량으로 흘린다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>기력이 없다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>복부에 통증을 느낀다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>숨을 쉬기 힘들어한다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>열이 난다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>단시간에 급격하게 배가 붓는다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>호흡곤란이 있고 토하는 동작을 반복한다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>트름을 하고 침을 대량으로 흘린다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>기력이 없다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>복부에 통증을 느낀다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>숨을 쉬기 힘들어한다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>열이 난다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="자궁 축농증";
@@ -59,37 +62,37 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>B</b>증상
-					</dt>
-					<dd onclick="B();" class="name">
-						<label><span>하복부가 붓는다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>암컷이고 호흡이 거칠거나 토한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>기력이 없다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>식욕이 없다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>구토를 한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>물을 많이 마신다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>우울증을 보인다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>음부에서 불쾌한 냄새가 나는 고름이나 혈농 등의 분비물이 나온다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>B</b>증상
+							</dt>
+							<dd onclick="B();" class="name">
+								<label><span>하복부가 붓는다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>암컷이고 호흡이 거칠거나 토한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>기력이 없다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>식욕이 없다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>구토를 한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>물을 많이 마신다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>우울증을 보인다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>음부에서 불쾌한 냄새가 나는 고름이나 혈농 등의 분비물이 나온다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="요로결석";
@@ -100,34 +103,34 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>C</b>증상
-					</dt>
-					<dd onclick="C();" class="name">
-						<label><span>하복부가 붓는다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>소변이 나오지 않는다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>소변보기를 힘들어 한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>소변 색에 이상이 있고 소변이 나오지 않거나 누기 힘들어 한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>배뇨 포즈를 취해도 전혀 나오지 않는다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>빈뇨가 되거나 소변을 잘 못본다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>방광 근처를 만졌을 때 단단한 응어리가 느껴진다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>C</b>증상
+							</dt>
+							<dd onclick="C();" class="name">
+								<label><span>하복부가 붓는다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>소변이 나오지 않는다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>소변보기를 힘들어 한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>소변 색에 이상이 있고 소변이 나오지 않거나 누기 힘들어 한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>배뇨 포즈를 취해도 전혀 나오지 않는다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>빈뇨가 되거나 소변을 잘 못본다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>방광 근처를 만졌을 때 단단한 응어리가 느껴진다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="폐동맥 협착증";
@@ -138,31 +141,31 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>D</b>증상
-					</dt>
-					<dd onclick="D();" class="name">
-						<label><span>1~2회 설사를 했다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>건강하고 식욕도 있다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>쉽게 피곤해진다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>체중이 감소한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>D</b>증상
+							</dt>
+							<dd onclick="D();" class="name">
+								<label><span>1~2회 설사를 했다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>건강하고 식욕도 있다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>쉽게 피곤해진다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>호흡곤란이나 심한 기침, 부종 등이 생긴다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>체중이 감소한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심실 중격 결손증";
@@ -173,28 +176,28 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>E</b>증상
-					</dt>
-					<dd onclick="E();" class="name">
-						<label><span>1~2회 설사를 했다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>건강하고 식욕도 있다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>몸이 자라지 않기도 한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>E</b>증상
+							</dt>
+							<dd onclick="E();" class="name">
+								<label><span>1~2회 설사를 했다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>건강하고 식욕도 있다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>금방 피곤해지고 기침, 호흡곤란, 구토 등의 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>몸이 자라지 않기도 한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function F() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심근증";
@@ -205,37 +208,37 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>F</b>증상
-					</dt>
-					<dd onclick="F();" class="name">
-						<label><span>1~2회 설사를 했다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>건강하고 식욕도 있다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>주저앉는다, 턱을 들고 숨쉰다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>눕지 못한다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>호흡을 괴로워한다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>실신이 몇 분 이상 지속된다</span></label>
-					</dd>
-					<dd onclick="F();" class="name">
-						<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>F</b>증상
+							</dt>
+							<dd onclick="F();" class="name">
+								<label><span>1~2회 설사를 했다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>건강하고 식욕도 있다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>주저앉는다, 턱을 들고 숨쉰다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>눕지 못한다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>호흡을 괴로워한다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>기침 횟수가 많고 장기화된다, 열이 있다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>실신이 몇 분 이상 지속된다</span></label>
+							</dd>
+							<dd onclick="F();" class="name">
+								<label><span>의식을 잃은 후 바로 의식을 되찾았지만 기운이 없다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function G() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심장사상충 감염";
@@ -246,34 +249,34 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>G</b>증상
-					</dt>
-					<dd onclick="G();" class="name">
-						<label><span>1~2회 설사를 했다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>건강하 식욕도 있다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>숨을 쉬기 힘들어한다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>기침을 자주 한다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>혈액이 섞인 소변 또는 대변을 본다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>탈수증상을 보인다</span></label>
-					</dd>
-					<dd onclick="G();" class="name">
-						<label><span>쉽게 피곤해한다(운동을 꺼린다)</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>G</b>증상
+							</dt>
+							<dd onclick="G();" class="name">
+								<label><span>1~2회 설사를 했다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>건강하 식욕도 있다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>숨을 쉬기 힘들어한다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>기침을 자주 한다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>혈액이 섞인 소변 또는 대변을 본다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>탈수증상을 보인다</span></label>
+							</dd>
+							<dd onclick="G();" class="name">
+								<label><span>쉽게 피곤해한다(운동을 꺼린다)</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function H() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="쿠싱증후군";
@@ -284,25 +287,25 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>							
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>H</b>증상
-					</dt>
-					<dd onclick="H();" class="name">
-						<label><span>탈모를 동반한다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>다음다뇨 증상이 나타난다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>식욕이 증진하여 평소보다 많이 먹는다</span></label>
-					</dd>
-					<dd onclick="H();" class="name">
-						<label><span>복부가 늘어지고 다리 힘이 약해진다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>H</b>증상
+							</dt>
+							<dd onclick="H();" class="name">
+								<label><span>탈모를 동반한다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>다음다뇨 증상이 나타난다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>식욕이 증진하여 평소보다 많이 먹는다</span></label>
+							</dd>
+							<dd onclick="H();" class="name">
+								<label><span>복부가 늘어지고 다리 힘이 약해진다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function I() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="소화기 종양";
@@ -313,40 +316,42 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>				
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>I</b>증상
-					</dt>
-					<dd onclick="I();" class="name">
-						<label><span>배 일부가 붓는다</span></label>
-					</dd>
-					<dd onclick="I();" class="name">
-						<label><span>설사나 무른 변이 만성적으로 계속된다</span></label>
-					</dd>
-					<dd onclick="I();" class="name">
-						<label><span>변에 벌레가 있다</span></label>
-					</dd>
-					<dd onclick="I();" class="name">
-						<label><span>기운이 없어진다</span></label>
-					</dd>
-					<dd onclick="I();" class="name">
-						<label><span>체중이 감소한다</span></label>
-					</dd>
-					<dd onclick="I();" class="name">
-						<label><span>이따금 토한다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>I</b>증상
+							</dt>
+							<dd onclick="I();" class="name">
+								<label><span>배 일부가 붓는다</span></label>
+							</dd>
+							<dd onclick="I();" class="name">
+								<label><span>설사나 무른 변이 만성적으로 계속된다</span></label>
+							</dd>
+							<dd onclick="I();" class="name">
+								<label><span>변에 벌레가 있다</span></label>
+							</dd>
+							<dd onclick="I();" class="name">
+								<label><span>기운이 없어진다</span></label>
+							</dd>
+							<dd onclick="I();" class="name">
+								<label><span>체중이 감소한다</span></label>
+							</dd>
+							<dd onclick="I();" class="name">
+								<label><span>이따금 토한다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 </body>
 </html>

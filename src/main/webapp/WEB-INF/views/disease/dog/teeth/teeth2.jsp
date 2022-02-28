@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="resources/css/petraschu.css">
 </head>
 <body>
-	<div class="container">
-		<ul class="grid">
-			<script type="text/javascript">
+	<div class="main-preview">
+		<h3 class="recruit__header">질병 사전</h3>
+		<div class="recruit-content" align="center">
+			<div class="container">
+				<ul class="grid">
+					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="구내염";
@@ -21,19 +24,19 @@
 					var location = document.querySelector('#titleID').offsetTop;
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
-			</script>		
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>A</b>증상
-					</dt>
-					<dd onclick="A();" class="name">
-						<label><span>밥을 먹기 힘들어 하고 구취가 난다</span></label>
-					</dd>
-					<dd onclick="A();" class="name">
-						<label><span>식욕이 없어진다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+			</script>
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>A</b>증상
+							</dt>
+							<dd onclick="A();" class="name">
+								<label><span>밥을 먹기 힘들어 하고 구취가 난다</span></label>
+							</dd>
+							<dd onclick="A();" class="name">
+								<label><span>식욕이 없어진다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="치주 질환";
@@ -45,21 +48,21 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>B</b>증상
-					</dt>
-					<dd onclick="B();" class="name">
-						<label><span>딱딱한 음식이 잇몸에 닿으면 아파한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>치구나 치석이 쌓이고 음식을 잘 먹지 못한다</span></label>
-					</dd>
-					<dd onclick="B();" class="name">
-						<label><span>구취가 심해진다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>B</b>증상
+							</dt>
+							<dd onclick="B();" class="name">
+								<label><span>딱딱한 음식이 잇몸에 닿으면 아파한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>치구나 치석이 쌓이고 음식을 잘 먹지 못한다</span></label>
+							</dd>
+							<dd onclick="B();" class="name">
+								<label><span>구취가 심해진다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="충치";
@@ -71,21 +74,21 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>C</b>증상
-					</dt>
-					<dd onclick="C();" class="name">
-						<label><span>이빨이 갈색이나 검은색으로 변한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>구멍이 뚫리기도 한다</span></label>
-					</dd>
-					<dd onclick="C();" class="name">
-						<label><span>통증 때문에 먹지 못하거나 구취가 심해진다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>C</b>증상
+							</dt>
+							<dd onclick="C();" class="name">
+								<label><span>이빨이 갈색이나 검은색으로 변한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>구멍이 뚫리기도 한다</span></label>
+							</dd>
+							<dd onclick="C();" class="name">
+								<label><span>통증 때문에 먹지 못하거나 구취가 심해진다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="치근첨주위농양";
@@ -97,21 +100,21 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>D</b>증상
-					</dt>
-					<dd onclick="D();" class="name">
-						<label><span>딱딱한 것을 깨물지 못한다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>고름이 고여 얼굴이 부어오른다</span></label>
-					</dd>
-					<dd onclick="D();" class="name">
-						<label><span>코에서 피가 나거나 고름이 나기도 한다</span></label>
-					</dd>
-				</dl></li>
-			<script type="text/javascript">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>D</b>증상
+							</dt>
+							<dd onclick="D();" class="name">
+								<label><span>딱딱한 것을 깨물지 못한다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>고름이 고여 얼굴이 부어오른다</span></label>
+							</dd>
+							<dd onclick="D();" class="name">
+								<label><span>코에서 피가 나거나 고름이 나기도 한다</span></label>
+							</dd>
+						</dl></li>
+					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="구강종양";
@@ -123,36 +126,38 @@
 					window.scrollTo({top:location,  behavior:'smooth'});
 				}
 			</script>
-			<li class="grid-12"><dl class="search-category-list">
-					<dt class="title title--small">
-						<b>E</b>증상
-					</dt>
-					<dd onclick="E();" class="name">
-						<label><span>혹이나 종기가 입안에 생겼거나 점막이 문드러진다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>침이 흐르거나 입을 벌린 상태로 있는다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>음식물을 잘 물지 못한다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>검은 종양으로 점막이나 혀에 생긴다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>이가 갈색이나 검게 변색되었다</span></label>
-					</dd>
-					<dd onclick="E();" class="name">
-						<label><span>입속에 멍울이나 혹이 있다</span></label>
-					</dd>
-				</dl></li>
-		</ul>
-		<div class="disease-container" style="display: none;">
-			<div class="disease-block">
-				<span id="titleID" class="title">test</span>
-				<p id="prID" class="pr">test2</p>
-				<div class="disease-img">
-					<img id="imgId" src="" alt="이미지">
+					<li class="grid-12"><dl class="search-category-list">
+							<dt class="title title--small">
+								<b>E</b>증상
+							</dt>
+							<dd onclick="E();" class="name">
+								<label><span>혹이나 종기가 입안에 생겼거나 점막이 문드러진다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>침이 흐르거나 입을 벌린 상태로 있는다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>음식물을 잘 물지 못한다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>검은 종양으로 점막이나 혀에 생긴다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>이가 갈색이나 검게 변색되었다</span></label>
+							</dd>
+							<dd onclick="E();" class="name">
+								<label><span>입속에 멍울이나 혹이 있다</span></label>
+							</dd>
+						</dl></li>
+				</ul>
+				<div class="disease-container" style="display: none;">
+					<div class="disease-block">
+						<span id="titleID" class="title">test</span>
+						<p id="prID" class="pr">test2</p>
+						<div class="disease-img">
+							<img id="imgId" src="" alt="이미지">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
