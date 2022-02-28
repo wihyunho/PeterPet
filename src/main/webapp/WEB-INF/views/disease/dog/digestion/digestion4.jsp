@@ -178,7 +178,7 @@
 					<dt class="title title--small">
 						<b>E</b>증상
 					</dt>
-					<dd conclick="E();" lass="name">
+					<dd onclick="E();" class="name">
 						<label><span>혈변이 나온다</span></label>
 					</dd>
 					<dd onclick="E();" class="name">
@@ -260,19 +260,19 @@
 					<dt class="title title--small">
 						<b>G</b>증상
 					</dt>
-					<dd onclick="A();" class="name">
+					<dd onclick="G();" class="name">
 						<label><span>혈변이 나온다</span></label>
 					</dd>
-					<dd onclick="A();" class="name">
+					<dd onclick="G();" class="name">
 						<label><span>구토를 동반한다</span></label>
 					</dd>
-					<dd onclick="A();" class="name">
+					<dd onclick="G();" class="name">
 						<label><span>급격하게 마른다</span></label>
 					</dd>
-					<dd onclick="A();" class="name">
+					<dd onclick="G();" class="name">
 						<label><span>배를 아파한다</span></label>
 					</dd>
-					<dd onclick="A();" class="name">
+					<dd onclick="G();" class="name">
 						<label><span>심한 설사를 반복한다</span></label>
 					</dd>
 				</dl></li>

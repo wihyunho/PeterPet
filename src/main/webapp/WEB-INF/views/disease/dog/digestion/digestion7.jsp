@@ -143,7 +143,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="심장사상충 감염";
 					document.getElementById("prID").innerHTML ="심장사상충은 모기가 전파하는 기생충성 전염병, 기침 증상으로 성충이 된 심사사상충이 반려견의 심장과 혈관에 번식하여 사망까지 이르게 합니다. 사망률도 매우 높고 뚜렷한 치료방법이 없어 한달에 한 번 꼴로 주기적인 예방을 하는 것이 최선의 방법입니다. 초기 약물치료가 가능하나, 증상이 심할 경우 외과적 수술도 고려하셔야 합니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/digestion/digestion_14.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/digestion/digestion_12.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;
@@ -210,7 +210,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="구내염";
 					document.getElementById("prID").innerHTML ="구내염은 세균감염. 영양결핍, 상처 등에 의해 발병하는 질병으로, 통증이 심해질 경우 반려견이 제대로 음식물을 씹지 못할 정도로고통스러워 하는 질병이다. 치과적 진단 후 항생제 투여 또는 염증치료를 반드시 수반해야 합니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/digestion/digestion_15.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/digestion/digestion_13.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

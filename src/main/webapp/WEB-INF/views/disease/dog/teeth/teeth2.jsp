@@ -116,7 +116,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="구강종양";
 					document.getElementById("prID").innerHTML ="구강종양은 특별한 원인이 없이 단지 노화가 되면서 발생하는 질병으로, 정기적인 검진이 꼭 합니다.강아지에게 자주 발생하는 종양 중에는 잇몸에 생기는 종양, 치은종이 대표적이며 스케일링과 발치 수술로 치료합니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/teeth/teeth_3.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/teeth/teeth_2.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

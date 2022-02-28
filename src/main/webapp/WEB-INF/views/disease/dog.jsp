@@ -195,12 +195,12 @@
 					<dt class="title">생식기 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/ODVkZWE5NzAtYjliMS00NTk4LTllOTAtODllMWFiYmZhYmNm"
+							href="DogDisease_Gentials_1"
 							class="">생식기에서 고름이 나온다(수컷)</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NjA5MGEwOTktOWVjYS00YjBjLWEwNTctMDdlNWQ2MzU5NDI5"
+							href="DogDisease_Gentials_2"
 							class="">생식기에서 고름이 나온다(암컷)</a>
 					</dd>
 				</dl></li>
@@ -208,17 +208,17 @@
 					<dt class="title">귀 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/YTI5Mzc5NWMtYTQzNS00NjRkLWFhODEtMzIzZmI5NzM1NDBh"
+							href="DogDisease_Ears_1"
 							class="">귀를 털거나 긁는다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OTk2NGM5YjEtZmU4YS00ZTBmLTg2NzMtYWRiYTczOTI4MDIx"
+							href="DogDisease_Ears_2"
 							class="">귀가 들리지 않는다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MTMzMWMxODMtZGM5MS00NzFlLTlkZjAtZTFlZTgyZDI1NmYy"
+							href="DogDisease_Ears_3"
 							class="">귀를 가려워한다, 아파한다, 머리를 흔든다</a>
 					</dd>
 				</dl></li>
@@ -226,22 +226,22 @@
 					<dt class="title">소변 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/NTRjYjMwNTItMmZhNi00MGJkLTk5MzUtYzU4ZWI1ZmMzN2Jm"
+							href="DogDisease_Pee_1"
 							class="">소변량이 줄어든다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YjgxMzllMjUtMzFiMy00MjdmLWI4YzctMGNhMzllOTQxNjEw"
+							href="DogDisease_Pee_2"
 							class="">소변을 자주 지린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NWI0NjU3ZDgtODRhYy00NDZhLTg5ODUtYzA4ZDg1Njk3NWJl"
+							href="DogDisease_Pee_3"
 							class="">소변이 나오지 않는다, 보기 힘들어 한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MWFmMmUzMTktYTk2ZS00NzIzLTgzMzMtNGJlZjA5YjkzZTY4"
+							href="DogDisease_Pee_4"
 							class="">소변 색이 이상하다</a>
 					</dd>
 				</dl></li>
@@ -249,37 +249,37 @@
 					<dt class="title">피부 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/YjdkNTAzMjQtY2QwNC00ODNlLWJjMzctOTMzYmRmOWVhMTk2"
+							href="DogDisease_Skin_1"
 							class="">피부가 노랗다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MTY1ZTcwMzMtOTIxYS00ZjQ2LTkzMmUtODhlOWRmNGFiMDIz"
+							href="DogDisease_Skin_2"
 							class="">다치지 않았는데 보라색 멍이 들었다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZTU5MmE3Y2MtZDYxYi00OTFhLWE4NDktZTVmYTVlMDVjMzBl"
+							href="DogDisease_Skin_3"
 							class="">이상한 냄새가 난다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MGMxZjc4ZjItYTM0Yy00MGE4LWE4MTctOGJjYTg4MmFkY2Mz"
+							href="DogDisease_Skin_4"
 							class="">멍울이 있다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YWZiMWFlNmMtM2IyZi00ZmRiLThjNjYtZmY2NDczZDg3OWZj"
+							href="DogDisease_Skin_5"
 							class="">붉은 기가 있다, 습진이 나타난다, 가려워한다, 비듬이 많다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/M2VhOWI3MTAtODk4ZS00OGVhLThkNmYtMDMwNzNjYzk1NGEy"
+							href="DogDisease_Skin_6"
 							class="">털이 빠진다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NDRiMjIyZWQtZGVlOS00NDIwLThkNTMtY2I0ZjAyZDdlMmM2"
+							href="DogDisease_Skin_7"
 							class="">붓는다</a>
 					</dd>
 				</dl></li>
@@ -287,37 +287,37 @@
 					<dt class="title">소화기 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/YjkyYTY0NGMtNWNiNy00MTU1LTk3ZjgtNTE4ZDRkOTc5OTA3"
+							href="DogDisease_Digestion_1"
 							class="">반복적으로 토한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YmYwMTJiMDgtYWY0Ny00ODBmLWFkZGEtNWFkNzAyODgzZjZk"
+							href="DogDisease_Digestion_2"
 							class="">식사 직후에 심하게 자주 토한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/OThiN2FkNzYtMDNlNC00ZjAxLWJmZjUtZGQyYmJmM2QzZDVi"
+							href="DogDisease_Digestion_3"
 							class="">토하려는 기색이 있고, 입을 핥거나 침을 흘린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZjczM2U1M2QtZWUxMi00MWMzLWI2ZmQtMmYxM2UxZTc5ZTUx"
+							href="DogDisease_Digestion_4"
 							class="">설사를 한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MGZkZGNlZjgtNDk5ZS00NWQ3LWIyMTAtYzZiNzllZjZiZWZh"
+							href="DogDisease_Digestion_5"
 							class="">변비를 보인다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/MmU5NDFiMTctMDkwYi00YWEyLWFlYzUtZGUxZTdiOTJhYjUx"
+							href="DogDisease_Digestion_6"
 							class="">피를 토한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ODlmYTczZTItMGMxNi00MTdiLWI1NjQtYjE5YmJmMDVkYTcz"
+							href="DogDisease_Digestion_7"
 							class="">마른다</a>
 					</dd>
 				</dl></li>
@@ -325,17 +325,17 @@
 					<dt class="title">구강 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/ODdlZmM1NDgtOGYyOS00ZjE5LTliMWYtOGY3MzBjMDg4Yjk4"
+							href="DogDisease_Teeth_1"
 							class="">체중 감소, 물을 많이 마시고 소변량이 증가하는 등의 증상을 동반한다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZThmZTI5MTktNjE0Yi00N2M2LTg1NWItNWRkZjcwN2YzMmYw"
+							href="DogDisease_Teeth_2"
 							class="">침이 많다, 입안이나 잇몸이 붉고 출혈이 있다, 이가 흔들린다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/NzQ4YThmN2QtZjVkOS00ZjJlLTliOWMtNzVmNDVkYWFiMDhi"
+							href="DogDisease_Teeth_3"
 							class="">이가 갈색이나 검게 변색되었다</a>
 					</dd>
 				</dl></li>
@@ -343,7 +343,7 @@
 					<dt class="title">체온 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/NWM3YTJiYTQtMmJiMi00YWY0LWE3MjItMTcwZTQ0MDc4MjQ5"
+							href="DogDisease_Temperature_1"
 							class="">열 이외에도 심각한 증상을 동반한다</a>
 					</dd>
 				</dl></li>
@@ -351,7 +351,7 @@
 					<dt class="title">기관지 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/MmMzYWE1YzItYjUwYi00ZWRkLTg0YzAtZWYxMzQ0ODlkM2Uz"
+							href="DogDisease_Bronchial_1"
 							class="">기침을 한다</a>
 					</dd>
 				</dl></li>
@@ -359,12 +359,12 @@
 					<dt class="title">혈관 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/ODU0NjA3MmItZGJlZS00NWI2LTg0MzgtZDg1ZGM0NjdiYjli"
+							href="DogDisease_Vessel_1"
 							class="">전신에 경련을 일으킨다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/YjJiOTA4M2YtZjQ0Ny00NzM4LTg0OGQtZjRiNWRiZjY3YTA5"
+							href="DogDisease_Vessel_2"
 							class="">의식을 잃는다</a>
 					</dd>
 				</dl></li>
@@ -372,12 +372,12 @@
 					<dt class="title">기타 이상</dt>
 					<dd class="name">
 						<a
-							href="/search/disease/N2RkMDExYjEtMzA3OS00M2RkLTg1ZjYtZWVkYmE1MzlkMTNk"
+							href="DogDisease_Etc_1"
 							class="">배가 부어오른다</a>
 					</dd>
 					<dd class="name">
 						<a
-							href="/search/disease/ZWRjNGRiNWMtZmRmNS00OGM2LWIzYjgtMmM5ZDcxNzY5ZmIz"
+							href="DogDisease_Etc_2"
 							class="">발육이 늦다</a>
 					</dd>
 				</dl></li>

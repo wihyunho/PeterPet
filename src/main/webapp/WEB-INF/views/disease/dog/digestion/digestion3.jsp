@@ -26,16 +26,16 @@
 					<dt class="title title--small">
 						<b>A</b>증상
 					</dt>
-					<dd class="name">
+					<dd onclick="A();" class="name">
 						<label><span>배에 복수가 차거나 마른다</span></label>
 					</dd>
-					<dd class="name">
+					<dd onclick="A();" class="name">
 						<label><span>경련이나 근력이 떨어져 비틀거린다</span></label>
 					</dd>
-					<dd class="name">
+					<dd onclick="A();" class="name">
 						<label><span>눈, 입, 피부색이 노랗게 되는 황달증상이 나타난다</span></label>
 					</dd>
-					<dd class="name">
+					<dd onclick="A();" class="name">
 						<label><span>식욕이나 기운이 없어진다</span></label>
 					</dd>
 				</dl></li>

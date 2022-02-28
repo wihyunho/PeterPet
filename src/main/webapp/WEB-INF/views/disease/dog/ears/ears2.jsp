@@ -70,7 +70,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="종양";
 					document.getElementById("prID").innerHTML ="반려견에게 발병하는 주요 종양은, 가장 흔희 생기는 유선종양, 말랑말랑한 혹 덩어리가 생기는 지방종, 피부종양인 비만세포종, 혈관 내비 세포의 악성 종양인 혈관 육종, 림프절이 확장하는 림프종 등 그 종류가 매우 다양합니다. 종양의 종류와 시기에 따라 수술과 꾸준한 항암치료로 상태가 호전될 수 있습니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/ears/ears_3jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/ears/ears_3.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

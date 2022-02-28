@@ -317,7 +317,7 @@ public class DogDiseaseController {
 	public String DogDisease_Gentials_1(HttpServletRequest request) {
 		udao.loginCheck(request);
 		
-		request.setAttribute("contentPage", "disease/dog/gentials/gentials1.jsp");
+		request.setAttribute("contentPage", "disease/dog/genitals/genitals1.jsp");
 		return "index";
 	}
 	
@@ -325,7 +325,7 @@ public class DogDiseaseController {
 	public String DogDisease_Gentials_2(HttpServletRequest request) {
 		udao.loginCheck(request);
 		
-		request.setAttribute("contentPage", "disease/dog/gentials/gentials2.jsp");
+		request.setAttribute("contentPage", "disease/dog/genitals/genitals2.jsp");
 		return "index";
 	}
 	
@@ -438,14 +438,6 @@ public class DogDiseaseController {
 		udao.loginCheck(request);
 		
 		request.setAttribute("contentPage", "disease/dog/skin/skin7.jsp");
-		return "index";
-	}
-	
-	@RequestMapping(value = "/DogDisease_Digestion_1", method = RequestMethod.GET)
-	public String DogDisease_Digestion_1(HttpServletRequest request) {
-		udao.loginCheck(request);
-		
-		request.setAttribute("contentPage", "disease/dog/digestion/digestion1.jsp");
 		return "index";
 	}
 	

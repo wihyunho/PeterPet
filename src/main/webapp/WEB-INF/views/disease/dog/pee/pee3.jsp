@@ -187,7 +187,7 @@
 					<dd onclick="E();" class="name">
 						<label><span>구토를 동반한다</span></label>
 					</dd>
-					<dd conclick="E();" lass="name">
+					<dd onclick="E();" class="name">
 						<label><span>기운이나 식욕이 없다</span></label>
 					</dd>
 					<dd onclick="E();" class="name">
@@ -228,7 +228,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="방광염";
 					document.getElementById("prID").innerHTML ="방광염으로 소변이 잘 나오지 않을 경우 구토를 할 수 있습니다. 실내 온도 차이가 원인입니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_9.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_4.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

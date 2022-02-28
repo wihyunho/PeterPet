@@ -221,7 +221,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="관절염";
 					document.getElementById("prID").innerHTML ="관절염은 노화, 부상, 감염 등의 질병으로 인해 염증이 발생하며, 약물치료와 수술이 요구되는 질병입니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_4.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_5.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

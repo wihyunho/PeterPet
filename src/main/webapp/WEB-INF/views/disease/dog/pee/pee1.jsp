@@ -80,8 +80,8 @@
 			<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
-					document.getElementById("titleID").innerHTML ="요로결석";
-					document.getElementById("prID").innerHTML ="요로결석은 음수량, 음식, 세균감염, 견종에 따라 발생하는 질병으로,수술로 치료합니다.";
+					document.getElementById("titleID").innerHTML ="급성 신부전";
+					document.getElementById("prID").innerHTML ="급성 신부전은 선천적인 경우 또는 독성물질 섭취, 감염, 심장질환, 부정맥, 탈수 등으로 발생하는 질병으로 혈액 투석으로 치료합니다.";
 					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_3.jpg";
 					
 					

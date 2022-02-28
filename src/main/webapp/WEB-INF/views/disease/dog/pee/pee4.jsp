@@ -71,8 +71,8 @@
 		<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
-					document.getElementById("titleID").innerHTML ="";
-					document.getElementById("prID").innerHTML ="";
+					document.getElementById("titleID").innerHTML ="요독증";
+					document.getElementById("prID").innerHTML ="신장의 기능이 저하되어 요소, 질소 등의 노폐물이 소변으로 배출되지 못하면 채내에 쌓여서 요독증을 일으킵니다. 다른 장기에도 심각한 영향을 미치고, 말기에는 경련이나 혼수상태 등의 신경증상을 일으킵니다. 치료방법으로는 수액을 맞히는 동시에 약물요법, 식사요법을 병행합니다.";
 					document.getElementById("imgId").src = "#";
 					
 					
@@ -106,8 +106,8 @@
 		<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
-					document.getElementById("titleID").innerHTML ="";
-					document.getElementById("prID").innerHTML ="";
+					document.getElementById("titleID").innerHTML ="전립선염";
+					document.getElementById("prID").innerHTML ="전립선이 커지는 질환으로, 전립선이 세균에 감염되어 염증을 일으킨 상태입니다. 중성화 수술을 하지 않은 성견, 노견에게서 많이 보입니다. 치료방법으로는 항생물질이나 항생제를 투여합니다. 재발률이 높은 질환이므로 재발을 방지하기 위해 중성화 수술을 하는 경우도 있습니다.";
 					document.getElementById("imgId").src = "#";
 					
 					
@@ -141,7 +141,7 @@
 					$('.disease-container').css('display', 'block');
 					document.getElementById("titleID").innerHTML ="방광염";
 					document.getElementById("prID").innerHTML ="방광염으로 소변이 잘 나오지 않을 경우 구토를 할 수 있습니다. 실내 온도 차이가 원인입니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_12.jpg";
+					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_4.jpg";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;
@@ -201,9 +201,9 @@
 			<script type="text/javascript">
 				function G() {
 					$('.disease-container').css('display', 'block');
-					document.getElementById("titleID").innerHTML ="급성 신부전";
-					document.getElementById("prID").innerHTML ="급성 신부전은 선천적인 경우 또는 독성물질 섭취, 감염, 심장질환, 부정맥, 탈수 등으로 발생하는 질병으로 혈액 투석으로 치료합니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_10.jpg";
+					document.getElementById("titleID").innerHTML ="급성 간염";
+					document.getElementById("prID").innerHTML ="바이러스 감염이나 중독 등에 의해 간장이 장해를 받아 발생하는 질환입니다. 치료방법은 수액을 맞히거나 해독제를 투여해서 응급처지를 한 후 충분한 휴식과 영양을 공급해 간 기능 회복을 촉진시킵니다. 평소 고지방 식단을 피하고 양질의 단백질로 구성된 처방식을 주는 것이 좋습니다.";
+					document.getElementById("imgId").src = "#";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;
@@ -242,9 +242,9 @@
 			<script type="text/javascript">
 				function H() {
 					$('.disease-container').css('display', 'block');
-					document.getElementById("titleID").innerHTML ="급성 신부전";
-					document.getElementById("prID").innerHTML ="급성 신부전은 선천적인 경우 또는 독성물질 섭취, 감염, 심장질환, 부정맥, 탈수 등으로 발생하는 질병으로 혈액 투석으로 치료합니다.";
-					document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_10.jpg";
+					document.getElementById("titleID").innerHTML ="바베시아증";
+					document.getElementById("prID").innerHTML ="혈액 속에서 기생하는 바베시아라는 원충에 감염되어 일어나는 중증의 빈혈이 특징인 질병입니다. 바베시아는 참진드기를 매개로 합니다. 치료방법은 빈혈이나 황달의 치료 외에 황원충제를 투여합니다. 재발이 많은 질병으므로 완치시키는 것이 중요합니다. 참진드기가 기생하지 않도록 정기적으로 살충제를 주변에 살포하는 것이 예방대책입니다.";
+					document.getElementById("imgId").src = "#";
 					
 					
 					var location = document.querySelector('#titleID').offsetTop;

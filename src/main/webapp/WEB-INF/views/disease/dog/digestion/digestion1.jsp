@@ -232,7 +232,7 @@
 						<label><span>토한 내용물이 노랗다</span></label>
 					</dd>
 					<dd onclick="F();" class="name">
-						<label><<span>토한 내용물에 피가 섞여 있다</span></label>
+						<label><span>토한 내용물에 피가 섞여 있다</span></label>
 					</dd>
 					<dd onclick="F();" class="name">
 						<label><span>격통 때문에 쇼크증상이 나타난다</span></label>
