@@ -27,15 +27,10 @@
 
 	<beans:bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		<beans:property name="url"
-			value="jdbc:oracle:thin:@localhost:1521:xe" />
-<<<<<<< HEAD
+		<beans:property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
 		<beans:property name="username" value="c##whh" />
 		<beans:property name="password" value="whh" />
-=======
-		<beans:property name="username" value="system" />
-		<beans:property name="password" value="oracle" />
->>>>>>> b047e55e25bc6a8247f5dd7a0c4bfae0c7982f36
+
 	</beans:bean>
 
 	<beans:bean id="transactionManager"
