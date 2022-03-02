@@ -21,7 +21,7 @@ h1{
 	font-family: "Hanna";
 }
 
-/*Å×ÀÌºí °ü·Ã µðÀÚÀÎ Ã³¸®*/
+/*ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½*/
 thead th {
  background-color: #3D9987;
  color: white;
@@ -40,7 +40,7 @@ tr th:last-child {
  border-bottom-right-radius: 6px;
 }
 
-/*¸ð´Þ ÆÄ¾÷Ã¢ °ü·Ã µðÀÚÀÎ Ã³¸®*/
+/*ï¿½ï¿½ï¿½ ï¿½Ä¾ï¿½Ã¢ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½*/
 .vertical-alignment-helper{
 	display: table;
 	height: 100%;
@@ -236,7 +236,7 @@ height:40px;
 .text-red {
     color: #e74c3c;
 } 
-/* ÀüÃ¼ ¸µÅ© °ü·Ã ¿µ¿ª */
+/* ï¿½ï¿½Ã¼ ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 a {
 	color: #000000;
 	text-decoration: none;
@@ -247,58 +247,58 @@ a:hover {
 	text-decoration: none;
 	cursor: pointer;
 }
-/* ³×ºñ°ÔÀÌ¼Ç  ¿µ¿ª */
-.navbar-default { /* ³×ºñ°ÔÀÌ¼Ç ¹Ù ¹è°æ»ö»ó*/
+/* ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½  ï¿½ï¿½ï¿½ï¿½ */
+.navbar-default { /* ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	background-color: #F8F8F8;
 	border-color: #F8F8F8;
 	border-bottom-color: #ffffff;
 	border-bottom-width: 3px;
 	border-radius: 0px;
 }
-.navbar-default .navbar-brand{/*³×ºñ°ÔÀÌ¼Ç Á¦¸ñ »ö»ó*/
+.navbar-default .navbar-brand{/*ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 	color: #ffffff;
 	padding-top: 10px;
 	font-family: 'Hanna'; 
 }
-.navbar-default .navbar-brand img{/*³×ºñ°ÔÀÌ¼Ç Á¦¸ñ »ö»ó*/
+.navbar-default .navbar-brand img{/*ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 	height: 50px;
 }
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus{ /*³×ºñ°ÔÀÌ¼Ç Á¦¸ñ¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§ ¾îÂ¥ÇÇ ±×¸² »ðÀÔÀÌ¶ó ´õ¹ÌÀÓ*/
+.navbar-default .navbar-brand:focus{ /*ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ ï¿½×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 	color : #dddddd;
 	background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus{/*¼±ÅÃµÈ ³»ºñ°ÔÀÌ¼Ç ¸¶¿ì½º ÀÌº¥Æ®*/
+.navbar-default .navbar-nav > .active > a:focus{/*ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ì½º ï¿½Ìºï¿½Æ®*/
 	color: #000000;
 }
-.navbar-default .navbar-nav > li > a{ /*³×ºñ°ÔÀÌ¼Ç ±ÛÀÚ ±âº» ÆùÆ® º¯°æ*/
+.navbar-default .navbar-nav > li > a{ /*ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½âº» ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½*/
 	font-family: 'Noto Sans KR';
 }
 .navbar-default .navbar-nav > .li > a:hover,
-.navbar-default .navbar-nav > .li > a:focus{/*³»ºñ°ÔÀÌ¼Ç ±ÛÀÚ¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§*/
+.navbar-default .navbar-nav > .li > a:focus{/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½*/
 	color: #000000;
 	background-color: #dddddd; 
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus{/*µå¶ø´Ù¿î¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§*/
+.navbar-default .navbar-nav > .open > a:focus{/*ï¿½ï¿½ï¿½ï¿½Ù¿î¿¡ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½*/
 	color: #000000;
 	text-decoration: #dddddd;
 }
-.dropdown-menu > .active > a{ /*µå·Ó½ÃÅ² ¸Þ´º ¼±ÅÃ½Ã »ö»ó*/
+.dropdown-menu > .active > a{ /*ï¿½ï¿½Ó½ï¿½Å² ï¿½Þ´ï¿½ ï¿½ï¿½ï¿½Ã½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 	background-color: #dddddd; 
 	color: #000000;
 }
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus{ /*Åä±Û¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§*/
+.navbar-default .navbar-toggle:focus{ /*ï¿½ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½*/
 	background-color: #F8F8F8;
 }
-.navbar-default .navbar-toggle .icon-bar{/*Åä±Û ¾ÆÀÌÄÜ ¹Ù»ö»ó*/
+.navbar-default .navbar-toggle .icon-bar{/*ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù»ï¿½ï¿½ï¿½*/
 	background-color: #dddddd; 
 }
-@media (max-width: 767px){/*ÀÛÀº È­¸éÀÏ ¶§ µå¶ø´Ù¿î ¾ÆÀÌÅÛ¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§*/
+@media (max-width: 767px){/*ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½*/
 	.navbar-default .navbar-nav > .open .dropdown-menu > li > a{
 		color: #777777;
 	}
@@ -307,7 +307,7 @@ a:hover {
 		color: #777777;
 	}
 }
-/* ³»ºñ°ÔÀÌ¼Ç ¹Ù ±æÀÌ ¼öÁ¤*/
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 .navbar-fixed-top{
 	min-height: 70px;
 }
@@ -325,7 +325,7 @@ a:hover {
 		padding-bottom: 0px;
 		line-height: 40px;
 	}
-	.navbar-default .navbar-brand img{/*³×ºñ°ÔÀÌ¼Ç Á¦¸ñ »ö»ó*/
+	.navbar-default .navbar-brand img{/*ï¿½×ºï¿½ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 	height: 30px;
 	}
 	.caret{
@@ -355,7 +355,7 @@ a:hover {
 .main-preview {
   padding: 0 100px;
 }
-@media (max-width: 767px){/*ÀÛÀº È­¸éÀÏ ¶§ µå¶ø´Ù¿î ¾ÆÀÌÅÛ¿¡ ¸¶¿ì½º¸¦ ¿Ã·ÈÀ» ¶§*/
+@media (max-width: 767px){/*ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ù¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½ì½ºï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ ï¿½ï¿½*/
 	.main-preview {
 	  padding: 0 0;
 	}
@@ -436,7 +436,7 @@ a:hover {
 	cursor: pointer;
 }
 
-/* ½æ³×ÀÏ °Ô½ÃÆÇ*/
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô½ï¿½ï¿½ï¿½*/
 .card-group {
   display: flex;
   flex-wrap: wrap;
@@ -701,7 +701,7 @@ a:hover {
 
 
 
-/*QA³ª TIP °Ô½ÃÆÇ ÀÛ¼ºÀÚ¿Í ³¯Â¥ Ç¥½Ã ÇÒÁö ¸»Áö*/
+/*QAï¿½ï¿½ TIP ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 @media(max-width:768px) {
     #smallhidden {
 		display:none;
@@ -721,7 +721,7 @@ a:hover {
 	}
 }
 
-/*½½¶óÀÌ´õ*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½*/
 /*GLOBALS*/
 *{margin:0; padding:0; list-style:none;}
 a{text-decoration:none; color:#666;}
