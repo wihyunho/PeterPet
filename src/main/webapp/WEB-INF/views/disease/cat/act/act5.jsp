@@ -40,7 +40,7 @@
 							$('.disease-container').css('display', 'block');
 							document.getElementById("titleID").innerHTML = "비타민e결핍증(지방조직염)";
 							document.getElementById("prID").innerHTML = "주로 생선을 먹어 비타민E를 섭취하지 못하는 고양이에게는 비타민E결핍증이 생깁니다. 주로 먹는 참치가 가장 큰 원인으로 생각됩니다. 지방조직염은 지방조직에 염증이 생기는 상태입니다. 지각과민증상이 나타나 온몸에 통증이 느껴지는지 만지거나 아는 것을 매우 싫어합니다. 치료방법으로는 지방조직을 조직검사하여 진단합니다. 그리고 비타민E를 투여하고 영양이 골고루 함유된 양질의 사료를 줍니다.";
-							document.getElementById("imgId").src = "resources/images/disease/cat/act/cat_5_2.jpg";
+							document.getElementById("imgId").src = "resources/images/disease/cat/act/act_5_2.jpg";
 
 							var location = document.querySelector('#titleID').offsetTop;
 							window.scrollTo({

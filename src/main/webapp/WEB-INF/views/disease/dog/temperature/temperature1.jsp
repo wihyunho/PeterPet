@@ -16,6 +16,8 @@
 					<script type="text/javascript">
 				function A() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'block');
+					
 					document.getElementById("titleID").innerHTML ="열사병";
 					document.getElementById("prID").innerHTML ="열사병은 반려견이 땀으로 체온을 조절하기 어려운 신체구조를 갖고 있기 때문에 생깁니다. 뜨겁고 환기가잘 안되는 공간에서 걸릴 확률이 높으며 몸의 온도를 내리기 위해 물을 뿌려주거나 적신 타월을 감싸주고 물을 최대한 많이 공급해 주어야 증상을 완화시킬 수 있습니다.";
 					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_1.jpg";
@@ -66,6 +68,8 @@
 					<script type="text/javascript">
 				function B() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'block');
+					
 					document.getElementById("titleID").innerHTML ="자궁 축농증";
 					document.getElementById("prID").innerHTML ="자궁 축농증은 세균 감염으로 자궁에 농이 차는 질환으로자궁과 난소를 제거하는 수술로 치료합니다.";
 					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_2.jpg";
@@ -120,6 +124,8 @@
 					<script type="text/javascript">
 				function C() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'block');
+					
 					document.getElementById("titleID").innerHTML ="종양";
 					document.getElementById("prID").innerHTML ="반려견에게 발병하는 주요 종양은, 가장 흔희 생기는 유선종양, 말랑말랑한 혹 덩어리가 생기는 지방종, 피부종양인 비만세포종, 혈관 내비 세포의 악성 종양인 혈관 육종, 림프절이 확장하는 림프종 등 그 종류가 매우 다양합니다. 종양의 종류와 시기에 따라 수술과 꾸준한 항암치료로 상태가 호전될 수 있습니다.";
 					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_3.jpg";
@@ -173,6 +179,8 @@
 					<script type="text/javascript">
 				function D() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'none');
+					
 					document.getElementById("titleID").innerHTML ="내이염";
 					document.getElementById("prID").innerHTML ="귀의 가장 안쪽 깊은 곳에 있는 내이에서 일어나는 내이염은 외이염이나 중이염이 확대되어 일어납니다. 치료방법으로는 원인이 되는 외이염이나 내이염을 치료해야합니다. 장애가 심하면 증상의 개선이 어려워집니다.";
 					document.getElementById("imgId").src = "#";
@@ -223,6 +231,8 @@
 					<script type="text/javascript">
 				function E() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'block');
+					
 					document.getElementById("titleID").innerHTML ="관절염";
 					document.getElementById("prID").innerHTML ="관절염은 노화, 부상, 감염 등의 질병으로 인해 염증이 발생하며, 약물치료와 수술이 요구되는 질병입니다.";
 					document.getElementById("imgId").src = "resources/images/disease/dog/temperature/temperature_5.jpg";
@@ -276,6 +286,8 @@
 					<script type="text/javascript">
 				function F() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'none');
+					
 					document.getElementById("titleID").innerHTML ="자기면역에 의한 피부병";
 					document.getElementById("prID").innerHTML ="사람이나 동물은 채내에 바이러스나 세균을 비롯한 유해한 물질이 침입했을 때 그것을 공격해서 배제하려는 면역이라는 기능을 갖고 있다. 이 면역기능에 이상이 발생하여 자신의 몸을 공격하는 경우가 있는데 피부에도 다양한 증상을 일으킨다. 치료방법으로는 몇 가지 약을 조합해서 투여한다. 일반적으로 피부병 치료에는 끈기가 필요한데, 자기면역성인 질병은 특히 장기요양을 해야 한다. 자기면역력의 밸런스를 조절하도록 피부를 청결하게 유지하고 최대한 자극을 받지 않기 위해서는 직사광선을 피하거나 기생충을 구제하는등의 주의가 필요하다";
 					document.getElementById("imgId").src = "#";
@@ -333,6 +345,8 @@
 					<script type="text/javascript">
 				function G() {
 					$('.disease-container').css('display', 'block');
+					$('.disease-img').css('display', 'none');
+					
 					document.getElementById("titleID").innerHTML ="중이염";
 					document.getElementById("prID").innerHTML ="일반적인 증상은 외이염과 거의 비슷하다. 원인은 외이염과 거의 동일한데 외이의 염증이 번져서 일어난다. 중이의 고실까지 염증이 일어나 고름이 쌓이긷 한다. 치료방법으로는 병발해 있는 외이염의 치료를 겸해서 하고 항생물질이나 소독제를 투여한다. 수술을 하기도 한다";
 					document.getElementById("imgId").src = "#";
