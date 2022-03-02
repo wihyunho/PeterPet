@@ -16,6 +16,8 @@
 					<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="비염";
 							document.getElementById("prID").innerHTML ="비염은 바이러스나 세균, 곰팡이의 일종인 진균에 감염되거나 알레르기가 원인이 되어 발병하는 질병으로 항생물질이나 소염제를 투여를 통해 치료합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/nose/nose2_A.jpg";
@@ -74,6 +76,8 @@
 					<script type="text/javascript">
 						function B() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="혈액응고 장애";
 							document.getElementById("prID").innerHTML ="반려견의 피부, 항문, 생식기 부분에 반상출혈이 확인되는 경우 혈액 응고 장애를 의심해 볼 수 있습니다. 혈액 검사를 통해 혈소판 상태를 확인하고 중성화 수술과 약물치료로 증상을 호전시킬 수 있습니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/nose/nose2_B.jpg";
@@ -112,6 +116,8 @@
 					<script type="text/javascript">
 						function C() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="종양";
 							document.getElementById("prID").innerHTML ="반려견에게 발병하는 주요 종양은, 가장 흔희 생기는 유선종양, 말랑말랑한 혹 덩어리가 생기는 지방종, 피부종양인 비만세포종, 혈관 내비 세포의 악성 종양인 혈관 육종, 림프절이 확장하는 림프종 등 그 종류가 매우 다양합니다. 종양의 종류와 시기에 따라 수술과 꾸준한 항암치료로 상태가 호전될 수 있습니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/nose/nose2_C.jpg";
@@ -160,6 +166,8 @@
 					<script type="text/javascript">
 						function D() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="폐수종";
 							document.getElementById("prID").innerHTML ="폐수종은 폐 속에 액체가 차서 공기가 제대로 순환하지 못해 호흡 곤란을 유발하는 질병으로, 폐렴이나 심장질환 등이 원인이며, 세균 감염이나 극도의 스트레스, 급격한 운동 등으로 발병합니다. 뚜렷한 예방법이 없기 때문에 주기적인 검사를 통해 예방하셔야 합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/nose/nose2_D.jpg";
@@ -203,6 +211,8 @@
 					<script type="text/javascript">
 						function E() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="혈소판 감소증";
 							document.getElementById("prID").innerHTML ="출혈이 생겼을 때 혈액을 응고시키는 작용을 하는 혈소판이 감소하여 생기는 질병입니다. 완치는 불가능하지만 치료에 따라 증상을 완화시킬 수 있습니다. 빈혈이 심할 때에는 수혈을 하는 것이 좋지만, 혈액형이 적합하고 혈액을 제공하는 개가 가까이 있어야만 가능합니다. 치료는 장기간에 걸쳐 진행되는 경우가 종종 있습니다.";
 							document.getElementById("imgId").src = "#";
@@ -246,6 +256,8 @@
 					<script type="text/javascript">
 						function F() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="부비강염";
 							document.getElementById("prID").innerHTML ="비염이 장기화되어 발생하는 만성적인 질환입니다. 치료방법은 비염과 마찬가지로 소염제나 항생물질을 투여합니다. 심한 경우에는 튜브 등을 통해 부비강을 세정하는 방법도 있습니다.";
 							document.getElementById("imgId").src = "#";
@@ -297,7 +309,7 @@
 						<span id="titleID" class="title">test</span>
 						<p id="prID" class="pr">test2</p>
 						<div class="disease-img">
-							<img id="imgId" src="" alt="이미지" onerror="this.parentNode.style.display='none'">
+							<img id="imgId" src="">
 						</div>
 					</div>
 				</div>

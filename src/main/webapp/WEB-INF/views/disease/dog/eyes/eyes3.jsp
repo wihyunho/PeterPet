@@ -15,6 +15,7 @@
 					<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="알레르기가 심한 경우";
 							document.getElementById("prID").innerHTML ="음식 알레르기 또는 계절성 알레르기로 인해 발생하며, 너무나 많은 원인이 있을 수 있으므로 알레르기 검사로 정확한 원인 판단 후 치료가 필요합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes3_A.png";
@@ -67,9 +68,10 @@
 					<script type="text/javascript">
 						function B() {
 							$('.disease-container').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="각막상처";
 							document.getElementById("prID").innerHTML ="각막상처는 검은자위 부분이 손상된 질병입니다. 반려견이 눈을 긁거나 사물에 부딪혀 생기는 경우가 많으며 향후 심각한 각막궤양으로 발전될 수 있습니다. 상처에 2차 감염되는 경우가 있어 적절한 안과적 치료가 요구됩니다.";
-							document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes3_B.png";
+							document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes3_B.jpg";
 							
 							
 							var location = document.querySelector('#titleID').offsetTop;
@@ -100,6 +102,7 @@
 					<script type="text/javascript">
 						function C() {
 							$('.disease-container').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="세균 감염";
 							document.getElementById("prID").innerHTML ="비교적 가벼운 안과적 질병이므로 빠른 치료를 필요로 합니다. 그대로 둘 경우 결막염, 안검염 등 심각하고 고질적인 질환으로 발병할 수 있으니, 초기 치료가 매우 중요합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/eyes/eyes3_C.jpg";

@@ -16,6 +16,8 @@
 					<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="외이염";
 							document.getElementById("prID").innerHTML ="외이도에 염증이 생기는 흔한 질환입니다. 치료방법은 원인을 밝혀내고, 소염제나 항생물질을 투여합니다. 또 귓구멍을 세정하고 살충제를 넣어 진드기의 증식을 억제합니다. 아토피 등이 원인인 경우에는 그 질병의 진행을 억제합니다.";
 							document.getElementById("imgId").src = "#";
@@ -48,6 +50,8 @@
 					<script type="text/javascript">
 						function B() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="개선충증";
 							document.getElementById("prID").innerHTML ="현미경으로만 보이는 초소형 옴벌레가 개의 피부에 구멍을 뚫고 기생하면서 일어납니다. 치료방법으로는 진드기 구제약을 투여합니다. 구제약이 진드기 알에는 효과가 없기 때문에 1주일 정도 간격을 두어 투여를 반복해야 합니다.";
 							document.getElementById("imgId").src = "#";
@@ -80,6 +84,8 @@
 					<script type="text/javascript">
 						function C() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="마라세티아 감염증";
 							document.getElementById("prID").innerHTML ="지방을 영양으로 이용하는, 효모균에 속하는 진균 마라세티아에 의해 일어납니다. 피부나 귀 속에 증식하여 피부염을 악화시키거나 외이염을 일으킵니다. 치료방법으로는 항진균 약을 투여하거나 바르는 외에 약용샴푸로 세정합니다.";
 							document.getElementById("imgId").src = "#";
@@ -115,6 +121,8 @@
 					<script type="text/javascript">
 						function D() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="이혈종";
 							document.getElementById("prID").innerHTML ="이개의 피부와 연골 사이에 혈액이나 액체가 쌓여 부어오르는 상태입니다. 치료방법으로는 귀를 절개하는 등 고인 피나 액체를 빼냅니다. 재발할 때에는 절개 후 특수한 봉합법으로 근치를 도모합니다. 외이염이 원이이 되어 일어난 경우에는 이것을 치료하면서 귀를 청결하게 유지해야 합니다.";
 							document.getElementById("imgId").src = "#";
@@ -141,6 +149,8 @@
 					<script type="text/javascript">
 						function E() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="중이염";
 							document.getElementById("prID").innerHTML ="일반적인 증상은 외이염과 거의 비슷하다. 원인은 외이염과 거의 동일한데 외이의 염증이 번져서 일어난다. 중이의 고실까지 염증이 일어나 고름이 쌓이긷 한다. 치료방법으로는 병발해 있는 외이염의 치료를 겸해서 하고 항생물질이나 소독제를 투여한다. 수술을 하기도 한다.";
 							document.getElementById("imgId").src = "#";

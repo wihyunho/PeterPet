@@ -16,6 +16,8 @@
 					<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML = "당뇨병";
 							document.getElementById("prID").innerHTML = "당뇨병은 췌장에서 인슐린이 제대로 분비되지 않아 발생하는 질병으로, 과식 또는 유전적인 요인과 노화로 인해 발생합니다. 치료방법은 사람과 매우 유사하게 식단관리, 인슐린 치료와 매일 정해진 시간대 운동, 정기적 검사를 통한 보호자의 꾸준한 혈당관리로 개선될 수 있습니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/food/food8_A.jpg";
@@ -50,6 +52,8 @@
 					<script type="text/javascript">
 						function B() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML = "쿠싱증후군";
 							document.getElementById("prID").innerHTML = "쿠싱증후근은 공팥 위에 있는 부신이라는 기관이 호르몬을 분비하는데, 이 호르몬이 과다 분비되어 발생하는 질병입니다. 종양이나 종종 멍이드는 것도 관찰될 수 있으먀, 스테로이드 약물 복용으로도 발병할 수 있으며, 정확한 검사를 통해 수술이나 약물로 치료할 수 있습니다. ";
 							document.getElementById("imgId").src = "resources/images/disease/dog/food/food8_B.jpg";
@@ -93,6 +97,8 @@
 					<script type="text/javascript">
 						function C() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML = "요붕증";
 							document.getElementById("prID").innerHTML = "소변의 과다배출을 막는 호르몬에 이상이 생기거나 신장에 문제가 있기 때문에 물을 많이 먹고 소변을 많이 보는 다음다뇨가 되는 질병이다. 치료방법은 약물로 치료할 수 있다. 치료를 계속하면 탈수증상을 일으키지 않도록 음수량을 조절해야 한다";
 							document.getElementById("imgId").src = "#";

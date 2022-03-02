@@ -16,6 +16,8 @@
 				<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="혈소판 감소증";
 							document.getElementById("prID").innerHTML ="출혈이 생겼을 때 혈액을 응고시키는 작용을 하는 혈소판이 감소하여 생기는 질병입니다. 완치는 불가능하지만 치료에 따라 증상을 완화시킬 수 있습니다. 빈혈이 심할 때에는 수혈을 하는 것이 좋지만, 혈액형이 적합하고 혈액을 제공하는 개가 가까이 있어야만 가능합니다. 치료는 장기간에 걸쳐 진행되는 경우가 종종 있습니다.";
 							document.getElementById("imgId").src = "#";

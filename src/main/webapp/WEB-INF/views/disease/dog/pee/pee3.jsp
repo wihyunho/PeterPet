@@ -16,6 +16,8 @@
 					<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="급성 신부전";
 							document.getElementById("prID").innerHTML ="급성 신부전은 선천적인 경우 또는 독성물질 섭취, 감염, 심장질환, 부정맥, 탈수 등으로 발생하는 질병으로 혈액 투석으로 치료합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_6.jpg";
@@ -54,6 +56,8 @@
 					<script type="text/javascript">
 						function B() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="요로결석";
 							document.getElementById("prID").innerHTML ="요로결석은 음수량, 음식, 세균감염, 견종에 따라 발생하는 질병으로,수술로 치료합니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_7.jpg";
@@ -95,6 +99,8 @@
 						<script type="text/javascript">
 						function C() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="요독증";
 							document.getElementById("prID").innerHTML ="신장의 기능이 저하되어 요소, 질소 등의 노폐물이 소변으로 배출되지 못하면 채내에 쌓여서 요독증을 일으킵니다. 다른 장기에도 심각한 영향을 미치고, 말기에는 경련이나 혼수상태 등의 신경증상을 일으킵니다. 치료방법으로는 수액을 맞히는 동시에 약물요법, 식사요법을 병행합니다.";
 							document.getElementById("imgId").src = "#";
@@ -133,6 +139,8 @@
 						<script type="text/javascript">
 						function D() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="전립선 비대";
 							document.getElementById("prID").innerHTML ="호르몬 불균형으로 발생하는 전립선 비대는 중성화 수술을 하지 않고 나이를 먹은 개에게 많은 질병으로, 대부분의 경우에 증상이 나타나지 않지만 증상이 없는 경우에도 노견의 절반 정도는 전립선이 비대해져 있다고 합니다. 치료방법으로는 변비 등을 완화시키는 치료를 하고, 중성화 수술을 하면 전립선이 축소되어 치유가 됩니다. 노견 등에게는 호르몬요법을 하는 경우도 있습니다. 가정에서는 변비라면 섬유질이 있는 것을 많이 먹이거나 관장을 해주는 방법도 있습니다. 이 질병은 어릴 때 중성화 수술을 시키면 발병하지 않습니다.";
 							document.getElementById("imgId").src = "#";
@@ -168,6 +176,8 @@
 					<script type="text/javascript">
 						function E() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="회음 헤르니아";
 							document.getElementById("prID").innerHTML ="장기가 본래 있어야 할 곳에서 다른 장소로 튀어나와 있는 상태를 뜻하는데 항분 주변의 근육 틈에서 직장 등이 튀어나오는 것입니다. 특히 노령의 수컷에게 많이 보이는 질환입니다. 치료방법은 수솔로 직장을 원래의 위치로 돌려놓고 탈출한 부위의 근육을 꿰매는 방법이 있습니다. 증상이 가벼운 경우 식이요법이나 변을 부드럽게 하는 약을 투여합니다. 전립선 비대가 원인인 경우에는 중성화 수술을 하면 예방할 수 있습니다.";
 							document.getElementById("imgId").src = "#";
@@ -200,6 +210,8 @@
 					<script type="text/javascript">
 						function F() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="종양";
 							document.getElementById("prID").innerHTML ="반려견에게 발병하는 주요 종양은, 가장 흔희 생기는 유선종양, 말랑말랑한 혹 덩어리가 생기는 지방종, 피부종양인 비만세포종, 혈관 내비 세포의 악성 종양인 혈관 육종, 림프절이 확장하는 림프종 등 그 종류가 매우 다양합니다. 종양의 종류와 시기에 따라 수술과 꾸준한 항암치료로 상태가 호전될 수 있습니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_8.jpg";
@@ -229,6 +241,8 @@
 					<script type="text/javascript">
 						function G() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'block');
+							
 							document.getElementById("titleID").innerHTML ="방광염";
 							document.getElementById("prID").innerHTML ="방광염으로 소변이 잘 나오지 않을 경우 구토를 할 수 있습니다. 실내 온도 차이가 원인입니다.";
 							document.getElementById("imgId").src = "resources/images/disease/dog/pee/pee_4.jpg";

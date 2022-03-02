@@ -72,7 +72,7 @@ public class CatDiseaseController {
 	public String CatDisease_Inetes_2(HttpServletRequest request) {
 		udao.loginCheck(request);
 		
-		request.setAttribute("contentPage", "disease/cat/intes/intes3.jsp");
+		request.setAttribute("contentPage", "disease/cat/intes/intes2.jsp");
 		return "index";
 	}
 	
