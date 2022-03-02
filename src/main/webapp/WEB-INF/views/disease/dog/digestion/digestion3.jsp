@@ -16,6 +16,8 @@
 				<script type="text/javascript">
 						function A() {
 							$('.disease-container').css('display', 'block');
+							$('.disease-img').css('display', 'none');
+							
 							document.getElementById("titleID").innerHTML ="급성 간염";
 							document.getElementById("prID").innerHTML ="바이러스 감염이나 중독 등에 의해 간장이 장해를 받아 발생하는 질환입니다. 치료방법은 수액을 맞히거나 해독제를 투여해서 응급처지를 한 후 충분한 휴식과 영양을 공급해 간 기능 회복을 촉진시킵니다. 평소 고지방 식단을 피하고 양질의 단백질로 구성된 처방식을 주는 것이 좋습니다.";
 							document.getElementById("imgId").src = "#";
