@@ -324,4 +324,12 @@ public class ChatDAO {
 		
 		ss.getMapper(ChatMapper.class).reInside(cdto);
 	}
+
+	public void userDel(String userNickname) {
+		ChatDTO cdto = new ChatDTO();
+		cdto.setFromID(userNickname);
+		
+		ss.getMapper(ChatMapper.class).userDel(cdto);
+		
+	}
 }//Class END

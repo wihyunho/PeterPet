@@ -19,4 +19,6 @@ public interface BoardMapper {
 	
 	public int getDel(BoardDTO bdto);
 	
+	public int userDel(BoardDTO bdto);
+	
 }

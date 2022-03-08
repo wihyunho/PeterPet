@@ -37,7 +37,7 @@ public class CommentController {
 
 	// 댓글 등록///////////////////////
 	@RequestMapping(value = "/CommentWriteC", method = RequestMethod.POST)
-	public String home(HttpServletRequest request) {
+	public String CommentWriteC(HttpServletRequest request) {
 
 		if (cdao.insertComment(request) == 1) {
 			request.getSession().setAttribute("messageType", "성공 메시지");

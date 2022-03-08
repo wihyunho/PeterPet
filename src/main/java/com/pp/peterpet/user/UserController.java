@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import com.pp.peterpet.board.BoardDAO;
+import com.pp.peterpet.chat.ChatDAO;
+import com.pp.peterpet.chat.ChatDTO;
+import com.pp.peterpet.comment.CommentDAO;
 import com.pp.peterpet.user.UserDAO;
 
 /**
@@ -25,6 +28,17 @@ public class UserController {
 
 	@Autowired
 	private UserDAO udao;
+	
+	@Autowired
+	private BoardDAO bdao;
+	
+	@Autowired
+	private CommentDAO commentdao;
+	
+	@Autowired
+	private ChatDAO chatdao;
+	
+	
 
 	// 로그인 페이지 진입 컨트롤러/////////////////////////////
 	@RequestMapping(value = "/UserLoginC", method = RequestMethod.GET)
@@ -263,5 +277,36 @@ public class UserController {
 		if(password == null || password.equals("")) response.getWriter().write("-1");
 		
 		response.getWriter().write(udao.passwordCheck(request, password) + "");
+	}
+	
+	// 회원 탈퇴 컨트롤러
+	@RequestMapping(value = "/UserDeleteC", method = RequestMethod.GET)
+	public String UserDeleteC(HttpServletRequest request){
+		UserDTO user = udao.getUser(request);
+		
+		String userID = user.getUserID();
+		String userNickname = user.getUserNickname();
+		
+		
+		//게시물 삭제
+		bdao.userDel(userNickname);
+		
+		//댓글 삭제
+		commentdao.userDel(userNickname);
+
+		//채팅 삭제
+		chatdao.userDel(userID);
+		
+		
+		//유저 정보 삭제
+		udao.userDel(userID);
+		
+		//로그인 세션 삭제
+		request.getSession().invalidate();
+		
+		request.getSession().setAttribute("messageType", "성공 메시지");
+		request.getSession().setAttribute("messageContent", "회원 탈퇴를 성공했습니다.");
+		
+		return "redirect:/";
 	}
 }

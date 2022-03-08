@@ -21,6 +21,6 @@ public interface UserMapper {
 	
 	public UserDTO passwordCheck(UserDTO udto);
 	
-	
-	
+	public int userDel(UserDTO udto);
+
 }

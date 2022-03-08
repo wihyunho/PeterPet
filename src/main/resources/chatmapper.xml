@@ -48,4 +48,8 @@
 	<update id="reInside" parameterType="com.pp.peterpet.chat.ChatDTO">
 		UPDATE Chat SET isDelete = 0 WHERE ((fromID = #{fromID} AND toID = #{toID}) OR (fromID = #{toID} AND toID =#{fromID}))
 	</update>
+	
+	<delete id="userDel" parameterType="com.pp.peterpet.chat.ChatDTO">
+		DELETE CHAT WHERE fromID = #{fromID} OR toID = #{fromID}
+	</delete>
 </mapper>

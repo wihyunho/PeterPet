@@ -215,4 +215,12 @@ public class UserDAO {
 		return -1;
 	}
 
+	public void userDel(String userID) {
+		UserDTO udto = new UserDTO();
+		udto.setUserID(userID);
+		
+		ss.getMapper(UserMapper.class).userDel(udto);
+		
+	}
+
 }// class end

@@ -40,5 +40,8 @@
 		delete from BOARD_COMMENT where c_no=#{c_no}
 	</delete>
 	
-
+	<!-- 삭제해얄 코맨트 리스트 가져오는 작업 -->
+	<select id="userDel" resultType="com.pp.peterpet.comment.CommentDTO">
+		select * from BOARD_COMMENT where c_writer = #{c_writer}
+	</select>
 </mapper>
