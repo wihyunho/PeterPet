@@ -158,9 +158,8 @@ function popup(toNickname) {
 						<tr bgcolor="#F5F5F5">
 							<form action="CommentWriteC" method="post" id="writeCommentForm">
 								<input type="hidden" name="boardnum" value="${board.b_no}">
-								<input type="hidden" name="comment_id"
-									value="${sessionScope.userID}"> <input type="hidden"
-									name="commentnum" value="0">
+								<input type="hidden" name="comment_id" value="${sessionScope.userID}"> 
+								<input type="hidden" name="commentnum" value="0">
 								<!-- 본문 작성-->
 								<td colspan="2">
 									<div>

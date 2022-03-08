@@ -40,4 +40,9 @@
 	<delete id="getDel" parameterType="com.pp.peterpet.board.BoardDTO">
 		delete from board where b_no= #{b_no}
 	</delete>
+	
+	<!-- 게시물 삭제하기 -->
+	<delete id="userDel" parameterType="com.pp.peterpet.board.BoardDTO">
+		 delete from board where b_writer=#{b_writer}
+	</delete>
 </mapper>

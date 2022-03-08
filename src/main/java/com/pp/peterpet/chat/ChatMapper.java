@@ -27,4 +27,6 @@ public interface ChatMapper {
 	public int deleteChat(ChatDTO cdto);
 	
 	public int reInside(ChatDTO cdto);
+	
+	public int userDel(ChatDTO cdto);
 }

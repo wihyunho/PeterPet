@@ -7,6 +7,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>회원 가입</title>
+<script type="text/javascript">
+function quit() {
+    if (!confirm("탈퇴하시겠습니까?\r\n여태 작성한 게시물, 댓글, 채팅의 내용이 삭제됩니다.")) {
+    	//아니요를 눌렀을 때 작동	
+        return;
+    } else {
+    	//예를 눌렀을 경우
+    	location.href="UserDeleteC";	
+    }
+} 
+
+
+</script>
 </head>
 <body>
 	<!-- 회원가입 양식 -->
@@ -44,6 +57,7 @@
 							<c:if test="${User.loginType eq 'PeterPet'}">
 								<input class="btn btn-primary" onclick="location.href='UserInfoUpdateC?type=password'" type="button"value="비밀번호 변경">
 							</c:if>
+							<input class="btn btn-primary" onclick="quit();" type="button"value="회원 탈퇴">
 						</td>
 					</tr>
 								

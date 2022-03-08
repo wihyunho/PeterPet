@@ -51,6 +51,10 @@
 		SELECT * FROM Account WHERE userID = #{userID}
 	</select>
 	
+	<delete id="userDel" parameterType="com.pp.peterpet.user.UserDTO">
+	 	delete from Account where userID= #{userID}
+	</delete>
+	
 	
 	
 </mapper>

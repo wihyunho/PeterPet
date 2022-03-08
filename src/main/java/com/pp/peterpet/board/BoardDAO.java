@@ -216,4 +216,13 @@ public class BoardDAO {
 			}					
 		return boards;
 	}
+	
+	//회원탈퇴 시 보드 삭제
+	public void userDel(String userNickname) {
+		BoardDTO bdto = new BoardDTO();
+		
+		bdto.setB_writer(userNickname);
+		
+		ss.getMapper(BoardMapper.class).userDel(bdto);
+	}
 }

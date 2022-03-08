@@ -32,6 +32,10 @@ UPDATE Chat SET isDelete = 1 WHERE fromID = 'sszz97'AND toID = 'test';
 UPDATE Chat SET isDelete = 2 WHERE fromID = 'test' AND toID ='sszz97';
 
 DELETE CHAT WHERE ((fromID = 'sszz97' AND toID = 'test') OR (fromID =  'test' AND toID ='sszz97'));
+
+DELETE CHAT WHERE fromID = 'sszz97' OR toID ='sszz97';
+
+
 /*
 set @rownum=0
 SELECT  @rownum:=@rownum+1 rn ,chatID,fromID,toID,chatContent,chatTime,chatRead FROM CHAT WHERE chatID IN(SELECT MAX(chatID) FROM CHAT WHERE toID = 'sszz97' OR fromID='sszz97' GROUP BY fromID, toID);

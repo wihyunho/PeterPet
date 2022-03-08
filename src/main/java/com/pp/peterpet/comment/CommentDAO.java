@@ -147,5 +147,17 @@ public class CommentDAO {
 		}
 	}
 
+	public void userDel(String userNickname) {
+		CommentDTO cdto = new CommentDTO();
+		cdto.setC_writer(userNickname);
+		
+		List<CommentDTO> result = ss.getMapper(CommentMapper.class).userDel(cdto);	
+		if(result != null) {
+			for (int i = 0; i < result.size(); i++) {
+				commentDelete(result.get(i).getC_no());
+			}
+		}
+	}
+
 	
 }

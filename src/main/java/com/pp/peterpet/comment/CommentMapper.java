@@ -17,4 +17,6 @@ public interface CommentMapper {
 	
 	public int deleteComment(CommentDTO cdto);
 	
+	public List<CommentDTO> userDel(CommentDTO cdto);
+	
 }
