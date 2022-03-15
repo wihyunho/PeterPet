@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pp.peterpet.tour.TourMapper">
+
+	<select id="getAllTour" resultType="com.pp.peterpet.tour.TourDTO">
+		select * from tour_pet where p_area = #{p_area} order by p_category
+	</select>
+	
+	<select id="getTour" resultType="com.pp.peterpet.tour.TourDTO">
+		select * from tour_pet where p_area = #{p_area} and p_category = #{p_category}
+	</select>
+	
+	<select id="tourView" resultType="com.pp.peterpet.tour.TourDTO">
+		select * from tour_pet where p_code=#{p_code}
+
+	</select>
+
+
+	<select id="checkTour" resultType="com.pp.peterpet.tour.TourDTO">
+		select p_code from tour_pet where p_code=#{p_code}
+
+	</select>
+	
+	
+	
+	<insert id="putTour" parameterType="com.pp.peterpet.tour.TourDTO">
+	
+		insert into tour_pet
+		values (#{p_area}, #{p_category}, #{p_code}, #{p_name}, #{p_address}, #{p_tell},
+		#{p_des}, #{p_img})
+		
+	</insert>
+
+
+	<update id="updateTour" parameterType="com.pp.peterpet.tour.TourDTO">
+	
+		update tour_pet
+		set p_area = #{p_area}, p_category = #{p_category}, p_name=#{p_name}, p_address=#{p_address}, p_tell=#{p_tell},
+		p_des=#{p_des}, p_img=#{p_img}
+		<where>p_code = #{p_code}</where> 
+		
+	</update>
+
+
+</mapper>
