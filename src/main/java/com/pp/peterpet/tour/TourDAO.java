@@ -124,7 +124,7 @@ public class TourDAO {
 					String img ;
 					
 					if(ii2 == null) {
-						img = "/resouces/images/noimage.png";
+						img = "/resources/images/noimage.png";
 						
 					
 					}else {

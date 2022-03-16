@@ -143,7 +143,10 @@ public class UserController {
 		String userProfile = mr.getFilesystemName("profile");
 		if(userProfile == null) {
             userProfile = "resources/images/icon.png";
+        }else {
+        	userProfile = "resources/images/" + userProfile;
         }
+		
 		String loginType = mr.getParameter("loginType");
 
 		// null 값을 받으면 반환

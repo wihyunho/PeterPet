@@ -211,7 +211,7 @@ public class BoardController {
 		}else {
 			request.getSession().setAttribute("messageType", "오류 메시지");
 			request.getSession().setAttribute("messageContent", "회원만 글을 작성할 수 있습니다.");
-			request.setAttribute("contentPage", "home.jsp");
+			return "redirect:/";
 		}
 
 		return "index";

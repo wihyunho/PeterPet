@@ -14,6 +14,7 @@ select * from Account;
 
 --테이블 삭제
 --drop table account;
+
 ---------------------------------------
 
 create or replace trigger TRG_nickname

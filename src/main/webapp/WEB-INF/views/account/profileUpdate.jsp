@@ -20,7 +20,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td colspan="3"><img src="resources/images/${User.userProfile  }" width="300px"></td>
+						<td colspan="3"><img src="${User.userProfile  }" width="300px"></td>
 					</tr>
 					
 					<tr>
