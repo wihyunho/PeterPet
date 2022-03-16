@@ -86,7 +86,7 @@
 			<ul class="pagination" style="display: table; margin-left: auto; margin-right: auto;">
 				<!-- 페이지 화살표 -->
 				<c:choose>
-					<c:when test="${curPageNo == 1 }">
+					<c:when test="${curPageNo == 1 or curPageNo == null}">
 						<li class="page-item disabled"><a class="page-link" href="#">◀</a></li>
 					</c:when>
 					<c:otherwise>

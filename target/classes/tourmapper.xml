@@ -26,8 +26,7 @@
 	<insert id="putTour" parameterType="com.pp.peterpet.tour.TourDTO">
 	
 		insert into tour_pet
-		values (#{p_area}, #{p_category}, #{p_code}, #{p_name}, #{p_address}, #{p_tell},
-		#{p_des}, #{p_img})
+		values (#{p_area}, #{p_category}, #{p_code}, #{p_name}, #{p_address}, #{p_img})
 		
 	</insert>
 
@@ -35,8 +34,7 @@
 	<update id="updateTour" parameterType="com.pp.peterpet.tour.TourDTO">
 	
 		update tour_pet
-		set p_area = #{p_area}, p_category = #{p_category}, p_name=#{p_name}, p_address=#{p_address}, p_tell=#{p_tell},
-		p_des=#{p_des}, p_img=#{p_img}
+		set p_area = #{p_area}, p_category = #{p_category}, p_name=#{p_name}, p_address=#{p_address}, p_img=#{p_img}
 		<where>p_code = #{p_code}</where> 
 		
 	</update>
