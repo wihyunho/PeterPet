@@ -30,7 +30,8 @@ public class TourController {
 	@RequestMapping(value = "/TourHomeC", method = RequestMethod.GET)
 	public String TourHomeC(HttpServletRequest request) {
 		UserDAO.loginCheck(request);
-		
+	
+		request.setAttribute("curPageNo", 1);
 		request.setAttribute("contentPage", "tour/TourList.jsp");
 		return "index";
 	}
@@ -41,19 +42,24 @@ public class TourController {
 		UserDAO.loginCheck(request);
 		// tdao.putTour(p, req);
 		//tdao.getTour(request);
-		int p=1;
-		if(request.getParameter("p")!= null){
 		
-			p = Integer.parseInt(request.getParameter("p"));
+		if(request.getParameter("area") == null){
+			return "redirect:TourHomeC";
+		}else {
+			int p = 1;
+			if(request.getParameter("p") != null ) {
+				p = Integer.parseInt(request.getParameter("p"));
+			} 
+			
+			tdao.getTour(request);
+			tdao.paging(p, request);
+			
+			
+			request.setAttribute("contentPage", "tour/TourList.jsp");
+			return "index";
+			
 		}
 		
-		
-		tdao.getTour(request);
-		tdao.paging(p, request);
-		
-		
-		request.setAttribute("contentPage", "tour/TourList.jsp");
-		return "index";
 		
 		
 	}
@@ -66,7 +72,7 @@ public class TourController {
 		tdao.upsertTour(p_up, p_in, request);
 		// tdao.getAllTour(req);
 		 request.setAttribute("contentPage", "tour/TourList.jsp");
-		return "index";
+		 return "redirect:TourHomeC";
 	}
 
 	@RequestMapping(value = "TourPageC", method = RequestMethod.GET)
@@ -85,9 +91,14 @@ public class TourController {
 		//tdao.paging(p, request);
 		
 		//request.setAttribute("contentPage", "tour/TourList.jsp");
+		//System.out.println(request.getHeader("referer").length());
+		if(request.getHeader("referer").length() == 35) {
+			return  "redirect:TourMain";
+		}else {
 		String[] url = request.getHeader("referer").split("&") ;
 		
 		return "redirect:"+url[0]+"&"+url[1]+"&p="+p;
+		}
 	}
 
 	
@@ -97,7 +108,7 @@ public class TourController {
 		UserDAO.loginCheck(request);
 	
 		tdao.tourView(request);
-		 request.setAttribute("contentPage", "tour/TourView.jsp");
+		 request.setAttribute("contentPage", "tour/TourApi2.jsp");
 		return "index";
 	}
 	
