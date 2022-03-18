@@ -8,32 +8,6 @@ create table board_comment(
     c_comment varchar2(1000 char) not null   
 );
 
-
 create sequence COMMENT_SEQ;
 
---drop sequence COMMENT_SEQ;
---drop table board_comment;
---delete board_comment;
-
 select * from BOARD_COMMENT;
-
-/*
-코멘트 가져올때 답글에 레벨을 설정해서 보여줌
-select Level, c_no, b_no, c_writer, c_date, c_parent, c_comment
-from BOARD_COMMENT
-where  b_no = 101
-start with c_parent = 0
-connect by prior c_no = c_parent;
-*/
-
-/*
-create or replace trigger TRG_nickname
-	after update of userNickname on Account
-	for each row
-begin
-	update board_comment set c_writer=:new.userNickname
-	where c_writer=:old.userNickname;
-end;
-*/
-
---delete board_comment;

@@ -8,15 +8,6 @@ CREATE TABLE tour_pet(
 	p_img varchar2(300char)
 );
 
-
 create sequence tour_pet_seq;
 
-
 select * from tour_pet;
-
-
-
-
-drop table tour_pet;
-drop sequence tour_pet_seq;
-

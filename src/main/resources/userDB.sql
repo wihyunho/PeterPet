@@ -7,16 +7,7 @@ CREATE TABLE Account(
     loginType varchar(10 char) not null
 );
 
-
-delete Account;
-
-select * from Account;
-
---테이블 삭제
---drop table account;
-
 ---------------------------------------
-
 create or replace trigger TRG_nickname
 	after update of userNickname on Account
 	for each row
